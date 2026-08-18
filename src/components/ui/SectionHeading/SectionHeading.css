@@ -1,0 +1,113 @@
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+  width: 100%;
+  max-width: 620px;
+}
+
+.section-heading-centered {
+  max-width: 760px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.section-eyebrow {
+  margin: 0 0 18px;
+
+  color: #c38e24;
+
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.section-title {
+  margin: 0;
+
+  color: #071a38;
+
+  font-size: 46px;
+  line-height: 1.08;
+  font-weight: 700;
+
+  letter-spacing: -1.5px;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.section-description {
+  max-width: 580px;
+
+  margin: 24px 0 0;
+
+  color: #647083;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   CENTERED
+========================================================= */
+
+.section-heading-centered .section-description {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 40px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+  .section-eyebrow {
+    margin-bottom: 12px;
+
+    font-size: 12px;
+  }
+
+  .section-title {
+    font-size: 34px;
+    line-height: 1.12;
+  }
+
+  .section-description {
+    margin-top: 18px;
+
+    font-size: 15px;
+  }
+}

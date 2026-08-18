@@ -1,0 +1,1206 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.cash-equities-page {
+  width: 100%;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background: #06142e;
+}
+
+
+.cash-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   GRADIENT TITLES
+========================================================= */
+
+.cash-gradient-title,
+.cash-intro-copy h2,
+.cash-final-copy h2,
+.cash-article-date {
+  color: #eeb235;
+
+  background:
+    linear-gradient(90deg,
+      #f7c442,
+      #dfa02d 55%,
+      #cb8927);
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.cash-hero {
+  display: flex;
+
+  align-items: center;
+
+  min-height: 285px;
+
+  background-image:
+    var(--cash-hero);
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+
+
+.cash-hero h1 {
+  max-width: 1150px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 53px;
+
+  line-height: 1.18;
+
+  font-weight: 900;
+
+  letter-spacing:
+    -0.025em;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.cash-intro-section {
+  padding:
+    48px 0 120px;
+
+  background-image:
+    var(--cash-intro-bg);
+
+  background-size: cover;
+
+  background-position:
+    top center;
+
+  background-repeat: repeat-x;
+}
+
+
+.cash-intro-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(450px, 589px) minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 85px;
+
+  padding-top: 105px;
+}
+
+
+/* =========================================================
+   MAIN IMAGE
+========================================================= */
+
+.cash-main-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 529px;
+
+  padding: 1px;
+
+  overflow: hidden;
+
+  border-radius: 23px;
+
+  background:
+    linear-gradient(145deg,
+      #6556c8,
+      #765091,
+      #bf7340);
+
+  box-shadow:
+    -25px 28px 60px rgba(0,
+      0,
+      0,
+      0.22);
+}
+
+
+.cash-main-image img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  border-radius: 22px;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   INTRO COPY
+========================================================= */
+
+.cash-intro-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+
+  line-height: 1.33;
+
+  font-weight: 800;
+}
+
+
+.cash-intro-paragraphs {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 30px;
+
+  margin-top: 28px;
+}
+
+
+.cash-intro-paragraphs p {
+  margin: 0;
+
+  color:
+    rgba(255,
+      255,
+      255,
+      0.91);
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+.cash-intro-paragraphs strong {
+  color: #ffffff;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.cash-gradient-title {
+  margin: 0;
+
+  font-size: 45px;
+
+  line-height: 1.25;
+
+  font-weight: 500;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   WHY CASH EQUITIES
+========================================================= */
+
+.cash-reasons-section {
+  padding:
+    110px 0 60px;
+
+  overflow: hidden;
+
+  background-image:
+    var(--cash-why-bg);
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+
+
+.cash-reasons-slider {
+  position: relative;
+
+  margin-top: 35px;
+}
+
+
+.cash-reasons-slider .swiper {
+  overflow: visible;
+}
+
+
+.cash-reasons-slider .swiper-slide {
+  height: auto;
+
+  padding:
+    58px 0 5px;
+}
+
+
+/* =========================================================
+   REASON CARD
+========================================================= */
+
+.cash-reason-card {
+  position: relative;
+
+  height: 100%;
+
+  min-height: 250px;
+
+  padding:
+    70px 25px 38px;
+
+  border:
+    1px solid transparent;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(#091830,
+      #091830) padding-box,
+
+    linear-gradient(135deg,
+      #6554c4,
+      #755093,
+      #bb7040) border-box;
+}
+
+
+.cash-reason-icon {
+  position: absolute;
+
+  top: 0;
+
+  left: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 109px;
+
+  height: 106px;
+
+  background-image:
+    var(--cash-icon-bg);
+
+  background-size: contain;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  transform:
+    translate(-50%,
+      -50%);
+}
+
+
+.cash-reason-icon img {
+  display: block;
+
+  width: 80px;
+
+  height: 80px;
+
+  object-fit: contain;
+}
+
+
+.cash-reason-card h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 22px;
+
+  line-height: 1.4;
+
+  font-weight: 400;
+}
+
+
+.cash-reason-card p {
+  margin:
+    10px 0 0;
+
+  color:
+    rgba(255,
+      255,
+      255,
+      0.9);
+
+  font-size: 15px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   MOBILE REASON ARROWS
+========================================================= */
+
+.cash-reason-arrow {
+  display: none;
+
+  position: absolute;
+
+  top: 50%;
+
+  z-index: 12;
+
+  width: 46px;
+
+  height: 46px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  transform:
+    translateY(-50%);
+
+  cursor: pointer;
+}
+
+
+.cash-reason-arrow img {
+  width: 100%;
+
+  height: 100%;
+}
+
+
+.cash-reasons-prev {
+  left: -8px;
+}
+
+
+.cash-reasons-next {
+  right: -8px;
+}
+
+
+/* =========================================================
+   ARTICLES
+========================================================= */
+
+.cash-articles-section {
+  padding:
+    105px 0 60px;
+
+  background: #06142e;
+}
+
+
+.cash-articles-slider {
+  position: relative;
+
+  margin-top: 55px;
+}
+
+
+.cash-articles-slider .swiper-slide {
+  height: auto;
+}
+
+
+/* =========================================================
+   ARTICLE CARD
+========================================================= */
+
+.cash-article-card {
+  display: flex;
+
+  flex-direction: column;
+
+  height: 100%;
+
+  overflow: hidden;
+
+  border:
+    1px solid #222426;
+
+  border-radius: 23px;
+
+  background: #061123;
+}
+
+
+.cash-article-image {
+  width: 100%;
+
+  height: 203px;
+
+  overflow: hidden;
+}
+
+
+.cash-article-image img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+.cash-article-card:hover .cash-article-image img {
+  transform:
+    scale(1.04);
+}
+
+
+/* =========================================================
+   ARTICLE CONTENT
+========================================================= */
+
+.cash-article-content {
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1;
+
+  gap: 15px;
+
+  padding:
+    28px 28px 30px;
+}
+
+
+.cash-article-date {
+  font-size: 15px;
+
+  line-height: 1.35;
+
+  font-weight: 500;
+}
+
+
+.cash-article-content p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+.cash-article-bottom {
+  display: flex;
+
+  align-items: flex-end;
+
+  flex: 1;
+
+  padding-top: 14px;
+}
+
+
+/* =========================================================
+   OUTLINE BUTTON
+========================================================= */
+
+.cash-outline-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 150px;
+
+  min-height: 42px;
+
+  padding:
+    0 18px;
+
+  border:
+    1px solid #daa12c;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  background: transparent;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.cash-outline-button:hover {
+  color: #0c2e6d;
+
+  background: #e9ad31;
+}
+
+
+/* =========================================================
+   ARTICLE ARROWS
+========================================================= */
+
+.cash-article-arrow {
+  position: absolute;
+
+  top: 50%;
+
+  z-index: 10;
+
+  width: 57px;
+
+  height: 57px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  transform:
+    translateY(-50%);
+
+  cursor: pointer;
+}
+
+
+.cash-article-arrow img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+.cash-articles-prev {
+  left: -75px;
+}
+
+
+.cash-articles-next {
+  right: -75px;
+}
+
+
+/* =========================================================
+   VIEW ALL
+========================================================= */
+
+.cash-view-all {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 45px;
+}
+
+
+/* =========================================================
+   GOLD BUTTON
+========================================================= */
+
+.cash-gold-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  width: fit-content;
+
+  min-height: 45px;
+
+  padding:
+    0 22px;
+
+  border:
+    1px solid #e2a91f;
+
+  border-radius: 4px;
+
+  color: #0c2e6d;
+
+  background:
+    linear-gradient(180deg,
+      #f7ca52,
+      #e9a824);
+
+  font-size: 13px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+
+.cash-gold-button:hover {
+  transform:
+    translateY(-2px);
+
+  filter:
+    brightness(1.05);
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.cash-final-section {
+  background-image:
+    var(--cash-final-bg);
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+
+
+.cash-final-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.95fr) minmax(0, 1.05fr);
+
+  align-items: center;
+
+  gap: 50px;
+}
+
+
+.cash-final-copy {
+  padding:
+    90px 0;
+}
+
+
+.cash-final-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+
+  line-height: 1.22;
+
+  font-weight: 900;
+}
+
+
+.cash-final-paragraphs {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+
+  margin-top: 25px;
+}
+
+
+.cash-final-paragraphs p {
+  margin: 0;
+
+  color:
+    rgba(255,
+      255,
+      255,
+      0.91);
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+.cash-final-copy .cash-gold-button {
+  margin-top: 30px;
+}
+
+
+/* =========================================================
+   FINAL IMAGE
+========================================================= */
+
+.cash-final-image {
+  align-self: end;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
+}
+
+
+.cash-final-image img {
+  display: block;
+
+  width: 100%;
+
+  max-width: 867px;
+
+  height: auto;
+}
+
+
+/* =========================================================
+   BACK TOP
+========================================================= */
+
+.cash-back-top-shell {
+  position: relative;
+
+  z-index: 40;
+
+  height: 0;
+}
+
+
+.cash-back-top {
+  position: absolute;
+
+  left: 50%;
+
+  bottom: -45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 90px;
+
+  height: 90px;
+
+  padding: 0;
+
+  border:
+    1px solid rgba(255,
+      255,
+      255,
+      0.2);
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56,
+        47,
+        112,
+        0.84),
+      rgba(17,
+        38,
+        79,
+        0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter:
+    blur(20px);
+
+  cursor: pointer;
+}
+
+
+.cash-back-top img {
+  width: 30px;
+
+  height: 30px;
+
+  animation:
+    cashJump 1.6s ease-in-out infinite;
+}
+
+
+@keyframes cashJump {
+
+  0%,
+  100% {
+    transform:
+      translateY(3px);
+  }
+
+
+  50% {
+    transform:
+      translateY(-4px);
+  }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .cash-equities-page {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .cash-hero,
+html[dir="rtl"] .cash-intro-copy,
+html[dir="rtl"] .cash-article-content,
+html[dir="rtl"] .cash-final-copy {
+  text-align: right;
+}
+
+
+/* =========================================================
+   LARGE
+========================================================= */
+
+@media (max-width: 1350px) {
+
+  .cash-articles-prev {
+    left: -20px;
+  }
+
+
+  .cash-articles-next {
+    right: -20px;
+  }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .cash-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .cash-hero {
+    min-height: 235px;
+  }
+
+
+  .cash-hero h1 {
+    font-size: 40px;
+  }
+
+
+  .cash-intro-layout {
+    grid-template-columns:
+      minmax(390px, 480px) minmax(0, 1fr);
+
+    gap: 55px;
+  }
+
+
+  .cash-main-image {
+    height: 440px;
+  }
+
+
+  .cash-gradient-title,
+  .cash-intro-copy h2,
+  .cash-final-copy h2 {
+    font-size: 36px;
+  }
+
+
+  .cash-article-image {
+    height: 180px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .cash-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .cash-hero {
+    min-height: 205px;
+  }
+
+
+  .cash-hero h1 {
+    font-size: 35px;
+
+    text-align: center;
+  }
+
+
+  .cash-intro-layout {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    padding-top: 75px;
+  }
+
+
+  .cash-main-image {
+    width:
+      min(100%,
+        590px);
+
+    height: 450px;
+
+    margin:
+      0 auto;
+  }
+
+
+  .cash-intro-copy h2 {
+    text-align: center;
+  }
+
+
+  .cash-reasons-section,
+  .cash-articles-section {
+    padding:
+      75px 0;
+  }
+
+
+  .cash-reason-arrow {
+    display: block;
+  }
+
+
+  .cash-article-arrow {
+    width: 45px;
+
+    height: 45px;
+  }
+
+
+  .cash-articles-prev {
+    left: -10px;
+  }
+
+
+  .cash-articles-next {
+    right: -10px;
+  }
+
+
+  .cash-final-layout {
+    grid-template-columns: 1fr;
+  }
+
+
+  .cash-final-copy {
+    padding:
+      70px 0 15px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .cash-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .cash-hero {
+    min-height: 170px;
+  }
+
+
+  .cash-hero h1 {
+    font-size: 28px;
+
+    line-height: 1.3;
+  }
+
+
+  .cash-intro-section {
+    padding-top: 38px;
+
+    padding-bottom: 60px;
+  }
+
+
+  .cash-intro-layout {
+    padding-top: 55px;
+  }
+
+
+  .cash-main-image {
+    height: 330px;
+
+    border-radius: 14px;
+  }
+
+
+  .cash-gradient-title,
+  .cash-intro-copy h2,
+  .cash-final-copy h2 {
+    font-size: 28px;
+
+    line-height: 1.25;
+  }
+
+
+  .cash-intro-paragraphs {
+    gap: 16px;
+  }
+
+
+  .cash-intro-paragraphs p,
+  .cash-final-paragraphs p {
+    font-size: 13px;
+
+    line-height: 1.65;
+  }
+
+
+  .cash-reason-card {
+    min-height: 230px;
+  }
+
+
+  .cash-reason-card h3 {
+    font-size: 19px;
+  }
+
+
+  .cash-reason-card p {
+    font-size: 13px;
+  }
+
+
+  .cash-articles-slider {
+    margin-top: 35px;
+  }
+
+
+  .cash-article-image {
+    height: 200px;
+  }
+
+
+  .cash-article-content {
+    padding:
+      23px 22px 26px;
+  }
+
+
+  .cash-article-content p {
+    font-size: 14px;
+  }
+
+
+  .cash-article-date {
+    font-size: 12px;
+  }
+
+
+  .cash-article-arrow {
+    display: none;
+  }
+
+
+  .cash-final-copy {
+    padding-top: 55px;
+  }
+
+
+  .cash-back-top {
+    width: 55px;
+
+    height: 55px;
+
+    bottom: -27px;
+  }
+
+
+  .cash-back-top img {
+    width: 21px;
+
+    height: 21px;
+  }
+
+}

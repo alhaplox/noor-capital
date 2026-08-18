@@ -1,0 +1,1552 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.shares-page {
+  width: 100%;
+  overflow: hidden;
+  color: #fff;
+  background: #06142e;
+}
+
+
+.shares-container {
+  width: min(1210px,
+      calc(100% - 60px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   GRADIENT TITLES
+========================================================= */
+
+.shares-gradient-title,
+.shares-intro-copy h2,
+.shares-demo-copy h2,
+.shares-faq-title h2,
+.shares-final-copy h2 {
+  color: #eeb235;
+
+  background:
+    linear-gradient(90deg,
+      #f6c443,
+      #dfa02d 55%,
+      #cc8a27);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.shares-hero {
+  display: flex;
+  align-items: center;
+
+  min-height: 285px;
+
+  background-image:
+    var(--shares-hero);
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.shares-hero h1 {
+  max-width: 950px;
+
+  margin: 0;
+
+  font-size: 53px;
+  line-height: 1.18;
+  font-weight: 900;
+
+  letter-spacing: -0.025em;
+}
+
+
+.shares-hero ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  margin: 16px 0 0;
+  padding-left: 20px;
+}
+
+
+.shares-hero li {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.shares-intro-section {
+  padding:
+    48px 0 120px;
+
+  background-image:
+    var(--shares-intro-bg);
+
+  background-size: cover;
+  background-position: top center;
+  background-repeat: repeat-x;
+}
+
+
+/* =========================================================
+   COMMON PRODUCTS ROUTE TABS
+========================================================= */
+
+.product-route-tabs-shell {
+  position: sticky;
+
+  top: 15px;
+
+  z-index: 37;
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+
+.product-route-tabs {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  max-width:
+    calc(100% - 30px);
+
+  padding: 6px;
+
+  overflow-x: auto;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.09);
+
+  border-radius: 7px;
+
+  background:
+    rgba(5, 20, 47, 0.88);
+
+  backdrop-filter: blur(18px);
+
+  scrollbar-width: none;
+}
+
+
+.product-route-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+
+.product-route-tabs a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 auto;
+
+  min-height: 34px;
+
+  padding:
+    0 18px;
+
+  border-radius: 4px;
+
+  color: #fff;
+
+  font-size: 13px;
+  font-weight: 400;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+
+.product-route-tabs a:hover {
+  background: #284168;
+}
+
+
+.product-route-tabs a.is-active {
+  color: #f6d57a;
+
+  background:
+    linear-gradient(90deg,
+      #75423e,
+      #533958,
+      #302b70);
+}
+
+
+/* =========================================================
+   INTRO LAYOUT
+========================================================= */
+
+.shares-intro-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(450px, 589px) minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 85px;
+
+  padding-top: 105px;
+}
+
+
+/* =========================================================
+   MAIN IMAGE
+========================================================= */
+
+.shares-main-image {
+  position: relative;
+
+  width: 100%;
+  height: 529px;
+
+  padding: 1px;
+
+  overflow: hidden;
+
+  border-radius: 23px;
+
+  background:
+    linear-gradient(145deg,
+      #6556c8,
+      #765091,
+      #bf7340);
+
+  box-shadow:
+    -25px 28px 60px rgba(0, 0, 0, 0.22);
+}
+
+
+.shares-main-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 22px;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   INTRO COPY
+========================================================= */
+
+.shares-intro-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 1.33;
+  font-weight: 800;
+}
+
+
+.shares-intro-copy>p,
+.shares-types li {
+  color:
+    rgba(255, 255, 255, 0.91);
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+.shares-intro-copy>p {
+  margin:
+    27px 0 22px;
+}
+
+
+.shares-types-title {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #fff;
+
+  font-size: 16px;
+}
+
+
+.shares-types {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  margin: 0;
+  padding-left: 20px;
+}
+
+
+/* =========================================================
+   ADVANTAGES
+========================================================= */
+
+.shares-advantages-section {
+  padding:
+    64px 0;
+
+  background: #07162f;
+}
+
+
+.shares-gradient-title {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 1.33;
+  font-weight: 500;
+
+  text-align: center;
+}
+
+
+.shares-advantages-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4,
+      minmax(0, 1fr));
+
+  gap: 30px;
+
+  margin-top: 55px;
+}
+
+
+.shares-advantage-card {
+  min-height: 270px;
+
+  padding:
+    38px 32px 48px;
+
+  border:
+    1px solid transparent;
+
+  border-radius: 8px;
+
+  background:
+    linear-gradient(#091830,
+      #091830) padding-box,
+
+    linear-gradient(135deg,
+      #6454c4,
+      #755093,
+      #bb7040) border-box;
+}
+
+
+.shares-advantage-card h3 {
+  margin: 0;
+
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+
+.shares-advantage-card p {
+  margin:
+    28px 0 0;
+
+  color:
+    rgba(255, 255, 255, 0.9);
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   REASONS
+========================================================= */
+
+.shares-reasons-section {
+  padding:
+    64px 0;
+
+  overflow: hidden;
+
+  background-image:
+    var(--shares-why-bg);
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.shares-reasons-slider {
+  position: relative;
+
+  margin-top: 35px;
+}
+
+
+.shares-reasons-slider .swiper {
+  overflow: visible;
+}
+
+
+.shares-reasons-slider .swiper-slide {
+  height: auto;
+
+  padding:
+    58px 0 5px;
+}
+
+
+.shares-reason-card {
+  position: relative;
+
+  height: 100%;
+  min-height: 240px;
+
+  padding:
+    70px 25px 36px;
+
+  border:
+    1px solid transparent;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(#091830,
+      #091830) padding-box,
+
+    linear-gradient(135deg,
+      #6554c4,
+      #755093,
+      #bb7040) border-box;
+}
+
+
+.shares-reason-icon {
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 109px;
+  height: 106px;
+
+  background-image:
+    var(--shares-icon-bg);
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transform:
+    translate(-50%, -50%);
+}
+
+
+.shares-reason-icon img {
+  width: 80px;
+  height: 80px;
+
+  object-fit: contain;
+}
+
+
+.shares-reason-card h3 {
+  margin: 0;
+
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+
+.shares-reason-card p {
+  margin:
+    10px 0 0;
+
+  color:
+    rgba(255, 255, 255, 0.9);
+
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+
+.shares-slider-button {
+  display: none;
+
+  position: absolute;
+
+  top: 50%;
+
+  z-index: 10;
+
+  width: 46px;
+  height: 46px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  transform:
+    translateY(-50%);
+
+  cursor: pointer;
+}
+
+
+.shares-slider-button img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.shares-reasons-prev {
+  left: -8px;
+}
+
+
+.shares-reasons-next {
+  right: -8px;
+}
+
+
+/* =========================================================
+   DEMO
+========================================================= */
+
+.shares-demo-section {
+  padding:
+    64px 0;
+
+  background-image:
+    var(--shares-why-bg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.shares-demo-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr) minmax(0, 1.15fr);
+
+  align-items: start;
+
+  gap: 80px;
+}
+
+
+.shares-demo-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 1.33;
+  font-weight: 800;
+}
+
+
+.shares-demo-copy>strong {
+  display: block;
+
+  margin-top: 20px;
+
+  font-size: 16px;
+}
+
+
+.shares-demo-copy ul {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+
+  margin:
+    15px 0 0;
+
+  padding-left: 20px;
+}
+
+
+.shares-demo-copy li {
+  color:
+    rgba(255, 255, 255, 0.91);
+
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.shares-demo-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+
+.shares-form-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2,
+      minmax(0, 1fr));
+
+  gap:
+    20px 24px;
+}
+
+
+.shares-demo-form label {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+
+.shares-demo-form label>span {
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+
+.shares-demo-form input {
+  width: 100%;
+  height: 46px;
+
+  padding:
+    0 16px;
+
+  border:
+    1px solid #b88831;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  color: #fff;
+
+  background:
+    rgba(7, 22, 47, 0.78);
+
+  font-family: inherit;
+  font-size: 14px;
+}
+
+
+.shares-demo-form input::placeholder {
+  color: #a8a8a8;
+}
+
+
+.shares-demo-form input:focus {
+  border-color: #efbd46;
+
+  box-shadow:
+    0 0 0 3px rgba(232, 174, 50, 0.1);
+}
+
+
+.shares-form-full {
+  width: 100%;
+}
+
+
+.shares-checkbox {
+  flex-direction: row !important;
+
+  align-items: flex-start;
+
+  gap: 10px !important;
+}
+
+
+.shares-checkbox input {
+  flex:
+    0 0 auto;
+
+  width: 14px;
+  height: 14px;
+
+  margin-top: 4px;
+}
+
+
+.shares-checkbox span {
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+}
+
+
+.shares-form-status {
+  margin: 0;
+
+  padding:
+    10px 12px;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+}
+
+
+.shares-form-status.is-success {
+  color: #94e3b4;
+
+  background:
+    rgba(45, 153, 93, 0.15);
+}
+
+
+.shares-form-status.is-error {
+  color: #ff9cab;
+
+  background:
+    rgba(190, 57, 78, 0.15);
+}
+
+
+/* =========================================================
+   GOLD BUTTON
+========================================================= */
+
+.shares-gold-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  width: fit-content;
+
+  min-height: 45px;
+
+  padding:
+    0 22px;
+
+  border:
+    1px solid #e2a91f;
+
+  border-radius: 4px;
+
+  color: #0c2e6d;
+
+  background:
+    linear-gradient(180deg,
+      #f7ca52,
+      #e9a824);
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.shares-table-section {
+  padding:
+    64px 0;
+
+  background: #06142e;
+}
+
+
+.shares-table-wrapper {
+  max-height: 671px;
+
+  margin-top: 50px;
+
+  overflow: auto;
+
+  border-radius: 20px;
+
+  background: #0f1539;
+}
+
+
+.shares-table-wrapper table {
+  width: 100%;
+
+  min-width: 1000px;
+
+  border-collapse: collapse;
+}
+
+
+.shares-table-wrapper thead {
+  position: sticky;
+
+  top: 0;
+
+  z-index: 5;
+
+  background:
+    linear-gradient(#060b28,
+      #0a0e23);
+}
+
+
+.shares-table-wrapper th,
+.shares-table-wrapper td {
+  padding:
+    17px 20px;
+
+  border-bottom:
+    1px solid rgba(109, 117, 143, 0.25);
+
+  color: #fff;
+
+  font-size: 13px;
+  font-weight: 400;
+
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+
+.shares-table-wrapper th {
+  font-weight: 600;
+}
+
+
+.shares-table-pagination {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-top: 24px;
+}
+
+
+.shares-table-pagination button {
+  width: 55px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: none;
+
+  cursor: pointer;
+}
+
+
+.shares-table-pagination button:disabled {
+  opacity: 0.4;
+
+  cursor: not-allowed;
+}
+
+
+.shares-table-pagination img {
+  width: 40px;
+  height: 35px;
+
+  object-fit: contain;
+}
+
+
+.shares-table-pagination span {
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.shares-faq-section {
+  padding:
+    64px 0;
+
+  background-image:
+    var(--shares-why-bg);
+
+  background-size: cover;
+  background-position: top center;
+  background-repeat: repeat-x;
+}
+
+
+.shares-faq-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(260px, 0.7fr) minmax(0, 1.1fr);
+
+  align-items: start;
+
+  gap: 80px;
+}
+
+
+.shares-faq-title h2 {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 1.33;
+  font-weight: 500;
+}
+
+
+.shares-faq-item {
+  overflow: hidden;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.13);
+}
+
+
+.shares-faq-item>button {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  width: 100%;
+
+  padding:
+    20px 0;
+
+  border: 0;
+
+  color: #fff;
+
+  background: transparent;
+
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 400;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+
+.shares-faq-plus {
+  flex:
+    0 0 20px;
+
+  font-size: 25px;
+
+  transition:
+    transform 0.25s ease;
+}
+
+
+.shares-faq-item.is-open .shares-faq-plus {
+  transform:
+    rotate(45deg);
+}
+
+
+.shares-faq-answer {
+  display: grid;
+
+  grid-template-rows:
+    0fr;
+
+  padding-left: 40px;
+
+  overflow: hidden;
+
+  color:
+    rgba(255, 255, 255, 0.89);
+
+  transition:
+    grid-template-rows 0.35s ease;
+}
+
+
+.shares-faq-item.is-open .shares-faq-answer {
+  grid-template-rows:
+    1fr;
+
+  padding-bottom: 20px;
+}
+
+
+.shares-faq-answer>* {
+  min-height: 0;
+}
+
+
+.shares-faq-answer p,
+.shares-faq-answer li {
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+
+.shares-faq-answer p {
+  margin:
+    0 0 10px;
+}
+
+
+.shares-faq-answer ul {
+  margin: 0;
+
+  padding-left: 20px;
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.shares-final-section {
+  background-image:
+    var(--shares-trading-bg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.shares-final-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.95fr) minmax(0, 1.05fr);
+
+  align-items: center;
+
+  gap: 50px;
+}
+
+
+.shares-final-copy {
+  padding:
+    90px 0;
+}
+
+
+.shares-final-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 1.22;
+  font-weight: 900;
+}
+
+
+.shares-final-copy>div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+
+  margin-top: 25px;
+}
+
+
+.shares-final-copy p {
+  margin: 0;
+
+  color:
+    rgba(255, 255, 255, 0.91);
+
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+
+.shares-final-copy .shares-gold-button {
+  margin-top: 30px;
+}
+
+
+.shares-final-image {
+  align-self: end;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+.shares-final-image img {
+  display: block;
+
+  width: 100%;
+  max-width: 867px;
+
+  height: auto;
+}
+
+
+/* =========================================================
+   BACK TOP
+========================================================= */
+
+.shares-back-top-shell {
+  position: relative;
+
+  z-index: 40;
+
+  height: 0;
+}
+
+
+.shares-back-top {
+  position: absolute;
+
+  left: 50%;
+  bottom: -45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+
+  padding: 0;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.2);
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56, 47, 112, 0.84),
+      rgba(17, 38, 79, 0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter:
+    blur(20px);
+
+  cursor: pointer;
+}
+
+
+.shares-back-top img {
+  width: 30px;
+  height: 30px;
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .shares-page {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .shares-hero,
+html[dir="rtl"] .shares-intro-copy,
+html[dir="rtl"] .shares-demo-copy,
+html[dir="rtl"] .shares-demo-form,
+html[dir="rtl"] .shares-faq-item,
+html[dir="rtl"] .shares-final-copy {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .shares-hero ul,
+html[dir="rtl"] .shares-types,
+html[dir="rtl"] .shares-demo-copy ul,
+html[dir="rtl"] .shares-faq-answer ul {
+  padding-left: 0;
+
+  padding-right: 20px;
+}
+
+
+html[dir="rtl"] .shares-faq-answer {
+  padding-left: 0;
+
+  padding-right: 40px;
+}
+
+
+html[dir="rtl"] .shares-table-wrapper th,
+html[dir="rtl"] .shares-table-wrapper td {
+  text-align: right;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .shares-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .shares-hero {
+    min-height: 235px;
+  }
+
+
+  .shares-hero h1 {
+    font-size: 40px;
+  }
+
+
+  .shares-intro-layout {
+    grid-template-columns:
+      minmax(390px, 480px) minmax(0, 1fr);
+
+    gap: 55px;
+  }
+
+
+  .shares-main-image {
+    height: 440px;
+  }
+
+
+  .shares-gradient-title,
+  .shares-intro-copy h2,
+  .shares-demo-copy h2,
+  .shares-faq-title h2,
+  .shares-final-copy h2 {
+    font-size: 36px;
+  }
+
+
+  .shares-advantages-grid {
+    grid-template-columns:
+      repeat(2,
+        minmax(0, 1fr));
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .shares-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .shares-hero {
+    min-height: 205px;
+  }
+
+
+  .shares-hero h1 {
+    font-size: 35px;
+
+    text-align: center;
+  }
+
+
+  .shares-hero ul {
+    width: fit-content;
+
+    margin:
+      15px auto 0;
+  }
+
+
+  .shares-intro-layout {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    padding-top: 75px;
+  }
+
+
+  .shares-main-image {
+    width:
+      min(100%, 590px);
+
+    height: 450px;
+
+    margin:
+      0 auto;
+  }
+
+
+  .shares-intro-copy h2 {
+    text-align: center;
+  }
+
+
+  .shares-demo-layout,
+  .shares-faq-layout,
+  .shares-final-layout {
+    grid-template-columns: 1fr;
+  }
+
+
+  .shares-demo-layout,
+  .shares-faq-layout {
+    gap: 45px;
+  }
+
+
+  .shares-final-copy {
+    padding:
+      70px 0 15px;
+  }
+
+
+  .shares-slider-button {
+    display: block;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .shares-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .shares-hero {
+    min-height: 180px;
+  }
+
+
+  .shares-hero h1 {
+    font-size: 28px;
+  }
+
+
+  .shares-hero li {
+    font-size: 12px;
+  }
+
+
+  .shares-intro-section {
+    padding-top: 38px;
+    padding-bottom: 60px;
+  }
+
+
+  .product-route-tabs-shell {
+    justify-content:
+      flex-start;
+  }
+
+
+  .product-route-tabs {
+    max-width: 100%;
+  }
+
+
+  .product-route-tabs a {
+    min-height: 31px;
+
+    padding:
+      0 12px;
+
+    font-size: 11px;
+  }
+
+
+  .shares-intro-layout {
+    padding-top: 55px;
+  }
+
+
+  .shares-main-image {
+    height: 330px;
+
+    border-radius: 14px;
+  }
+
+
+  .shares-gradient-title,
+  .shares-intro-copy h2,
+  .shares-demo-copy h2,
+  .shares-faq-title h2,
+  .shares-final-copy h2 {
+    font-size: 28px;
+
+    line-height: 1.25;
+  }
+
+
+  .shares-intro-copy>p,
+  .shares-types li,
+  .shares-demo-copy li,
+  .shares-final-copy p {
+    font-size: 13px;
+
+    line-height: 1.65;
+  }
+
+
+  .shares-advantages-grid {
+    grid-template-columns: 1fr;
+
+    gap: 17px;
+
+    margin-top: 35px;
+  }
+
+
+  .shares-advantage-card {
+    min-height: auto;
+
+    padding:
+      27px 23px;
+  }
+
+
+  .shares-advantage-card h3 {
+    font-size: 21px;
+  }
+
+
+  .shares-advantage-card p {
+    margin-top: 17px;
+
+    font-size: 13px;
+  }
+
+
+  .shares-form-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+
+  .shares-demo-form input {
+    height: 42px;
+
+    font-size: 13px;
+  }
+
+
+  .shares-table-wrapper {
+    margin-top: 35px;
+  }
+
+
+  .shares-faq-item>button {
+    gap: 13px;
+
+    font-size: 16px;
+  }
+
+
+  .shares-faq-answer {
+    padding-left: 28px;
+  }
+
+
+  html[dir="rtl"] .shares-faq-answer {
+    padding-left: 0;
+
+    padding-right: 28px;
+  }
+
+
+  .shares-faq-answer p,
+  .shares-faq-answer li {
+    font-size: 12px;
+  }
+
+
+  .shares-final-copy {
+    padding-top: 55px;
+  }
+
+
+  .shares-back-top {
+    width: 55px;
+    height: 55px;
+
+    bottom: -27px;
+  }
+
+
+  .shares-back-top img {
+    width: 21px;
+    height: 21px;
+  }
+
+}

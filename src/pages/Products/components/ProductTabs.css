@@ -1,0 +1,130 @@
+/* =========================================================
+   PRODUCT ROUTE TABS
+========================================================= */
+
+.product-route-tabs-shell {
+  position: sticky;
+  top: 15px;
+  z-index: 37;
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+
+.product-route-tabs {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  max-width: calc(100% - 30px);
+
+  padding: 6px;
+
+  overflow-x: auto;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.09);
+
+  border-radius: 7px;
+
+  background:
+    rgba(5, 20, 47, 0.88);
+
+  backdrop-filter: blur(18px);
+
+  -webkit-backdrop-filter: blur(18px);
+
+  scrollbar-width: none;
+}
+
+
+.product-route-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+
+.product-route-tabs a {
+  flex: 0 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 34px;
+
+  padding: 0 18px;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 400;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+
+.product-route-tabs a:hover {
+  color: #f6d57a;
+
+  background: #284168;
+}
+
+
+.product-route-tabs a.is-active {
+  color: #f6d57a;
+
+  background:
+    linear-gradient(90deg,
+      #75423e,
+      #533958,
+      #302b70);
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .product-route-tabs {
+  direction: rtl;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .product-route-tabs-shell {
+    justify-content: flex-start;
+  }
+
+
+  .product-route-tabs {
+    max-width: 100%;
+  }
+
+
+  .product-route-tabs a {
+    min-height: 31px;
+
+    padding: 0 12px;
+
+    font-size: 11px;
+  }
+
+}

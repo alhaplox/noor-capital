@@ -1,0 +1,399 @@
+/* =========================================================
+   TRADING OFFERS
+========================================================= */
+
+.trading-offers {
+  position: relative;
+
+  width: 100%;
+
+  padding:
+    76px 0 62px;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background-color: #071a3e;
+
+  background-image:
+    linear-gradient(90deg,
+      rgba(5, 24, 57, 0.91) 0%,
+      rgba(12, 45, 103, 0.86) 52%,
+      rgba(4, 24, 56, 0.94) 100%),
+    url("/images/about/bg-count.png"
+    );
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.trading-offers-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin:
+    0 auto;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.trading-offers-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,
+      minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.trading-offer-card {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 155px;
+
+  padding:
+    25px 28px;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(110deg,
+      rgba(38, 45, 94, 0.85),
+      rgba(15, 40, 86, 0.84));
+
+  box-shadow:
+    0 14px 35px rgba(0, 0, 0, 0.18);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.trading-offer-card:hover {
+  transform:
+    translateY(-4px);
+
+  box-shadow:
+    0 20px 44px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.trading-offer-image {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex:
+    0 0 118px;
+
+  width: 118px;
+
+  margin-right: 24px;
+}
+
+
+.trading-offer-image img {
+  display: block;
+
+  width: 100%;
+
+  max-height: 115px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.trading-offer-card h3 {
+  max-width: 180px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 20px;
+
+  line-height: 1.3;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.trading-offers-bottom {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-top: 30px;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   MAIN TITLE
+========================================================= */
+
+.trading-offers-bottom h2 {
+  max-width: 850px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 30px;
+
+  line-height: 1.35;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.trading-offers-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 165px;
+
+  height: 46px;
+
+  margin-top: 58px;
+
+  padding:
+    0 24px;
+
+  border:
+    1px solid #e6a91c;
+
+  border-radius: 4px;
+
+  color: #082050;
+
+  background:
+    linear-gradient(180deg,
+      #f7ca55 0%,
+      #eaaa23 100%);
+
+  font-size: 13px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+
+.trading-offers-button:hover {
+  transform:
+    translateY(-2px);
+
+  filter:
+    brightness(1.06);
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .trading-offer-card {
+  direction: rtl;
+
+  text-align: right;
+}
+
+
+html[dir="rtl"] .trading-offer-image {
+  margin-right: 0;
+
+  margin-left: 24px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .trading-offers {
+    padding:
+      55px 0;
+  }
+
+
+  .trading-offers-container {
+    width:
+      calc(100% - 44px);
+  }
+
+
+  .trading-offers-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .trading-offer-card {
+    justify-content:
+      flex-start;
+
+    min-height: 125px;
+  }
+
+
+  .trading-offer-card h3 {
+    max-width: none;
+  }
+
+
+  .trading-offers-bottom h2 {
+    font-size: 26px;
+  }
+
+
+  .trading-offers-button {
+    margin-top: 42px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .trading-offers {
+    padding:
+      34px 0 42px;
+  }
+
+
+  .trading-offers-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .trading-offers-grid {
+    gap: 14px;
+  }
+
+
+  .trading-offer-card {
+    min-height: 105px;
+
+    padding:
+      16px 18px;
+  }
+
+
+  .trading-offer-image {
+    flex-basis: 75px;
+
+    width: 75px;
+
+    margin-right: 15px;
+  }
+
+
+  html[dir="rtl"] .trading-offer-image {
+    margin-right: 0;
+
+    margin-left: 15px;
+  }
+
+
+  .trading-offer-image img {
+    max-height: 78px;
+  }
+
+
+  .trading-offer-card h3 {
+    font-size: 16px;
+  }
+
+
+  .trading-offers-bottom {
+    margin-top: 26px;
+  }
+
+
+  .trading-offers-bottom h2 {
+    font-size: 21px;
+
+    line-height: 1.45;
+  }
+
+
+  .trading-offers-button {
+    min-width: 150px;
+
+    height: 42px;
+
+    margin-top: 30px;
+
+    font-size: 12px;
+  }
+
+}

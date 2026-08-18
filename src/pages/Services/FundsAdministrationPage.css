@@ -1,0 +1,1492 @@
+/* =========================================================
+   FUNDS ADMINISTRATION PAGE
+========================================================= */
+
+.funds-page {
+  width: 100%;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background:
+    #06142e;
+}
+
+
+.funds-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin:
+    0 auto;
+}
+
+
+/* =========================================================
+   GRADIENT TITLES
+========================================================= */
+
+.funds-intro-copy h2,
+.funds-features-title,
+.funds-other-title,
+.funds-cta-copy h2 {
+  color:
+    #edb234;
+
+  background:
+    linear-gradient(90deg,
+      #f7c442 0%,
+      #dfa02d 55%,
+      #cc8b28 100%);
+
+  -webkit-background-clip:
+    text;
+
+  background-clip:
+    text;
+
+  -webkit-text-fill-color:
+    transparent;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.funds-hero {
+  display: flex;
+
+  align-items: center;
+
+  width: 100%;
+
+  min-height:
+    285px;
+
+  background-image:
+    var(--funds-hero);
+
+  background-size:
+    cover;
+
+  background-position:
+    center;
+
+  background-repeat:
+    no-repeat;
+}
+
+
+.funds-hero h1 {
+  max-width:
+    1150px;
+
+  margin: 0;
+
+  color:
+    #ffffff;
+
+  font-size:
+    53px;
+
+  line-height:
+    1.18;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    -0.025em;
+}
+
+
+/* =========================================================
+   INTRO SECTION
+========================================================= */
+
+.funds-intro-section {
+  padding:
+    48px 0 64px;
+
+  background-image:
+    var(--funds-pattern);
+
+  background-size:
+    cover;
+
+  background-position:
+    top center;
+
+  background-repeat:
+    repeat-x;
+}
+
+
+/* =========================================================
+   TABS
+========================================================= */
+
+.funds-tabs-shell {
+  position:
+    sticky;
+
+  top:
+    15px;
+
+  z-index:
+    40;
+
+  display: flex;
+
+  justify-content:
+    center;
+
+  width: 100%;
+}
+
+
+.funds-tabs {
+  display: flex;
+
+  align-items:
+    center;
+
+  gap:
+    8px;
+
+  max-width:
+    calc(100% - 30px);
+
+  padding:
+    6px;
+
+  overflow-x:
+    auto;
+
+  border:
+    1px solid rgba(255,
+      255,
+      255,
+      0.09);
+
+  border-radius:
+    7px;
+
+  background:
+    rgba(5,
+      20,
+      47,
+      0.88);
+
+  backdrop-filter:
+    blur(18px);
+
+  scrollbar-width:
+    none;
+}
+
+
+.funds-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+
+.funds-tabs a {
+  flex:
+    0 0 auto;
+
+  display: flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  min-height:
+    34px;
+
+  padding:
+    0 18px;
+
+  border-radius:
+    4px;
+
+  color:
+    #ffffff;
+
+  font-size:
+    13px;
+
+  line-height:
+    1;
+
+  font-weight:
+    400;
+
+  text-decoration:
+    none;
+
+  white-space:
+    nowrap;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+
+.funds-tabs a:hover {
+  background:
+    #284168;
+}
+
+
+.funds-tabs a.is-active {
+  color:
+    #f6d57a;
+
+  background:
+    linear-gradient(90deg,
+      #75423e,
+      #533958,
+      #302b70);
+}
+
+
+/* =========================================================
+   INTRO LAYOUT
+   SOURCE: IMAGE LEFT / COPY RIGHT
+========================================================= */
+
+.funds-intro-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(450px,
+      589px) minmax(0,
+      1fr);
+
+  align-items:
+    center;
+
+  gap:
+    85px;
+
+  padding-top:
+    105px;
+}
+
+
+/* =========================================================
+   MAIN IMAGE
+========================================================= */
+
+.funds-main-image {
+  position:
+    relative;
+
+  width:
+    100%;
+
+  height:
+    529px;
+
+  padding:
+    1px;
+
+  overflow:
+    hidden;
+
+  border-radius:
+    23px;
+
+  background:
+    linear-gradient(145deg,
+      #6556c8,
+      #765091,
+      #bf7340);
+
+  box-shadow:
+    -25px 28px 60px rgba(0,
+      0,
+      0,
+      0.22);
+}
+
+
+.funds-main-image img {
+  display: block;
+
+  width:
+    100%;
+
+  height:
+    100%;
+
+  border-radius:
+    22px;
+
+  object-fit:
+    cover;
+}
+
+
+/* =========================================================
+   INTRO COPY
+========================================================= */
+
+.funds-intro-copy h2 {
+  margin:
+    0;
+
+  font-size:
+    45px;
+
+  line-height:
+    1.33;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    -0.025em;
+}
+
+
+.funds-intro-copy p {
+  margin:
+    28px 0 0;
+
+  color:
+    rgba(255,
+      255,
+      255,
+      0.91);
+
+  font-size:
+    16px;
+
+  line-height:
+    1.5;
+}
+
+
+/* =========================================================
+   FEATURES SECTION
+========================================================= */
+
+.funds-features-section {
+  padding:
+    64px 0;
+
+  background-image:
+    var(--funds-features-bg);
+
+  background-size:
+    cover;
+
+  background-position:
+    top center;
+
+  background-repeat:
+    no-repeat;
+}
+
+
+/* =========================================================
+   FEATURES TITLE
+========================================================= */
+
+.funds-features-title {
+  margin:
+    0;
+
+  font-size:
+    45px;
+
+  line-height:
+    1.33;
+
+  font-weight:
+    500;
+
+  text-align:
+    center;
+}
+
+
+/* =========================================================
+   FEATURES GRID
+========================================================= */
+
+.funds-features-grid {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(3,
+      minmax(0,
+        1fr));
+
+  gap:
+    30px;
+
+  margin-top:
+    55px;
+}
+
+
+/* =========================================================
+   FEATURE CARD
+========================================================= */
+
+.funds-feature-card {
+  min-height:
+    280px;
+
+  padding:
+    38px 32px 48px;
+
+  border:
+    1px solid transparent;
+
+  border-radius:
+    8px;
+
+  background:
+    linear-gradient(#091830,
+      #091830) padding-box,
+
+    linear-gradient(135deg,
+      #6454c4,
+      #755093,
+      #bb7040) border-box;
+}
+
+
+.funds-feature-card h3 {
+  margin:
+    0;
+
+  color:
+    #ffffff;
+
+  font-size:
+    28px;
+
+  line-height:
+    1.2;
+
+  font-weight:
+    500;
+}
+
+
+.funds-feature-card p {
+  margin:
+    28px 0 0;
+
+  color:
+    rgba(255,
+      255,
+      255,
+      0.9);
+
+  font-size:
+    15px;
+
+  line-height:
+    1.6;
+}
+
+
+/* =========================================================
+   CTA SECTIONS
+========================================================= */
+
+.funds-advisor-section,
+.funds-trading-section {
+  background-size:
+    cover;
+
+  background-position:
+    center;
+
+  background-repeat:
+    no-repeat;
+}
+
+
+.funds-advisor-section {
+  background-image:
+    var(--funds-advisor-bg);
+}
+
+
+.funds-trading-section {
+  background-image:
+    var(--funds-trading-bg);
+}
+
+
+/* =========================================================
+   CTA LAYOUT
+========================================================= */
+
+.funds-cta-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0,
+      0.9fr) minmax(0,
+      1.1fr);
+
+  align-items:
+    center;
+
+  gap:
+    50px;
+}
+
+
+.funds-cta-copy {
+  padding:
+    100px 0;
+}
+
+
+.funds-cta-copy h2 {
+  margin:
+    0;
+
+  font-size:
+    45px;
+
+  line-height:
+    1.22;
+
+  font-weight:
+    900;
+}
+
+
+/* =========================================================
+   CTA IMAGE
+========================================================= */
+
+.funds-cta-image {
+  align-self:
+    end;
+
+  display: flex;
+
+  align-items:
+    flex-end;
+
+  justify-content:
+    center;
+}
+
+
+.funds-cta-image img {
+  display: block;
+
+  width:
+    100%;
+
+  max-width:
+    867px;
+
+  height:
+    auto;
+}
+
+
+/* =========================================================
+   GOLD BUTTON
+========================================================= */
+
+.funds-gold-button {
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    12px;
+
+  min-height:
+    45px;
+
+  margin-top:
+    30px;
+
+  padding:
+    0 22px;
+
+  border:
+    1px solid #e2a91f;
+
+  border-radius:
+    4px;
+
+  color:
+    #0c2e6d;
+
+  background:
+    linear-gradient(180deg,
+      #f7ca52,
+      #e9a824);
+
+  font-size:
+    13px;
+
+  line-height:
+    1;
+
+  font-weight:
+    800;
+
+  text-decoration:
+    none;
+
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+
+.funds-gold-button:hover {
+  transform:
+    translateY(-2px);
+
+  filter:
+    brightness(1.05);
+}
+
+
+/* =========================================================
+   OTHER SERVICES
+========================================================= */
+
+.funds-other-section {
+  padding:
+    110px 0 120px;
+
+  background-image:
+    var(--funds-other-bg);
+
+  background-size:
+    cover;
+
+  background-position:
+    top center;
+
+  background-repeat:
+    repeat-x;
+}
+
+
+.funds-other-title {
+  margin:
+    0;
+
+  font-size:
+    45px;
+
+  line-height:
+    1.33;
+
+  font-weight:
+    500;
+
+  text-align:
+    center;
+}
+
+
+.funds-other-grid {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(3,
+      minmax(0,
+        1fr));
+
+  gap:
+    30px;
+
+  margin-top:
+    55px;
+}
+
+
+/* =========================================================
+   OTHER CARD
+========================================================= */
+
+.funds-other-card {
+  display: flex;
+
+  flex-direction:
+    column;
+
+  overflow:
+    hidden;
+
+  border-radius:
+    23px;
+
+  background:
+    #061123;
+}
+
+
+.funds-other-image {
+  position:
+    relative;
+
+  height:
+    264px;
+
+  overflow:
+    hidden;
+}
+
+
+.funds-other-image::after {
+  content:
+    "";
+
+  position:
+    absolute;
+
+  inset:
+    0;
+
+  background:
+    linear-gradient(180deg,
+      transparent 55%,
+      rgba(2,
+        10,
+        24,
+        0.62));
+}
+
+
+.funds-other-image img {
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    100%;
+
+  object-fit:
+    cover;
+}
+
+
+/* =========================================================
+   OTHER CONTENT
+========================================================= */
+
+.funds-other-content {
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  flex:
+    1;
+
+  padding:
+    30px 26px 45px;
+
+  border:
+    1px solid #222426;
+
+  border-top:
+    0;
+
+  border-radius:
+    0 0 23px 23px;
+}
+
+
+.funds-other-content h3 {
+  margin:
+    0;
+
+  color:
+    #ffffff;
+
+  font-size:
+    28px;
+
+  line-height:
+    1.2;
+
+  font-weight:
+    500;
+}
+
+
+.funds-other-paragraphs {
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  gap:
+    10px;
+
+  margin-top:
+    20px;
+}
+
+
+.funds-other-paragraphs p {
+  margin:
+    0;
+
+  color:
+    rgba(255,
+      255,
+      255,
+      0.89);
+
+  font-size:
+    14px;
+
+  line-height:
+    1.57;
+}
+
+
+.funds-other-paragraphs strong {
+  color:
+    #ffffff;
+
+  font-weight:
+    700;
+}
+
+
+.funds-other-bottom {
+  display:
+    flex;
+
+  align-items:
+    flex-end;
+
+  flex:
+    1;
+
+  padding-top:
+    30px;
+}
+
+
+/* =========================================================
+   BORDER BUTTON
+========================================================= */
+
+.funds-border-button {
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  min-width:
+    130px;
+
+  min-height:
+    40px;
+
+  padding:
+    0 18px;
+
+  border:
+    1px solid #daa12c;
+
+  border-radius:
+    4px;
+
+  color:
+    #ffffff;
+
+  background:
+    transparent;
+
+  font-size:
+    12px;
+
+  line-height:
+    1;
+
+  font-weight:
+    700;
+
+  text-decoration:
+    none;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.funds-border-button:hover {
+  color:
+    #0c2e6d;
+
+  background:
+    #e8ad31;
+}
+
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.funds-benefits {
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  gap:
+    11px;
+
+  margin:
+    27px 0 0;
+
+  padding-left:
+    20px;
+}
+
+
+.funds-benefits li {
+  color:
+    #ffffff;
+
+  font-size:
+    15px;
+
+  line-height:
+    1.5;
+}
+
+
+/* =========================================================
+   CTA BUTTONS
+========================================================= */
+
+.funds-cta-buttons {
+  display: flex;
+
+  align-items:
+    center;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    15px;
+}
+
+
+/* =========================================================
+   BACK TOP
+========================================================= */
+
+.funds-back-top-shell {
+  position:
+    relative;
+
+  z-index:
+    40;
+
+  height:
+    0;
+}
+
+
+.funds-back-top {
+  position:
+    absolute;
+
+  left:
+    50%;
+
+  bottom:
+    -45px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  width:
+    90px;
+
+  height:
+    90px;
+
+  padding:
+    0;
+
+  border:
+    1px solid rgba(255,
+      255,
+      255,
+      0.2);
+
+  border-radius:
+    50%;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56,
+        47,
+        112,
+        0.84),
+      rgba(17,
+        38,
+        79,
+        0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter:
+    blur(20px);
+
+  cursor:
+    pointer;
+}
+
+
+.funds-back-top img {
+  width:
+    30px;
+
+  height:
+    30px;
+
+  animation:
+    fundsJump 1.6s ease-in-out infinite;
+}
+
+
+@keyframes fundsJump {
+
+  0%,
+  100% {
+    transform:
+      translateY(3px);
+  }
+
+  50% {
+    transform:
+      translateY(-4px);
+  }
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .funds-page {
+  direction:
+    rtl;
+}
+
+
+html[dir="rtl"] .funds-hero,
+html[dir="rtl"] .funds-intro-copy,
+html[dir="rtl"] .funds-feature-card,
+html[dir="rtl"] .funds-other-content,
+html[dir="rtl"] .funds-cta-copy {
+  text-align:
+    right;
+}
+
+
+html[dir="rtl"] .funds-benefits {
+  padding-left:
+    0;
+
+  padding-right:
+    20px;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .funds-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .funds-hero {
+    min-height:
+      235px;
+  }
+
+
+  .funds-hero h1 {
+    font-size:
+      40px;
+  }
+
+
+  .funds-intro-layout {
+    grid-template-columns:
+      minmax(390px,
+        480px) minmax(0,
+        1fr);
+
+    gap:
+      55px;
+  }
+
+
+  .funds-main-image {
+    height:
+      440px;
+  }
+
+
+  .funds-intro-copy h2,
+  .funds-features-title,
+  .funds-other-title,
+  .funds-cta-copy h2 {
+    font-size:
+      36px;
+  }
+
+
+  .funds-feature-card h3,
+  .funds-other-content h3 {
+    font-size:
+      23px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .funds-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .funds-hero {
+    min-height:
+      205px;
+  }
+
+
+  .funds-hero h1 {
+    font-size:
+      35px;
+
+    text-align:
+      center;
+  }
+
+
+  .funds-intro-layout {
+    grid-template-columns:
+      1fr;
+
+    gap:
+      45px;
+
+    padding-top:
+      75px;
+  }
+
+
+  .funds-main-image {
+    width:
+      min(100%,
+        590px);
+
+    height:
+      450px;
+
+    margin:
+      0 auto;
+  }
+
+
+  .funds-intro-copy h2 {
+    text-align:
+      center;
+  }
+
+
+  .funds-features-grid {
+    grid-template-columns:
+      repeat(2,
+        minmax(0,
+          1fr));
+  }
+
+
+  .funds-other-section {
+    padding:
+      75px 0 80px;
+  }
+
+
+  .funds-other-grid {
+    grid-template-columns:
+      repeat(2,
+        minmax(0,
+          1fr));
+  }
+
+
+  .funds-cta-layout {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .funds-cta-copy {
+    padding:
+      70px 0 20px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .funds-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .funds-hero {
+    min-height:
+      170px;
+  }
+
+
+  .funds-hero h1 {
+    font-size:
+      28px;
+
+    line-height:
+      1.3;
+  }
+
+
+  .funds-intro-section {
+    padding-top:
+      38px;
+  }
+
+
+  .funds-tabs-shell {
+    justify-content:
+      flex-start;
+  }
+
+
+  .funds-tabs {
+    max-width:
+      100%;
+  }
+
+
+  .funds-tabs a {
+    min-height:
+      31px;
+
+    padding:
+      0 12px;
+
+    font-size:
+      11px;
+  }
+
+
+  .funds-intro-layout {
+    padding-top:
+      55px;
+  }
+
+
+  .funds-main-image {
+    height:
+      330px;
+
+    border-radius:
+      14px;
+  }
+
+
+  .funds-intro-copy h2,
+  .funds-features-title,
+  .funds-other-title,
+  .funds-cta-copy h2 {
+    font-size:
+      28px;
+
+    line-height:
+      1.25;
+  }
+
+
+  .funds-intro-copy p {
+    font-size:
+      13px;
+
+    line-height:
+      1.65;
+  }
+
+
+  .funds-features-grid,
+  .funds-other-grid {
+    grid-template-columns:
+      1fr;
+
+    gap:
+      17px;
+
+    margin-top:
+      35px;
+  }
+
+
+  .funds-feature-card {
+    min-height:
+      auto;
+
+    padding:
+      27px 23px;
+  }
+
+
+  .funds-feature-card h3,
+  .funds-other-content h3 {
+    font-size:
+      21px;
+  }
+
+
+  .funds-feature-card p {
+    margin-top:
+      17px;
+
+    font-size:
+      13px;
+  }
+
+
+  .funds-other-image {
+    height:
+      210px;
+  }
+
+
+  .funds-other-content {
+    padding:
+      25px 22px 32px;
+  }
+
+
+  .funds-other-paragraphs p {
+    font-size:
+      12px;
+  }
+
+
+  .funds-cta-copy {
+    padding-top:
+      55px;
+  }
+
+
+  .funds-benefits li {
+    font-size:
+      13px;
+  }
+
+
+  .funds-cta-buttons {
+    flex-direction:
+      column;
+
+    align-items:
+      flex-start;
+  }
+
+
+  .funds-back-top {
+    width:
+      55px;
+
+    height:
+      55px;
+
+    bottom:
+      -27px;
+  }
+
+
+  .funds-back-top img {
+    width:
+      21px;
+
+    height:
+      21px;
+  }
+
+}

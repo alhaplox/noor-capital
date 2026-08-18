@@ -1,0 +1,1205 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.commodities-page {
+  width: 100%;
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background: #06142e;
+}
+
+
+.commodities-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   GRADIENT TITLES
+========================================================= */
+
+.commodities-gradient-title,
+.commodities-intro-copy h2,
+.commodities-final-copy h2,
+.commodities-article-date {
+  color: #eeb235;
+
+  background:
+    linear-gradient(90deg,
+      #f7c442,
+      #dfa02d 55%,
+      #cb8927);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.commodities-hero {
+  display: flex;
+  align-items: center;
+
+  min-height: 285px;
+
+  background-image:
+    var(--commodities-hero);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.commodities-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 53px;
+  line-height: 1.18;
+  font-weight: 900;
+
+  letter-spacing: -0.025em;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.commodities-intro-section {
+  padding:
+    48px 0 120px;
+
+  background-image:
+    var(--commodities-intro-bg);
+
+  background-size: cover;
+  background-position: top center;
+  background-repeat: repeat-x;
+}
+
+
+.commodities-intro-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(450px, 589px) minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 85px;
+
+  padding-top: 105px;
+}
+
+
+/* =========================================================
+   MAIN IMAGE
+========================================================= */
+
+.commodities-main-image {
+  position: relative;
+
+  width: 100%;
+  height: 529px;
+
+  padding: 1px;
+
+  overflow: hidden;
+
+  border-radius: 23px;
+
+  background:
+    linear-gradient(145deg,
+      #6556c8,
+      #765091,
+      #bf7340);
+
+  box-shadow:
+    -25px 28px 60px rgba(0, 0, 0, 0.22);
+}
+
+
+.commodities-main-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 22px;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   INTRO COPY
+========================================================= */
+
+.commodities-intro-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 1.33;
+  font-weight: 800;
+}
+
+
+.commodities-intro-paragraphs {
+  display: flex;
+  flex-direction: column;
+
+  gap: 28px;
+
+  margin-top: 28px;
+}
+
+
+.commodities-intro-paragraphs p {
+  margin: 0;
+
+  color:
+    rgba(255, 255, 255, 0.91);
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.commodities-gradient-title {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 1.25;
+  font-weight: 500;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   SPECIFICATION TABLE
+========================================================= */
+
+.commodities-table-section {
+  padding:
+    110px 0 120px;
+
+  background-image:
+    var(--commodities-table-bg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.commodities-table-wrapper {
+  max-height: 671px;
+
+  margin-top: 50px;
+
+  overflow: auto;
+
+  border-radius: 20px;
+
+  background: #0f1539;
+}
+
+
+.commodities-table-wrapper table {
+  width: 100%;
+
+  min-width: 760px;
+
+  border-collapse: collapse;
+}
+
+
+.commodities-table-wrapper thead {
+  background:
+    linear-gradient(#060b28,
+      #0a0e23);
+}
+
+
+.commodities-table-wrapper th,
+.commodities-table-wrapper td {
+  padding:
+    17px 20px;
+
+  border-bottom:
+    1px solid rgba(109, 117, 143, 0.25);
+
+  color: #ffffff;
+
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 400;
+
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+
+.commodities-table-wrapper th {
+  font-weight: 600;
+}
+
+
+.commodities-table-wrapper .commodities-empty-cell {
+  padding:
+    20px 50px;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   COMMODITY TYPES
+========================================================= */
+
+.commodities-types-section {
+  padding:
+    110px 0 60px;
+
+  overflow: hidden;
+
+  background-image:
+    var(--commodities-why-bg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.commodities-types-section .commodities-gradient-title {
+  width: min(850px,
+      100%);
+
+  margin:
+    0 auto;
+}
+
+
+.commodities-types-slider {
+  position: relative;
+
+  margin-top: 35px;
+}
+
+
+.commodities-types-slider .swiper {
+  overflow: visible;
+}
+
+
+.commodities-types-slider .swiper-slide {
+  height: auto;
+
+  padding:
+    58px 0 5px;
+}
+
+
+/* =========================================================
+   TYPE CARD
+========================================================= */
+
+.commodities-type-card {
+  position: relative;
+
+  height: 100%;
+  min-height: 245px;
+
+  padding:
+    70px 25px 38px;
+
+  border:
+    1px solid transparent;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(#091830,
+      #091830) padding-box,
+
+    linear-gradient(135deg,
+      #6554c4,
+      #755093,
+      #bb7040) border-box;
+}
+
+
+.commodities-type-icon {
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 109px;
+  height: 106px;
+
+  background-image:
+    var(--commodities-icon-bg);
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transform:
+    translate(-50%,
+      -50%);
+}
+
+
+.commodities-type-icon img {
+  display: block;
+
+  width: 80px;
+  height: 80px;
+
+  object-fit: contain;
+}
+
+
+.commodities-type-card h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+
+.commodities-type-card p {
+  max-width: 420px;
+
+  margin:
+    10px auto 0;
+
+  color:
+    rgba(255, 255, 255, 0.9);
+
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   TYPE ARROWS
+========================================================= */
+
+.commodities-type-arrow {
+  display: none;
+
+  position: absolute;
+
+  top: 50%;
+
+  z-index: 12;
+
+  width: 46px;
+  height: 46px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  transform:
+    translateY(-50%);
+
+  cursor: pointer;
+}
+
+
+.commodities-type-arrow img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+.commodities-types-prev {
+  left: -8px;
+}
+
+
+.commodities-types-next {
+  right: -8px;
+}
+
+
+/* =========================================================
+   FEATURED ARTICLES
+========================================================= */
+
+.commodities-articles-section {
+  padding:
+    105px 0 60px;
+
+  background: #06142e;
+}
+
+
+.commodities-articles-slider {
+  position: relative;
+
+  margin-top: 55px;
+}
+
+
+.commodities-articles-slider .swiper-slide {
+  height: auto;
+}
+
+
+/* =========================================================
+   ARTICLE CARD
+========================================================= */
+
+.commodities-article-card {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  overflow: hidden;
+
+  border:
+    1px solid #222426;
+
+  border-radius: 23px;
+
+  background: #061123;
+}
+
+
+.commodities-article-image {
+  width: 100%;
+  height: 203px;
+
+  overflow: hidden;
+}
+
+
+.commodities-article-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+.commodities-article-card:hover .commodities-article-image img {
+  transform:
+    scale(1.04);
+}
+
+
+/* =========================================================
+   ARTICLE CONTENT
+========================================================= */
+
+.commodities-article-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  gap: 15px;
+
+  padding:
+    28px 28px 30px;
+}
+
+
+.commodities-article-date {
+  font-size: 15px;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+
+.commodities-article-content p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+.commodities-article-bottom {
+  display: flex;
+  align-items: flex-end;
+
+  flex: 1;
+
+  padding-top: 14px;
+}
+
+
+/* =========================================================
+   OUTLINE BUTTON
+========================================================= */
+
+.commodities-outline-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-width: 150px;
+  min-height: 42px;
+
+  padding:
+    0 18px;
+
+  border:
+    1px solid #daa12c;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  background: transparent;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.commodities-outline-button:hover {
+  color: #0c2e6d;
+
+  background: #e9ad31;
+}
+
+
+/* =========================================================
+   ARTICLE ARROWS
+========================================================= */
+
+.commodities-article-arrow {
+  position: absolute;
+
+  top: 50%;
+
+  z-index: 10;
+
+  width: 57px;
+  height: 57px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  transform:
+    translateY(-50%);
+
+  cursor: pointer;
+}
+
+
+.commodities-article-arrow img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+.commodities-articles-prev {
+  left: -75px;
+}
+
+
+.commodities-articles-next {
+  right: -75px;
+}
+
+
+/* =========================================================
+   VIEW ALL
+========================================================= */
+
+.commodities-view-all {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 45px;
+}
+
+
+/* =========================================================
+   GOLD BUTTON
+========================================================= */
+
+.commodities-gold-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  width: fit-content;
+
+  min-height: 45px;
+
+  padding:
+    0 22px;
+
+  border:
+    1px solid #e2a91f;
+
+  border-radius: 4px;
+
+  color: #0c2e6d;
+
+  background:
+    linear-gradient(180deg,
+      #f7ca52,
+      #e9a824);
+
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+
+.commodities-gold-button:hover {
+  transform:
+    translateY(-2px);
+
+  filter:
+    brightness(1.05);
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.commodities-final-section {
+  background-image:
+    var(--commodities-final-bg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.commodities-final-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.95fr) minmax(0, 1.05fr);
+
+  align-items: center;
+
+  gap: 50px;
+}
+
+
+.commodities-final-copy {
+  padding:
+    90px 0;
+}
+
+
+.commodities-final-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 1.22;
+  font-weight: 900;
+}
+
+
+.commodities-final-copy p {
+  margin:
+    25px 0 0;
+
+  color:
+    rgba(255, 255, 255, 0.91);
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+.commodities-final-copy .commodities-gold-button {
+  margin-top: 30px;
+}
+
+
+/* =========================================================
+   FINAL IMAGE
+========================================================= */
+
+.commodities-final-image {
+  align-self: end;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+.commodities-final-image img {
+  display: block;
+
+  width: 100%;
+  max-width: 867px;
+
+  height: auto;
+}
+
+
+/* =========================================================
+   BACK TOP
+========================================================= */
+
+.commodities-back-top-shell {
+  position: relative;
+
+  z-index: 40;
+
+  height: 0;
+}
+
+
+.commodities-back-top {
+  position: absolute;
+
+  left: 50%;
+  bottom: -45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+
+  padding: 0;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.2);
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56, 47, 112, 0.84),
+      rgba(17, 38, 79, 0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter:
+    blur(20px);
+
+  cursor: pointer;
+}
+
+
+.commodities-back-top img {
+  width: 30px;
+  height: 30px;
+
+  animation:
+    commoditiesJump 1.6s ease-in-out infinite;
+}
+
+
+@keyframes commoditiesJump {
+
+  0%,
+  100% {
+    transform:
+      translateY(3px);
+  }
+
+  50% {
+    transform:
+      translateY(-4px);
+  }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .commodities-page {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .commodities-hero,
+html[dir="rtl"] .commodities-intro-copy,
+html[dir="rtl"] .commodities-article-content,
+html[dir="rtl"] .commodities-final-copy {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .commodities-table-wrapper th,
+html[dir="rtl"] .commodities-table-wrapper td {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .commodities-table-wrapper .commodities-empty-cell {
+  text-align: center;
+}
+
+
+/* =========================================================
+   LARGE / LAPTOP
+========================================================= */
+
+@media (max-width: 1350px) {
+
+  .commodities-articles-prev {
+    left: -20px;
+  }
+
+
+  .commodities-articles-next {
+    right: -20px;
+  }
+
+}
+
+
+@media (max-width: 1200px) {
+
+  .commodities-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .commodities-hero {
+    min-height: 235px;
+  }
+
+
+  .commodities-hero h1 {
+    font-size: 40px;
+  }
+
+
+  .commodities-intro-layout {
+    grid-template-columns:
+      minmax(390px, 480px) minmax(0, 1fr);
+
+    gap: 55px;
+  }
+
+
+  .commodities-main-image {
+    height: 440px;
+  }
+
+
+  .commodities-gradient-title,
+  .commodities-intro-copy h2,
+  .commodities-final-copy h2 {
+    font-size: 36px;
+  }
+
+
+  .commodities-article-image {
+    height: 180px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .commodities-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .commodities-hero {
+    min-height: 205px;
+  }
+
+
+  .commodities-hero h1 {
+    font-size: 35px;
+
+    text-align: center;
+  }
+
+
+  .commodities-intro-layout {
+    grid-template-columns:
+      1fr;
+
+    gap: 45px;
+
+    padding-top: 75px;
+  }
+
+
+  .commodities-main-image {
+    width:
+      min(100%,
+        590px);
+
+    height: 450px;
+
+    margin:
+      0 auto;
+  }
+
+
+  .commodities-intro-copy h2 {
+    text-align: center;
+  }
+
+
+  .commodities-table-section,
+  .commodities-types-section,
+  .commodities-articles-section {
+    padding:
+      75px 0;
+  }
+
+
+  .commodities-type-arrow {
+    display: block;
+  }
+
+
+  .commodities-article-arrow {
+    width: 45px;
+    height: 45px;
+  }
+
+
+  .commodities-articles-prev {
+    left: -10px;
+  }
+
+
+  .commodities-articles-next {
+    right: -10px;
+  }
+
+
+  .commodities-final-layout {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .commodities-final-copy {
+    padding:
+      70px 0 15px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .commodities-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .commodities-hero {
+    min-height: 170px;
+  }
+
+
+  .commodities-hero h1 {
+    font-size: 28px;
+  }
+
+
+  .commodities-intro-section {
+    padding-top: 38px;
+    padding-bottom: 60px;
+  }
+
+
+  .commodities-intro-layout {
+    padding-top: 55px;
+  }
+
+
+  .commodities-main-image {
+    height: 330px;
+
+    border-radius: 14px;
+  }
+
+
+  .commodities-gradient-title,
+  .commodities-intro-copy h2,
+  .commodities-final-copy h2 {
+    font-size: 28px;
+
+    line-height: 1.25;
+  }
+
+
+  .commodities-intro-paragraphs {
+    gap: 16px;
+  }
+
+
+  .commodities-intro-paragraphs p,
+  .commodities-final-copy p {
+    font-size: 13px;
+
+    line-height: 1.65;
+  }
+
+
+  .commodities-table-wrapper {
+    margin-top: 35px;
+  }
+
+
+  .commodities-type-card {
+    min-height: 230px;
+  }
+
+
+  .commodities-type-card h3 {
+    font-size: 19px;
+  }
+
+
+  .commodities-type-card p {
+    font-size: 13px;
+  }
+
+
+  .commodities-articles-slider {
+    margin-top: 35px;
+  }
+
+
+  .commodities-article-image {
+    height: 200px;
+  }
+
+
+  .commodities-article-content {
+    padding:
+      23px 22px 26px;
+  }
+
+
+  .commodities-article-content p {
+    font-size: 14px;
+  }
+
+
+  .commodities-article-date {
+    font-size: 12px;
+  }
+
+
+  .commodities-article-arrow {
+    display: none;
+  }
+
+
+  .commodities-final-copy {
+    padding-top: 55px;
+  }
+
+
+  .commodities-back-top {
+    width: 55px;
+    height: 55px;
+
+    bottom: -27px;
+  }
+
+
+  .commodities-back-top img {
+    width: 21px;
+    height: 21px;
+  }
+
+}

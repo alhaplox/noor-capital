@@ -1,0 +1,1744 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.forex-page {
+  width: 100%;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background: #06142e;
+}
+
+
+.forex-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   GRADIENT TITLES
+========================================================= */
+
+.forex-gradient-title,
+.forex-intro-copy h2,
+.forex-demo-copy h2,
+.forex-platform-copy h3,
+.forex-faq-heading h2,
+.forex-final-copy h2 {
+  color: #eeb235;
+
+  background:
+    linear-gradient(90deg,
+      #f6c343,
+      #dfa02d 55%,
+      #cc8a27);
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.forex-hero {
+  display: flex;
+
+  align-items: center;
+
+  min-height: 285px;
+
+  background-image:
+    var(--forex-hero);
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+
+
+.forex-hero h1 {
+  max-width: 950px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 53px;
+
+  line-height: 1.18;
+
+  font-weight: 900;
+
+  letter-spacing: -0.025em;
+}
+
+
+.forex-hero ul {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+
+  margin: 16px 0 0;
+
+  padding-left: 20px;
+}
+
+
+.forex-hero li {
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.forex-intro-section {
+  padding:
+    48px 0 120px;
+
+  background-image:
+    var(--forex-intro-bg);
+
+  background-position:
+    top center;
+
+  background-size: cover;
+
+  background-repeat: repeat-x;
+}
+
+
+.forex-intro-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(450px, 589px) minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 85px;
+
+  padding-top: 105px;
+}
+
+
+/* =========================================================
+   MAIN IMAGE
+========================================================= */
+
+.forex-main-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 529px;
+
+  padding: 1px;
+
+  overflow: hidden;
+
+  border-radius: 23px;
+
+  background:
+    linear-gradient(145deg,
+      #6556c8,
+      #765091,
+      #bf7340);
+
+  box-shadow:
+    -25px 28px 60px rgba(0, 0, 0, 0.22);
+}
+
+
+.forex-main-image img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  border-radius: 22px;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   INTRO COPY
+========================================================= */
+
+.forex-intro-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+
+  line-height: 1.33;
+
+  font-weight: 800;
+}
+
+
+.forex-intro-paragraphs {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 28px;
+
+  margin-top: 28px;
+}
+
+
+.forex-intro-paragraphs p {
+  margin: 0;
+
+  color:
+    rgba(255, 255, 255, 0.91);
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   REASONS
+========================================================= */
+
+.forex-reasons-section {
+  padding:
+    64px 0;
+
+  overflow: hidden;
+
+  background-image:
+    var(--forex-why-bg);
+
+  background-position: center;
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+
+
+.forex-gradient-title {
+  margin: 0;
+
+  font-size: 45px;
+
+  line-height: 1.3;
+
+  font-weight: 500;
+
+  text-align: center;
+}
+
+
+.forex-reasons-slider {
+  position: relative;
+
+  margin-top: 35px;
+}
+
+
+.forex-reasons-slider .swiper {
+  overflow: visible;
+}
+
+
+.forex-reasons-slider .swiper-slide {
+  height: auto;
+
+  padding:
+    58px 0 5px;
+}
+
+
+.forex-reason-card {
+  position: relative;
+
+  height: 100%;
+
+  min-height: 245px;
+
+  padding:
+    70px 25px 36px;
+
+  border:
+    1px solid transparent;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(#091830,
+      #091830) padding-box,
+
+    linear-gradient(135deg,
+      #6554c4,
+      #755093,
+      #bb7040) border-box;
+}
+
+
+.forex-reason-icon {
+  position: absolute;
+
+  top: 0;
+
+  left: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 109px;
+
+  height: 106px;
+
+  background-image:
+    var(--forex-icon-bg);
+
+  background-size: contain;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  transform:
+    translate(-50%,
+      -50%);
+}
+
+
+.forex-reason-icon img {
+  width: 80px;
+
+  height: 80px;
+
+  object-fit: contain;
+}
+
+
+.forex-reason-card h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 22px;
+
+  line-height: 1.4;
+
+  font-weight: 400;
+}
+
+
+.forex-reason-card p {
+  margin:
+    10px 0 0;
+
+  color:
+    rgba(255, 255, 255, 0.9);
+
+  font-size: 15px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   SLIDER BUTTONS
+========================================================= */
+
+.forex-slider-button {
+  display: none;
+
+  position: absolute;
+
+  top: 50%;
+
+  z-index: 10;
+
+  width: 46px;
+
+  height: 46px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  transform:
+    translateY(-50%);
+
+  cursor: pointer;
+}
+
+
+.forex-slider-button img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+}
+
+
+.forex-prev {
+  left: -8px;
+}
+
+
+.forex-next {
+  right: -8px;
+}
+
+
+/* =========================================================
+   DEMO
+========================================================= */
+
+.forex-demo-section {
+  padding:
+    64px 0;
+
+  background:
+    #07162f;
+}
+
+
+.forex-demo-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr) minmax(0, 1.15fr);
+
+  align-items: start;
+
+  gap: 80px;
+}
+
+
+.forex-demo-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+
+  line-height: 1.33;
+
+  font-weight: 800;
+}
+
+
+.forex-demo-copy>strong {
+  display: block;
+
+  margin-top: 20px;
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+.forex-demo-copy ol {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  margin:
+    16px 0 0;
+
+  padding-left: 20px;
+}
+
+
+.forex-demo-copy li {
+  color:
+    rgba(255, 255, 255, 0.91);
+
+  font-size: 15px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.forex-demo-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+
+.forex-form-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2,
+      minmax(0, 1fr));
+
+  gap:
+    20px 24px;
+}
+
+
+.forex-demo-form label {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+
+.forex-demo-form label>span {
+  color: #ffffff;
+
+  font-size: 15px;
+
+  line-height: 1.3;
+}
+
+
+.forex-demo-form input {
+  width: 100%;
+
+  height: 46px;
+
+  padding:
+    0 16px;
+
+  border:
+    1px solid #b88831;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  color: #ffffff;
+
+  background:
+    rgba(7, 22, 47, 0.78);
+
+  font-family: inherit;
+
+  font-size: 14px;
+}
+
+
+.forex-demo-form input::placeholder {
+  color: #a8a8a8;
+}
+
+
+.forex-demo-form input:focus {
+  border-color: #efbd46;
+
+  box-shadow:
+    0 0 0 3px rgba(232, 174, 50, 0.1);
+}
+
+
+.forex-form-full {
+  width: 100%;
+}
+
+
+.forex-checkbox {
+  flex-direction:
+    row !important;
+
+  align-items:
+    flex-start;
+
+  gap:
+    10px !important;
+}
+
+
+.forex-checkbox input {
+  flex:
+    0 0 auto;
+
+  width: 14px;
+
+  height: 14px;
+
+  margin-top: 4px;
+}
+
+
+.forex-checkbox span {
+  font-size:
+    13px !important;
+
+  line-height:
+    1.6 !important;
+}
+
+
+/* =========================================================
+   FORM STATUS
+========================================================= */
+
+.forex-form-status {
+  margin: 0;
+
+  padding:
+    10px 12px;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+}
+
+
+.forex-form-status.is-success {
+  color: #94e3b4;
+
+  background:
+    rgba(45, 153, 93, 0.15);
+}
+
+
+.forex-form-status.is-error {
+  color: #ff9cab;
+
+  background:
+    rgba(190, 57, 78, 0.15);
+}
+
+
+/* =========================================================
+   GOLD BUTTON
+========================================================= */
+
+.forex-gold-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  width: fit-content;
+
+  min-height: 45px;
+
+  padding:
+    0 22px;
+
+  border:
+    1px solid #e2a91f;
+
+  border-radius: 4px;
+
+  color: #0c2e6d;
+
+  background:
+    linear-gradient(180deg,
+      #f7ca52,
+      #e9a824);
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+
+.forex-gold-button:hover {
+  transform:
+    translateY(-2px);
+
+  filter:
+    brightness(1.05);
+}
+
+
+/* =========================================================
+   PLATFORMS
+========================================================= */
+
+.forex-platforms-section {
+  padding:
+    105px 0 120px;
+
+  background-image:
+    var(--forex-why-bg);
+
+  background-position: center;
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+
+
+.forex-platforms-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(220px, 0.33fr) minmax(0, 0.67fr);
+
+  gap: 60px;
+
+  margin-top: 50px;
+}
+
+
+/* =========================================================
+   PLATFORM TABS
+========================================================= */
+
+.forex-platform-tabs {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+
+.forex-platform-tabs button {
+  width: 100%;
+
+  min-height: 58px;
+
+  padding:
+    0 30px;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 10px;
+
+  color: #ffffff;
+
+  background:
+    #19284b;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+
+.forex-platform-tabs button.is-active {
+  color: #0c2e6d;
+
+  border-color:
+    #e3aa2b;
+
+  background:
+    linear-gradient(180deg,
+      #f6cb59,
+      #d99b2f);
+}
+
+
+/* =========================================================
+   PLATFORM CONTENT
+========================================================= */
+
+.forex-platform-content {
+  display: grid;
+
+  grid-template-columns:
+    minmax(300px, 483px) minmax(260px, 1fr);
+
+  align-items: center;
+
+  gap: 55px;
+}
+
+
+.forex-platform-image {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 545px;
+}
+
+
+.forex-platform-image img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+.forex-platform-copy h3 {
+  margin: 0;
+
+  font-size: 45px;
+
+  line-height: 1.33;
+
+  font-weight: 500;
+}
+
+
+.forex-platform-copy p,
+.forex-platform-copy li {
+  color:
+    rgba(255, 255, 255, 0.91);
+
+  font-size: 15px;
+
+  line-height: 1.55;
+}
+
+
+.forex-platform-copy p {
+  margin:
+    25px 0 0;
+}
+
+
+.forex-platform-copy ul {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  margin:
+    15px 0 0;
+
+  padding-left: 20px;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.forex-table-section {
+  padding:
+    64px 0;
+
+  background-image:
+    var(--forex-table-bg);
+
+  background-position: center;
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+
+
+.forex-table-wrapper {
+  max-height: 671px;
+
+  margin-top: 50px;
+
+  overflow: auto;
+
+  border-radius: 20px;
+
+  background: #0f1539;
+}
+
+
+.forex-table-wrapper table {
+  width: 100%;
+
+  min-width: 1050px;
+
+  border-collapse: collapse;
+}
+
+
+.forex-table-wrapper thead {
+  position: sticky;
+
+  top: 0;
+
+  z-index: 5;
+
+  background:
+    linear-gradient(#060b28,
+      #0a0e23);
+}
+
+
+.forex-table-wrapper th,
+.forex-table-wrapper td {
+  padding:
+    17px 20px;
+
+  border-bottom:
+    1px solid rgba(109, 117, 143, 0.25);
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+
+.forex-table-wrapper th {
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.forex-pagination {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-top: 24px;
+}
+
+
+.forex-pagination button {
+  width: 55px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  cursor: pointer;
+}
+
+
+.forex-pagination button:disabled {
+  opacity: 0.4;
+
+  cursor: not-allowed;
+}
+
+
+.forex-pagination img {
+  width: 40px;
+
+  height: 35px;
+
+  object-fit: contain;
+}
+
+
+.forex-pagination span {
+  color: #ffffff;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.forex-faq-section {
+  padding:
+    64px 0;
+
+  background-image:
+    var(--forex-why-bg);
+
+  background-position:
+    top center;
+
+  background-size: cover;
+
+  background-repeat: repeat-x;
+}
+
+
+.forex-faq-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(260px, 0.7fr) minmax(0, 1.1fr);
+
+  align-items: start;
+
+  gap: 80px;
+}
+
+
+.forex-faq-heading h2 {
+  margin: 0;
+
+  font-size: 45px;
+
+  line-height: 1.33;
+
+  font-weight: 500;
+}
+
+
+.forex-faq-item {
+  overflow: hidden;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.13);
+}
+
+
+.forex-faq-item>button {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  width: 100%;
+
+  padding:
+    20px 0;
+
+  border: 0;
+
+  color: #ffffff;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  font-size: 21px;
+
+  line-height: 1.3;
+
+  font-weight: 400;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+
+.forex-faq-plus {
+  flex:
+    0 0 20px;
+
+  color: #ffffff;
+
+  font-size: 25px;
+
+  transition:
+    transform 0.25s ease;
+}
+
+
+.forex-faq-item.is-open .forex-faq-plus {
+  transform:
+    rotate(45deg);
+}
+
+
+.forex-faq-answer {
+  padding:
+    0 0 20px 40px;
+
+  color:
+    rgba(255, 255, 255, 0.89);
+}
+
+
+.forex-faq-answer p,
+.forex-faq-answer li {
+  font-size: 14px;
+
+  line-height: 1.55;
+}
+
+
+.forex-faq-answer p {
+  margin:
+    0 0 10px;
+}
+
+
+.forex-faq-answer ol {
+  margin: 0;
+
+  padding-left: 20px;
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.forex-final-section {
+  background-image:
+    var(--forex-final-bg);
+
+  background-position: center;
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+
+
+.forex-final-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.95fr) minmax(0, 1.05fr);
+
+  align-items: center;
+
+  gap: 50px;
+}
+
+
+.forex-final-copy {
+  padding:
+    90px 0;
+}
+
+
+.forex-final-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+
+  line-height: 1.22;
+
+  font-weight: 900;
+}
+
+
+.forex-final-copy p {
+  margin:
+    25px 0 0;
+
+  color:
+    rgba(255, 255, 255, 0.91);
+
+  font-size: 15px;
+
+  line-height: 1.55;
+}
+
+
+.forex-phone {
+  display: inline-block;
+
+  margin-top: 8px;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+
+.forex-phone:hover {
+  color: #efb93c;
+}
+
+
+.forex-final-buttons {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+
+  margin-top: 30px;
+}
+
+
+.forex-final-image {
+  align-self: end;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
+}
+
+
+.forex-final-image img {
+  display: block;
+
+  width: 100%;
+
+  max-width: 867px;
+
+  height: auto;
+}
+
+
+/* =========================================================
+   BACK TOP
+========================================================= */
+
+.forex-back-top-shell {
+  position: relative;
+
+  z-index: 40;
+
+  height: 0;
+}
+
+
+.forex-back-top {
+  position: absolute;
+
+  left: 50%;
+
+  bottom: -45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 90px;
+
+  height: 90px;
+
+  padding: 0;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.2);
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56, 47, 112, 0.84),
+      rgba(17, 38, 79, 0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter: blur(20px);
+
+  cursor: pointer;
+}
+
+
+.forex-back-top img {
+  width: 30px;
+
+  height: 30px;
+
+  animation:
+    forexJump 1.6s ease-in-out infinite;
+}
+
+
+@keyframes forexJump {
+
+  0%,
+  100% {
+    transform:
+      translateY(3px);
+  }
+
+  50% {
+    transform:
+      translateY(-4px);
+  }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .forex-page {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .forex-hero,
+html[dir="rtl"] .forex-intro-copy,
+html[dir="rtl"] .forex-demo-copy,
+html[dir="rtl"] .forex-demo-form,
+html[dir="rtl"] .forex-platform-copy,
+html[dir="rtl"] .forex-faq-item,
+html[dir="rtl"] .forex-final-copy {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .forex-hero ul,
+html[dir="rtl"] .forex-demo-copy ol,
+html[dir="rtl"] .forex-platform-copy ul,
+html[dir="rtl"] .forex-faq-answer ol {
+  padding-left: 0;
+
+  padding-right: 20px;
+}
+
+
+html[dir="rtl"] .forex-platform-tabs button,
+html[dir="rtl"] .forex-faq-item>button {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .forex-faq-answer {
+  padding-left: 0;
+
+  padding-right: 40px;
+}
+
+
+html[dir="rtl"] .forex-table-wrapper th,
+html[dir="rtl"] .forex-table-wrapper td {
+  text-align: right;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .forex-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .forex-hero {
+    min-height: 235px;
+  }
+
+
+  .forex-hero h1 {
+    font-size: 40px;
+  }
+
+
+  .forex-intro-layout {
+    grid-template-columns:
+      minmax(390px, 480px) minmax(0, 1fr);
+
+    gap: 55px;
+  }
+
+
+  .forex-main-image {
+    height: 440px;
+  }
+
+
+  .forex-gradient-title,
+  .forex-intro-copy h2,
+  .forex-demo-copy h2,
+  .forex-platform-copy h3,
+  .forex-faq-heading h2,
+  .forex-final-copy h2 {
+    font-size: 36px;
+  }
+
+
+  .forex-platform-content {
+    grid-template-columns:
+      minmax(280px, 400px) minmax(230px, 1fr);
+
+    gap: 35px;
+  }
+
+
+  .forex-platform-image {
+    min-height: 450px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .forex-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .forex-hero {
+    min-height: 205px;
+  }
+
+
+  .forex-hero h1 {
+    font-size: 35px;
+
+    text-align: center;
+  }
+
+
+  .forex-hero ul {
+    width: fit-content;
+
+    margin:
+      15px auto 0;
+  }
+
+
+  .forex-intro-layout {
+    grid-template-columns:
+      1fr;
+
+    gap: 45px;
+
+    padding-top: 75px;
+  }
+
+
+  .forex-main-image {
+    width:
+      min(100%,
+        590px);
+
+    height: 450px;
+
+    margin:
+      0 auto;
+  }
+
+
+  .forex-intro-copy h2 {
+    text-align: center;
+  }
+
+
+  .forex-demo-layout,
+  .forex-faq-layout,
+  .forex-final-layout {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .forex-demo-layout,
+  .forex-faq-layout {
+    gap: 45px;
+  }
+
+
+  .forex-platforms-layout {
+    grid-template-columns:
+      1fr;
+
+    gap: 35px;
+  }
+
+
+  .forex-platform-tabs {
+    flex-direction: row;
+
+    flex-wrap: wrap;
+  }
+
+
+  .forex-platform-tabs button {
+    width: auto;
+
+    min-width: 162px;
+  }
+
+
+  .forex-platform-content {
+    grid-template-columns:
+      1fr;
+
+    gap: 30px;
+  }
+
+
+  .forex-platform-image {
+    width:
+      min(100%,
+        430px);
+
+    min-height: 430px;
+
+    margin:
+      0 auto;
+  }
+
+
+  .forex-platform-copy {
+    text-align: center;
+  }
+
+
+  .forex-platform-copy ul {
+    width: fit-content;
+
+    margin:
+      15px auto 0;
+
+    text-align: left;
+  }
+
+
+  .forex-slider-button {
+    display: block;
+  }
+
+
+  .forex-final-copy {
+    padding:
+      70px 0 15px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .forex-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .forex-hero {
+    min-height: 180px;
+  }
+
+
+  .forex-hero h1 {
+    font-size: 28px;
+  }
+
+
+  .forex-hero li {
+    font-size: 12px;
+  }
+
+
+  .forex-intro-section {
+    padding-top: 38px;
+
+    padding-bottom: 65px;
+  }
+
+
+  .forex-intro-layout {
+    padding-top: 55px;
+  }
+
+
+  .forex-main-image {
+    height: 330px;
+
+    border-radius: 14px;
+  }
+
+
+  .forex-gradient-title,
+  .forex-intro-copy h2,
+  .forex-demo-copy h2,
+  .forex-platform-copy h3,
+  .forex-faq-heading h2,
+  .forex-final-copy h2 {
+    font-size: 28px;
+
+    line-height: 1.25;
+  }
+
+
+  .forex-intro-paragraphs {
+    gap: 16px;
+  }
+
+
+  .forex-intro-paragraphs p,
+  .forex-demo-copy li,
+  .forex-platform-copy p,
+  .forex-platform-copy li,
+  .forex-final-copy p {
+    font-size: 13px;
+
+    line-height: 1.65;
+  }
+
+
+  .forex-form-grid {
+    grid-template-columns:
+      1fr;
+
+    gap: 15px;
+  }
+
+
+  .forex-demo-form input {
+    height: 42px;
+
+    font-size: 13px;
+  }
+
+
+  .forex-platforms-section {
+    padding:
+      65px 0;
+  }
+
+
+  .forex-platform-tabs {
+    gap: 9px;
+  }
+
+
+  .forex-platform-tabs button {
+    min-width: auto;
+
+    min-height: 42px;
+
+    padding:
+      0 15px;
+
+    font-size: 12px;
+  }
+
+
+  .forex-platform-image {
+    min-height: 360px;
+  }
+
+
+  .forex-table-wrapper {
+    margin-top: 35px;
+  }
+
+
+  .forex-faq-item>button {
+    gap: 13px;
+
+    font-size: 16px;
+  }
+
+
+  .forex-faq-answer {
+    padding-left: 28px;
+  }
+
+
+  html[dir="rtl"] .forex-faq-answer {
+    padding-left: 0;
+
+    padding-right: 28px;
+  }
+
+
+  .forex-faq-answer p,
+  .forex-faq-answer li {
+    font-size: 12px;
+  }
+
+
+  .forex-final-copy {
+    padding-top: 55px;
+  }
+
+
+  .forex-final-buttons {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .forex-back-top {
+    width: 55px;
+
+    height: 55px;
+
+    bottom: -27px;
+  }
+
+
+  .forex-back-top img {
+    width: 21px;
+
+    height: 21px;
+  }
+
+}

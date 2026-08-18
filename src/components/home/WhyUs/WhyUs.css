@@ -1,0 +1,660 @@
+/* =========================================================
+   WHY NOOR CAPITAL
+========================================================= */
+
+.why-section {
+  position: relative;
+
+  width: 100%;
+
+  margin-top: -1px;
+
+  padding:
+    12px 0 92px;
+
+  overflow: hidden;
+
+  background-color:
+    #071a3e;
+
+  background-image:
+    linear-gradient(90deg,
+      rgba(6, 26, 63, 0.96) 0%,
+      rgba(13, 42, 101, 0.95) 48%,
+      rgba(4, 22, 51, 0.98) 100%),
+    url("/images/home/about-bg.png"
+    );
+
+  background-size:
+    cover;
+
+  background-position:
+    center;
+
+  background-repeat:
+    no-repeat;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.why-container {
+  position: relative;
+
+  z-index: 2;
+
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin:
+    0 auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.why-heading {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 100%;
+
+  margin-bottom: 45px;
+
+  text-align: center;
+}
+
+
+.why-heading h2 {
+  margin: 0;
+
+  color: #f2b82f;
+
+  font-size: 34px;
+
+  line-height: 1.25;
+
+  font-weight: 800;
+
+  letter-spacing:
+    -0.02em;
+
+  background:
+    linear-gradient(90deg,
+      #ffc536,
+      #d89a2d);
+
+  -webkit-background-clip:
+    text;
+
+  background-clip:
+    text;
+
+  -webkit-text-fill-color:
+    transparent;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.why-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2,
+      minmax(0, 1fr));
+
+  gap:
+    30px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.why-card {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.08fr) minmax(180px, 0.92fr);
+
+  align-items: center;
+
+  min-height:
+    365px;
+
+  padding:
+    31px 30px;
+
+  overflow:
+    hidden;
+
+  border:
+    1px solid transparent;
+
+  border-radius:
+    20px;
+
+  background:
+    linear-gradient(110deg,
+      rgba(49,
+        43,
+        90,
+        0.98) 0%,
+      rgba(22,
+        35,
+        74,
+        0.97) 62%,
+      rgba(16,
+        31,
+        65,
+        0.98) 100%) padding-box,
+
+    linear-gradient(105deg,
+      #6054b9 0%,
+      #7850a2 48%,
+      #b76545 100%) border-box;
+
+  box-shadow:
+    inset 0 0 40px rgba(83,
+      75,
+      165,
+      0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.why-card:hover {
+  transform:
+    translateY(-4px);
+
+  box-shadow:
+    inset 0 0 40px rgba(83,
+      75,
+      165,
+      0.14),
+    0 18px 38px rgba(0,
+      0,
+      0,
+      0.18);
+}
+
+
+/* =========================================================
+   COPY
+========================================================= */
+
+.why-card-copy {
+  position: relative;
+
+  z-index: 3;
+
+  align-self:
+    start;
+}
+
+
+.why-card-copy h3 {
+  max-width:
+    290px;
+
+  margin:
+    0 0 26px;
+
+  color:
+    #ffffff;
+
+  font-size:
+    25px;
+
+  line-height:
+    1.15;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    -0.025em;
+}
+
+
+.why-card-copy p {
+  max-width:
+    280px;
+
+  margin: 0;
+
+  color:
+    #ffffff;
+
+  font-size:
+    13px;
+
+  line-height:
+    1.72;
+
+  font-weight:
+    500;
+}
+
+
+/* =========================================================
+   IMAGE AREA
+========================================================= */
+
+.why-card-image {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  align-self: center;
+
+  width: 100%;
+
+  min-height:
+    250px;
+}
+
+
+/* glow */
+
+.why-card-image::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+
+  top: 50%;
+
+  width: 250px;
+
+  height: 170px;
+
+  transform:
+    translate(-50%,
+      -42%);
+
+  border-radius:
+    50%;
+
+  background:
+    radial-gradient(ellipse at center,
+      rgba(45,
+        78,
+        176,
+        0.37) 0%,
+      rgba(35,
+        66,
+        150,
+        0.15) 40%,
+      transparent 72%);
+
+  filter:
+    blur(4px);
+
+  pointer-events:
+    none;
+}
+
+
+.why-card-image img {
+  position: relative;
+
+  z-index: 2;
+
+  display: block;
+
+  width:
+    min(100%,
+      240px);
+
+  max-height:
+    245px;
+
+  object-fit:
+    contain;
+
+  filter:
+    drop-shadow(0 23px 18px rgba(0,
+        0,
+        0,
+        0.25));
+}
+
+
+/* =========================================================
+   DECORATIVE GOLD DOT WAVE
+========================================================= */
+
+.why-decoration {
+  position: absolute;
+
+  z-index: 1;
+
+  width:
+    650px;
+
+  height:
+    260px;
+
+  opacity:
+    0.28;
+
+  pointer-events:
+    none;
+
+  background-image:
+    radial-gradient(circle,
+      rgba(219,
+        171,
+        72,
+        0.9) 0 3px,
+      transparent 4px);
+
+  background-size:
+    22px 22px;
+
+  mask-image:
+    radial-gradient(ellipse at center,
+      #000 0%,
+      transparent 68%);
+
+  -webkit-mask-image:
+    radial-gradient(ellipse at center,
+      #000 0%,
+      transparent 68%);
+
+  transform:
+    rotate(8deg);
+}
+
+
+.why-decoration-left {
+  left:
+    -260px;
+
+  top:
+    380px;
+}
+
+
+.why-decoration-right {
+  right:
+    -220px;
+
+  top:
+    250px;
+
+  transform:
+    rotate(-7deg);
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .why-card {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .why-card-copy {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .why-card-copy h3,
+
+html[dir="rtl"] .why-card-copy p {
+  margin-left:
+    auto;
+
+  margin-right:
+    0;
+}
+
+
+/* =========================================================
+   1200
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .why-container {
+    width:
+      calc(100% - 60px);
+  }
+
+
+  .why-grid {
+    gap:
+      24px;
+  }
+
+
+  .why-card {
+    min-height:
+      345px;
+
+    padding:
+      27px 25px;
+
+    grid-template-columns:
+      minmax(0, 1.1fr) minmax(150px, 0.9fr);
+  }
+
+
+  .why-card-copy h3 {
+    font-size:
+      22px;
+  }
+
+
+  .why-card-copy p {
+    font-size:
+      12px;
+
+    line-height:
+      1.7;
+  }
+
+
+  .why-card-image img {
+    max-width:
+      210px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .why-section {
+    padding:
+      25px 0 72px;
+  }
+
+
+  .why-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .why-heading {
+    margin-bottom:
+      35px;
+  }
+
+
+  .why-heading h2 {
+    font-size:
+      30px;
+  }
+
+
+  .why-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .why-card {
+    min-height:
+      330px;
+
+    grid-template-columns:
+      minmax(0, 1fr) minmax(180px, 0.7fr);
+  }
+
+
+  .why-card-copy p {
+    max-width:
+      390px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .why-section {
+    padding:
+      20px 0 55px;
+  }
+
+
+  .why-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .why-heading {
+    margin-bottom:
+      28px;
+  }
+
+
+  .why-heading h2 {
+    font-size:
+      25px;
+  }
+
+
+  .why-grid {
+    gap:
+      18px;
+  }
+
+
+  .why-card {
+    display: flex;
+
+    flex-direction:
+      column;
+
+    min-height:
+      auto;
+
+    padding:
+      25px 22px 28px;
+
+    border-radius:
+      16px;
+  }
+
+
+  .why-card-copy {
+    order: 2;
+
+    width:
+      100%;
+  }
+
+
+  .why-card-image {
+    order: 1;
+
+    min-height:
+      180px;
+
+    margin-bottom:
+      15px;
+  }
+
+
+  .why-card-image img {
+    width:
+      auto;
+
+    max-width:
+      190px;
+
+    max-height:
+      180px;
+  }
+
+
+  .why-card-copy h3 {
+    max-width:
+      none;
+
+    margin-bottom:
+      15px;
+
+    font-size:
+      21px;
+  }
+
+
+  .why-card-copy p {
+    max-width:
+      none;
+
+    font-size:
+      12px;
+
+    line-height:
+      1.7;
+  }
+
+
+  .why-decoration {
+    opacity:
+      0.15;
+  }
+
+}

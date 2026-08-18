@@ -1,0 +1,270 @@
+/* =========================================================
+   MARKET TABS
+   Noor homepage reference
+========================================================= */
+
+.market-tabs-section {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 132px;
+
+  padding:
+    20px 0 78px;
+
+  overflow: hidden;
+
+  background-color:
+    #071a3e;
+
+  background-image:
+    linear-gradient(90deg,
+      rgba(3,
+        21,
+        51,
+        0.97) 0%,
+      rgba(7,
+        31,
+        74,
+        0.94) 50%,
+      rgba(8,
+        40,
+        103,
+        0.96) 100%),
+    url("/images/home/about-bg.png"
+    );
+
+  background-size:
+    cover;
+
+  background-position:
+    center top;
+
+  background-repeat:
+    no-repeat;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.market-tabs-container {
+  width:
+    min(1072px,
+      calc(100% - 40px));
+
+  margin:
+    0 auto;
+}
+
+
+/* =========================================================
+   LIST
+========================================================= */
+
+.market-tabs-list {
+  display: flex;
+
+  align-items: center;
+
+  gap:
+    9px;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   TAB
+========================================================= */
+
+.market-tab {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex:
+    0 0 auto;
+
+  min-width:
+    76px;
+
+  height:
+    26px;
+
+  padding:
+    0 15px;
+
+  border:
+    1px solid rgba(255,
+      255,
+      255,
+      0.04);
+
+  border-radius:
+    6px;
+
+  outline:
+    none;
+
+  background:
+    #1d3a68;
+
+  color:
+    #ffffff;
+
+  font-family:
+    inherit;
+
+  font-size:
+    12px;
+
+  line-height:
+    1;
+
+  font-weight:
+    700;
+
+  white-space:
+    nowrap;
+
+  cursor:
+    pointer;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,
+      255,
+      255,
+      0.04);
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.market-tab:hover {
+  color:
+    #f8d88b;
+}
+
+
+/* =========================================================
+   ACTIVE
+========================================================= */
+
+.market-tab.is-active {
+  color:
+    #ffffff;
+
+  background:
+    linear-gradient(90deg,
+      #77433f 0%,
+      #563b55 46%,
+      #2e286f 100%);
+
+  box-shadow:
+    inset 0 0 10px rgba(233,
+      162,
+      59,
+      0.12);
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .market-tabs-list {
+  direction: rtl;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .market-tabs-section {
+    min-height:
+      115px;
+
+    padding:
+      18px 0 62px;
+  }
+
+
+  .market-tabs-container {
+    width:
+      calc(100% - 32px);
+  }
+
+
+  .market-tabs-list {
+    overflow-x:
+      auto;
+
+    overflow-y:
+      hidden;
+
+    padding-bottom:
+      4px;
+
+    scrollbar-width:
+      none;
+
+    -webkit-overflow-scrolling:
+      touch;
+  }
+
+
+  .market-tabs-list::-webkit-scrollbar {
+    display:
+      none;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .market-tabs-section {
+    min-height:
+      96px;
+
+    padding:
+      15px 0 48px;
+  }
+
+
+  .market-tabs-container {
+    width:
+      calc(100% - 24px);
+  }
+
+
+  .market-tab {
+    min-width:
+      auto;
+
+    height:
+      28px;
+
+    padding:
+      0 13px;
+
+    font-size:
+      11px;
+  }
+
+}

@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap"
+);
+
+
+/* =========================================================
+   DESIGN TOKENS
+========================================================= */
+
+:root {
+  --navy: #051837;
+  --navy-2: #0a234d;
+  --navy-3: #102c59;
+
+  --gold: #d8a73f;
+  --gold-bright: #f2c65f;
+
+  --cream: #f8f5ee;
+
+  --white: #ffffff;
+
+  --ink: #12203a;
+
+  --muted: #6e7787;
+
+  --line: #dfe3ea;
+
+  --green: #2dbf7f;
+
+  --red: #df5a66;
+
+  --radius: 24px;
+
+  --shadow:
+    0 22px 70px rgba(3, 16, 42, 0.12);
+
+  --page-container: 1480px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+html {
+  width: 100%;
+  min-height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+}
+
+
+body {
+  width: 100%;
+  min-height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+
+  background: #ffffff;
+
+  color: var(--ink);
+
+  font-family:
+    "Manrope",
+    Arial,
+    sans-serif;
+
+  -webkit-font-smoothing:
+    antialiased;
+
+  -moz-osx-font-smoothing:
+    grayscale;
+}
+
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+}
+
+
+/* =========================================================
+   RTL FONT
+========================================================= */
+
+html[dir="rtl"] body {
+  font-family:
+    "Noto Sans Arabic",
+    "Manrope",
+    Arial,
+    sans-serif;
+}
+
+
+/* =========================================================
+   BASIC ELEMENTS
+========================================================= */
+
+a {
+  color: inherit;
+
+  text-decoration: none;
+}
+
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+
+img {
+  display: block;
+
+  max-width: 100%;
+}
+
+
+/* =========================================================
+   GLOBAL CONTAINER
+========================================================= */
+
+.container {
+  width:
+    min(var(--page-container),
+      calc(100% - 80px));
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =========================================================
+   GENERIC SECTION
+========================================================= */
+
+.section {
+  width: 100%;
+
+  padding:
+    105px 0;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.sr-only {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  padding: 0;
+  margin: -1px;
+
+  overflow: hidden;
+
+  clip:
+    rect(0,
+      0,
+      0,
+      0);
+
+  white-space: nowrap;
+
+  border: 0;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1180px) {
+
+  .container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .section {
+    padding:
+      85px 0;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 640px) {
+
+  .container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .section {
+    padding:
+      70px 0;
+  }
+
+}

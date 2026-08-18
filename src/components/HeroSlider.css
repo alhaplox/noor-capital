@@ -1,0 +1,1109 @@
+/* =========================================================
+   NOOR CAPITAL - HOME HERO SLIDER
+   HeroSlider.css
+========================================================= */
+
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+.hm-banner-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #061a37;
+}
+
+.hm-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   SWIPER
+========================================================= */
+
+.home-hero-swiper {
+  position: relative;
+  width: 100%;
+  height: 590px;
+  overflow: hidden;
+}
+
+.home-hero-swiper .swiper-wrapper {
+  height: 100%;
+}
+
+.home-hero-swiper .swiper-slide {
+  position: relative;
+  height: 590px;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   SLIDE
+========================================================= */
+
+.noor-home-slide,
+.banner-fix-height {
+  position: relative;
+  width: 100%;
+  height: 590px;
+  min-height: 590px;
+  overflow: hidden;
+}
+
+.hero-slide-background {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  min-height: 590px;
+
+  overflow: hidden;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.hero-slide-container {
+  position: relative;
+
+  width: min(1480px, calc(100% - 80px));
+  height: 100%;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   TWO COLUMN GRID
+========================================================= */
+
+.hero-slide-grid {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  min-height: 590px;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.banner-headings {
+  position: relative;
+  z-index: 20;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.banner-content {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.hero-slide-title {
+  margin: 0;
+  padding: 0;
+
+  font-size: 54px;
+  line-height: 55px;
+  font-weight: 700;
+  letter-spacing: -1.6px;
+
+  color: #e6b84a;
+}
+
+.hero-title-line {
+  display: block;
+
+  width: fit-content;
+  max-width: 100%;
+
+  color: inherit;
+}
+
+.text_color {
+  color: #e6b84a;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.hero-slide-description {
+  max-width: 600px;
+
+  margin-top: 30px;
+
+  color: #ffffff;
+
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.hero-slide-description p {
+  margin: 0;
+  padding: 0;
+
+  color: inherit;
+}
+
+.hero-slide-description ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.hero-slide-description li {
+  position: relative;
+
+  margin: 0 0 10px 0;
+  padding-left: 22px;
+
+  color: #ffffff;
+
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.hero-slide-description li:last-child {
+  margin-bottom: 0;
+}
+
+.hero-slide-description li::before {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 0;
+
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #e6b642;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.hero-slide-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 30px;
+
+  margin-top: 30px;
+}
+
+
+/* =========================================================
+   OUTLINE BUTTON
+========================================================= */
+
+.border_btn_46 {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 165px;
+  min-height: 50px;
+
+  padding: 0 28px;
+
+  border: 1px solid #e5b438;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.border_btn_46 p {
+  margin: 0;
+  padding: 0;
+}
+
+.border_btn_46:hover {
+  background: #e5b438;
+  color: #071b39;
+}
+
+
+/* =========================================================
+   GOLD BUTTON
+========================================================= */
+
+.fill_btn_46 {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 165px;
+  min-height: 50px;
+
+  padding: 0 28px;
+
+  border: 1px solid #dca525;
+
+  color: #071b39;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  background:
+    linear-gradient(90deg,
+      #d99617 0%,
+      #efbd42 40%,
+      #f5cc61 58%,
+      #d99d1c 100%);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+.fill_btn_46 p {
+  margin: 0;
+  padding: 0;
+}
+
+.fill_btn_46:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   RIGHT SIDE VISUAL
+========================================================= */
+
+.banner-img-screen,
+.banner_main_image_sec {
+  position: relative;
+
+  z-index: 10;
+
+  width: 560px;
+  height: 549px;
+
+  justify-self: end;
+  align-self: center;
+
+  flex-shrink: 0;
+
+  overflow: visible;
+}
+
+
+/*
+  ÇOK ÖNEMLİ:
+  Noor'un hero görselleri aynı 560x549 canvas üzerinde
+  üst üste bindirilmiş PNG layer'lardır.
+*/
+
+.banner-img-screen img,
+.banner_main_image_sec img {
+  position: absolute;
+
+  inset: 0;
+
+  display: block;
+
+  width: 560px;
+  height: 549px;
+
+  max-width: none;
+
+  object-fit: contain;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+
+/* Base / holder image */
+
+.banner-holder {
+  z-index: 1;
+}
+
+
+/* Animated layers */
+
+.banner_elements {
+  z-index: 2;
+
+  opacity: 0;
+
+  animation-duration: 0.9s;
+  animation-fill-mode: forwards;
+  animation-timing-function:
+    cubic-bezier(0.22, 1, 0.36, 1);
+
+  will-change:
+    transform,
+    opacity;
+}
+
+
+/* =========================================================
+   ORIGINAL NOOR ANIMATION CLASS NAMES
+========================================================= */
+
+
+/* slide_right */
+
+.slide_right {
+  transform: translateX(45px);
+  animation-name: heroSlideRight;
+}
+
+
+/* alias */
+
+.slide-right {
+  transform: translateX(45px);
+  animation-name: heroSlideRight;
+}
+
+
+/* slide_left */
+
+.slide_left {
+  transform: translateX(-45px);
+  animation-name: heroSlideLeft;
+}
+
+
+/* alias */
+
+.slide-left {
+  transform: translateX(-45px);
+  animation-name: heroSlideLeft;
+}
+
+
+/* slide_left_2 */
+
+.slide_left_2 {
+  transform: translateX(-75px);
+  animation-name: heroSlideLeftLong;
+}
+
+
+/* alias */
+
+.slide-left-2 {
+  transform: translateX(-75px);
+  animation-name: heroSlideLeftLong;
+}
+
+
+/* slide_top */
+
+.slide_top {
+  transform: translateY(-45px);
+  animation-name: heroSlideTop;
+}
+
+
+/* alias */
+
+.slide-top {
+  transform: translateY(-45px);
+  animation-name: heroSlideTop;
+}
+
+
+/* zoom_element */
+
+.zoom_element {
+  transform: scale(0.74);
+  animation-name: heroZoom;
+}
+
+
+/* alias */
+
+.zoom-element {
+  transform: scale(0.74);
+  animation-name: heroZoom;
+}
+
+
+/* =========================================================
+   ORIGINAL DELAY CLASSES
+========================================================= */
+
+.anim_delay_1,
+.delay-1 {
+  animation-delay: 0.15s;
+}
+
+.anim_delay_2,
+.delay-2 {
+  animation-delay: 0.30s;
+}
+
+.anim_delay_3,
+.delay-3 {
+  animation-delay: 0.45s;
+}
+
+.anim_delay_4,
+.delay-4 {
+  animation-delay: 0.60s;
+}
+
+.anim_delay_5,
+.delay-5 {
+  animation-delay: 0.75s;
+}
+
+.anim_delay_6,
+.delay-6 {
+  animation-delay: 0.90s;
+}
+
+.anim_delay_7,
+.delay-7 {
+  animation-delay: 1.05s;
+}
+
+.anim_delay_8,
+.delay-8 {
+  animation-delay: 1.20s;
+}
+
+.anim_delay_9,
+.delay-9 {
+  animation-delay: 1.35s;
+}
+
+
+/* =========================================================
+   IMAGE ANIMATION KEYFRAMES
+========================================================= */
+
+@keyframes heroSlideRight {
+  from {
+    opacity: 0;
+    transform: translateX(45px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes heroSlideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-45px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes heroSlideLeftLong {
+  from {
+    opacity: 0;
+    transform: translateX(-75px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes heroSlideTop {
+  from {
+    opacity: 0;
+    transform: translateY(-45px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.74);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* =========================================================
+   HEADING ANIMATIONS
+========================================================= */
+
+.from-left {
+  animation:
+    headingFromLeft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.from-right {
+  animation:
+    headingFromRight 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+}
+
+.slide-bottom {
+  animation:
+    contentFromBottom 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.18s both;
+}
+
+
+/* =========================================================
+   HEADING KEYFRAMES
+========================================================= */
+
+@keyframes headingFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-42px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes headingFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(42px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes contentFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================================
+   ACTIVE SLIDE ANIMATIONS
+========================================================= */
+
+/*
+  Swiper loop sırasında eski slide'ın animasyonu görünmesin.
+*/
+
+.home-hero-swiper .swiper-slide:not(.swiper-slide-active) .banner_elements {
+  animation-play-state: paused;
+}
+
+.home-hero-swiper .swiper-slide-active .banner_elements {
+  animation-play-state: running;
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.home-hero-swiper .swiper-pagination {
+  position: absolute;
+
+  left: 50% !important;
+  right: auto !important;
+  bottom: 26px !important;
+
+  z-index: 50;
+
+  width: auto !important;
+
+  transform: translateX(-50%);
+}
+
+.home-hero-swiper .swiper-pagination-bullet {
+  width: 9px;
+  height: 9px;
+
+  margin: 0 6px !important;
+
+  border-radius: 50%;
+
+  background: #b9b9b9;
+
+  opacity: 0.65;
+
+  transition:
+    opacity 0.25s ease,
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.home-hero-swiper .swiper-pagination-bullet:hover {
+  opacity: 1;
+}
+
+.home-hero-swiper .swiper-pagination-bullet-active {
+  background: #e6b53d;
+
+  opacity: 1;
+
+  transform: scale(1.1);
+}
+
+
+/* =========================================================
+   SWIPER CREATIVE SHADOW
+========================================================= */
+
+.home-hero-swiper .swiper-slide-shadow-creative {
+  background:
+    rgba(2, 14, 34, 0.18);
+}
+
+
+/* =========================================================
+   RTL / ARABIC
+========================================================= */
+
+html[dir="rtl"] .hero-slide-grid {
+  direction: rtl;
+}
+
+html[dir="rtl"] .banner-headings {
+  text-align: right;
+}
+
+html[dir="rtl"] .hero-slide-description li {
+  padding-left: 0;
+  padding-right: 22px;
+}
+
+html[dir="rtl"] .hero-slide-description li::before {
+  left: auto;
+  right: 0;
+}
+
+html[dir="rtl"] .banner-img-screen,
+html[dir="rtl"] .banner_main_image_sec {
+  justify-self: start;
+}
+
+html[dir="rtl"] .hero-slide-actions {
+  justify-content: flex-start;
+}
+
+
+/* =========================================================
+   DESKTOP - 1280px
+========================================================= */
+
+@media (max-width: 1280px) {
+
+  .hero-slide-container {
+    width:
+      min(1180px,
+        calc(100% - 60px));
+  }
+
+  .hero-slide-title {
+    font-size: 49px;
+    line-height: 51px;
+  }
+
+  .banner-content {
+    max-width: 570px;
+  }
+
+  .banner-img-screen,
+  .banner_main_image_sec {
+    width: 510px;
+    height: 500px;
+  }
+
+  .banner-img-screen img,
+  .banner_main_image_sec img {
+    width: 510px;
+    height: 500px;
+  }
+}
+
+
+/* =========================================================
+   TABLET LANDSCAPE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .home-hero-swiper,
+  .home-hero-swiper .swiper-slide,
+  .noor-home-slide,
+  .banner-fix-height,
+  .hero-slide-background,
+  .hero-slide-grid {
+    height: 540px;
+    min-height: 540px;
+  }
+
+  .hero-slide-container {
+    width:
+      min(100% - 48px,
+        1050px);
+  }
+
+  .hero-slide-title {
+    font-size: 44px;
+    line-height: 47px;
+    letter-spacing: -1.2px;
+  }
+
+  .hero-slide-description {
+    margin-top: 24px;
+
+    font-size: 16px;
+  }
+
+  .hero-slide-description li {
+    font-size: 16px;
+  }
+
+  .hero-slide-actions {
+    gap: 18px;
+    margin-top: 25px;
+  }
+
+  .border_btn_46,
+  .fill_btn_46 {
+    min-width: 145px;
+    min-height: 46px;
+
+    padding: 0 21px;
+
+    font-size: 14px;
+  }
+
+  .banner-img-screen,
+  .banner_main_image_sec {
+    width: 460px;
+    height: 451px;
+  }
+
+  .banner-img-screen img,
+  .banner_main_image_sec img {
+    width: 460px;
+    height: 451px;
+  }
+}
+
+
+/* =========================================================
+   TABLET PORTRAIT
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .hero-slide-title {
+    font-size: 39px;
+    line-height: 42px;
+  }
+
+  .banner-content {
+    max-width: 460px;
+  }
+
+  .banner-img-screen,
+  .banner_main_image_sec {
+    width: 400px;
+    height: 392px;
+  }
+
+  .banner-img-screen img,
+  .banner_main_image_sec img {
+    width: 400px;
+    height: 392px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+  .hm-banner-section,
+  .hm-banner {
+    overflow: hidden;
+  }
+
+  .home-hero-swiper {
+    height: auto;
+    min-height: 780px;
+  }
+
+  .home-hero-swiper .swiper-slide,
+  .noor-home-slide,
+  .banner-fix-height {
+    height: auto;
+    min-height: 780px;
+  }
+
+  .hero-slide-background {
+    height: auto;
+    min-height: 780px;
+
+    background-position: center;
+  }
+
+  .hero-slide-container {
+    width: calc(100% - 36px);
+  }
+
+  .hero-slide-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+
+    height: auto;
+    min-height: 780px;
+
+    padding:
+      48px 0 72px;
+  }
+
+  .banner-headings {
+    order: 1;
+
+    height: auto;
+
+    align-items: flex-start;
+  }
+
+  .banner-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-slide-title {
+    font-size: 38px;
+    line-height: 41px;
+
+    letter-spacing: -1px;
+  }
+
+  .hero-slide-description {
+    margin-top: 22px;
+
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .hero-slide-description li {
+    margin-bottom: 7px;
+
+    font-size: 15px;
+  }
+
+  .hero-slide-actions {
+    gap: 12px;
+
+    margin-top: 24px;
+  }
+
+  .border_btn_46,
+  .fill_btn_46 {
+    min-width: 145px;
+    min-height: 46px;
+
+    padding: 0 18px;
+
+    font-size: 14px;
+  }
+
+
+  /* RIGHT IMAGE */
+
+  .banner-img-screen,
+  .banner_main_image_sec {
+    order: 2;
+
+    width: min(100%, 480px);
+    height: auto;
+
+    aspect-ratio: 560 / 549;
+
+    justify-self: center;
+    align-self: end;
+
+    margin-top: 22px;
+  }
+
+  .banner-img-screen img,
+  .banner_main_image_sec img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* Pagination */
+
+  .home-hero-swiper .swiper-pagination {
+    bottom: 24px !important;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .home-hero-swiper,
+  .home-hero-swiper .swiper-slide,
+  .noor-home-slide,
+  .banner-fix-height,
+  .hero-slide-background,
+  .hero-slide-grid {
+    min-height: 720px;
+  }
+
+  .hero-slide-container {
+    width: calc(100% - 30px);
+  }
+
+  .hero-slide-grid {
+    padding-top: 38px;
+  }
+
+  .hero-slide-title {
+    font-size: 33px;
+    line-height: 36px;
+  }
+
+  .hero-slide-description {
+    font-size: 14px;
+  }
+
+  .hero-slide-description li {
+    font-size: 14px;
+  }
+
+  .hero-slide-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 100%;
+    gap: 10px;
+  }
+
+  .border_btn_46,
+  .fill_btn_46 {
+    width: 100%;
+    min-width: 0;
+
+    padding: 0 12px;
+
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .banner_elements,
+  .from-left,
+  .from-right,
+  .slide-bottom {
+    animation: none !important;
+
+    opacity: 1 !important;
+
+    transform: none !important;
+  }
+}

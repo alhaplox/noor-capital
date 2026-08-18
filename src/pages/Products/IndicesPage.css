@@ -1,0 +1,1255 @@
+/* =========================================================
+   INDICES PAGE
+========================================================= */
+
+.indices-page {
+  width: 100%;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background: #06142e;
+}
+
+
+.indices-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   GRADIENT TITLES
+========================================================= */
+
+.indices-gradient-title,
+.indices-intro-copy h2,
+.indices-final-copy h2,
+.indices-article-date {
+  color: #eeb235;
+
+  background:
+    linear-gradient(90deg,
+      #f7c442,
+      #dfa02d 55%,
+      #cb8927);
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.indices-hero {
+  display: flex;
+
+  align-items: center;
+
+  min-height: 285px;
+
+  background-image:
+    var(--indices-hero);
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+
+
+.indices-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 53px;
+
+  line-height: 1.18;
+
+  font-weight: 900;
+
+  letter-spacing: -0.025em;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.indices-intro-section {
+  padding:
+    48px 0 120px;
+
+  background-image:
+    var(--indices-intro-bg);
+
+  background-size: cover;
+
+  background-position: top center;
+
+  background-repeat: repeat-x;
+}
+
+
+.indices-intro-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(450px, 589px) minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 85px;
+
+  padding-top: 105px;
+}
+
+
+/* =========================================================
+   INTRO IMAGE
+========================================================= */
+
+.indices-main-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 529px;
+
+  padding: 1px;
+
+  overflow: hidden;
+
+  border-radius: 23px;
+
+  background:
+    linear-gradient(145deg,
+      #6556c8,
+      #765091,
+      #bf7340);
+
+  box-shadow:
+    -25px 28px 60px rgba(0, 0, 0, 0.22);
+}
+
+
+.indices-main-image img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  border-radius: 22px;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   INTRO COPY
+========================================================= */
+
+.indices-intro-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+
+  line-height: 1.33;
+
+  font-weight: 800;
+}
+
+
+.indices-intro-paragraphs {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 28px;
+
+  margin-top: 28px;
+}
+
+
+.indices-intro-paragraphs p {
+  margin: 0;
+
+  color:
+    rgba(255, 255, 255, 0.91);
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   GENERAL SECTION TITLE
+========================================================= */
+
+.indices-gradient-title {
+  margin: 0;
+
+  font-size: 45px;
+
+  line-height: 1.25;
+
+  font-weight: 500;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   SPECIFICATION TABLE
+========================================================= */
+
+.indices-table-section {
+  padding:
+    110px 0 120px;
+
+  background: #06142e;
+}
+
+
+.indices-table-wrapper {
+  max-height: 671px;
+
+  margin-top: 50px;
+
+  overflow: auto;
+
+  border-radius: 20px;
+
+  background: #0f1539;
+}
+
+
+.indices-table-wrapper table {
+  width: 100%;
+
+  min-width: 1420px;
+
+  border-collapse: collapse;
+}
+
+
+.indices-table-wrapper thead {
+  position: sticky;
+
+  top: 0;
+
+  z-index: 5;
+
+  background:
+    linear-gradient(#060b28,
+      #0a0e23);
+}
+
+
+.indices-table-wrapper th,
+.indices-table-wrapper td {
+  padding:
+    17px 20px;
+
+  border-bottom:
+    1px solid rgba(109, 117, 143, 0.25);
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  font-weight: 400;
+
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+
+.indices-table-wrapper th {
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   WHY NOOR
+========================================================= */
+
+.indices-reasons-section {
+  padding:
+    110px 0 60px;
+
+  overflow: hidden;
+
+  background-image:
+    var(--indices-why-bg);
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+
+
+.indices-reasons-slider {
+  position: relative;
+
+  margin-top: 35px;
+}
+
+
+.indices-reasons-slider .swiper {
+  overflow: visible;
+}
+
+
+.indices-reasons-slider .swiper-slide {
+  height: auto;
+
+  padding:
+    58px 0 5px;
+}
+
+
+/* =========================================================
+   REASON CARD
+========================================================= */
+
+.indices-reason-card {
+  position: relative;
+
+  height: 100%;
+
+  min-height: 250px;
+
+  padding:
+    70px 25px 38px;
+
+  border:
+    1px solid transparent;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(#091830,
+      #091830) padding-box,
+
+    linear-gradient(135deg,
+      #6554c4,
+      #755093,
+      #bb7040) border-box;
+}
+
+
+.indices-reason-icon {
+  position: absolute;
+
+  top: 0;
+
+  left: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 109px;
+
+  height: 106px;
+
+  background-image:
+    var(--indices-icon-bg);
+
+  background-size: contain;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  transform:
+    translate(-50%,
+      -50%);
+}
+
+
+.indices-reason-icon img {
+  display: block;
+
+  width: 80px;
+
+  height: 80px;
+
+  object-fit: contain;
+}
+
+
+.indices-reason-card h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 22px;
+
+  line-height: 1.4;
+
+  font-weight: 400;
+}
+
+
+.indices-reason-card p {
+  margin:
+    10px 0 0;
+
+  color:
+    rgba(255, 255, 255, 0.9);
+
+  font-size: 15px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   REASON SLIDER ARROWS
+========================================================= */
+
+.indices-reason-arrow {
+  display: none;
+
+  position: absolute;
+
+  top: 50%;
+
+  z-index: 12;
+
+  width: 46px;
+
+  height: 46px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  transform:
+    translateY(-50%);
+
+  cursor: pointer;
+}
+
+
+.indices-reason-arrow img {
+  width: 100%;
+
+  height: 100%;
+}
+
+
+.indices-reasons-prev {
+  left: -8px;
+}
+
+
+.indices-reasons-next {
+  right: -8px;
+}
+
+
+/* =========================================================
+   FEATURED ARTICLES
+========================================================= */
+
+.indices-articles-section {
+  padding:
+    105px 0 60px;
+
+  background: #06142e;
+}
+
+
+.indices-articles-slider {
+  position: relative;
+
+  margin-top: 55px;
+}
+
+
+.indices-articles-slider .swiper-slide {
+  height: auto;
+}
+
+
+/* =========================================================
+   ARTICLE CARD
+========================================================= */
+
+.indices-article-card {
+  display: flex;
+
+  flex-direction: column;
+
+  height: 100%;
+
+  overflow: hidden;
+
+  border:
+    1px solid #222426;
+
+  border-radius: 23px;
+
+  background: #061123;
+}
+
+
+.indices-article-image {
+  width: 100%;
+
+  height: 203px;
+
+  overflow: hidden;
+}
+
+
+.indices-article-image img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+.indices-article-card:hover .indices-article-image img {
+  transform:
+    scale(1.04);
+}
+
+
+/* =========================================================
+   ARTICLE CONTENT
+========================================================= */
+
+.indices-article-content {
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1;
+
+  gap: 15px;
+
+  padding:
+    28px 28px 30px;
+}
+
+
+.indices-article-date {
+  font-size: 15px;
+
+  line-height: 1.35;
+
+  font-weight: 500;
+}
+
+
+.indices-article-content p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+.indices-article-bottom {
+  display: flex;
+
+  align-items: flex-end;
+
+  flex: 1;
+
+  padding-top: 14px;
+}
+
+
+/* =========================================================
+   OUTLINE BUTTON
+========================================================= */
+
+.indices-outline-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 150px;
+
+  min-height: 42px;
+
+  padding:
+    0 18px;
+
+  border:
+    1px solid #daa12c;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  background: transparent;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.indices-outline-button:hover {
+  color: #0c2e6d;
+
+  background: #e9ad31;
+}
+
+
+/* =========================================================
+   ARTICLE ARROWS
+========================================================= */
+
+.indices-article-arrow {
+  position: absolute;
+
+  top: 50%;
+
+  z-index: 10;
+
+  width: 57px;
+
+  height: 57px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  transform:
+    translateY(-50%);
+
+  cursor: pointer;
+}
+
+
+.indices-article-arrow img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+.indices-articles-prev {
+  left: -75px;
+}
+
+
+.indices-articles-next {
+  right: -75px;
+}
+
+
+/* =========================================================
+   VIEW ALL
+========================================================= */
+
+.indices-view-all {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 45px;
+}
+
+
+/* =========================================================
+   GOLD BUTTON
+========================================================= */
+
+.indices-gold-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  width: fit-content;
+
+  min-height: 45px;
+
+  padding:
+    0 22px;
+
+  border:
+    1px solid #e2a91f;
+
+  border-radius: 4px;
+
+  color: #0c2e6d;
+
+  background:
+    linear-gradient(180deg,
+      #f7ca52,
+      #e9a824);
+
+  font-size: 13px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+
+.indices-gold-button:hover {
+  transform:
+    translateY(-2px);
+
+  filter:
+    brightness(1.05);
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.indices-final-section {
+  background-image:
+    var(--indices-final-bg);
+
+  background-position: center;
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+
+
+.indices-final-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.95fr) minmax(0, 1.05fr);
+
+  align-items: center;
+
+  gap: 50px;
+}
+
+
+.indices-final-copy {
+  padding:
+    90px 0;
+}
+
+
+.indices-final-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+
+  line-height: 1.22;
+
+  font-weight: 900;
+}
+
+
+.indices-final-paragraphs {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+
+  margin-top: 25px;
+}
+
+
+.indices-final-paragraphs p {
+  margin: 0;
+
+  color:
+    rgba(255, 255, 255, 0.91);
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+.indices-final-copy .indices-gold-button {
+  margin-top: 30px;
+}
+
+
+/* =========================================================
+   FINAL IMAGE
+========================================================= */
+
+.indices-final-image {
+  align-self: end;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
+}
+
+
+.indices-final-image img {
+  display: block;
+
+  width: 100%;
+
+  max-width: 867px;
+
+  height: auto;
+}
+
+
+/* =========================================================
+   BACK TOP
+========================================================= */
+
+.indices-back-top-shell {
+  position: relative;
+
+  z-index: 40;
+
+  height: 0;
+}
+
+
+.indices-back-top {
+  position: absolute;
+
+  left: 50%;
+
+  bottom: -45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 90px;
+
+  height: 90px;
+
+  padding: 0;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.2);
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56, 47, 112, 0.84),
+      rgba(17, 38, 79, 0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter:
+    blur(20px);
+
+  cursor: pointer;
+}
+
+
+.indices-back-top img {
+  width: 30px;
+
+  height: 30px;
+
+  animation:
+    indicesJump 1.6s ease-in-out infinite;
+}
+
+
+@keyframes indicesJump {
+
+  0%,
+  100% {
+    transform:
+      translateY(3px);
+  }
+
+  50% {
+    transform:
+      translateY(-4px);
+  }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .indices-page {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .indices-hero,
+html[dir="rtl"] .indices-intro-copy,
+html[dir="rtl"] .indices-article-content,
+html[dir="rtl"] .indices-final-copy {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .indices-table-wrapper th,
+html[dir="rtl"] .indices-table-wrapper td {
+  text-align: right;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1350px) {
+
+  .indices-articles-prev {
+    left: -20px;
+  }
+
+
+  .indices-articles-next {
+    right: -20px;
+  }
+
+}
+
+
+@media (max-width: 1200px) {
+
+  .indices-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .indices-hero {
+    min-height: 235px;
+  }
+
+
+  .indices-hero h1 {
+    font-size: 40px;
+  }
+
+
+  .indices-intro-layout {
+    grid-template-columns:
+      minmax(390px, 480px) minmax(0, 1fr);
+
+    gap: 55px;
+  }
+
+
+  .indices-main-image {
+    height: 440px;
+  }
+
+
+  .indices-gradient-title,
+  .indices-intro-copy h2,
+  .indices-final-copy h2 {
+    font-size: 36px;
+  }
+
+
+  .indices-article-image {
+    height: 180px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .indices-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .indices-hero {
+    min-height: 205px;
+  }
+
+
+  .indices-hero h1 {
+    font-size: 35px;
+
+    text-align: center;
+  }
+
+
+  .indices-intro-layout {
+    grid-template-columns:
+      1fr;
+
+    gap: 45px;
+
+    padding-top: 75px;
+  }
+
+
+  .indices-main-image {
+    width:
+      min(100%,
+        590px);
+
+    height: 450px;
+
+    margin:
+      0 auto;
+  }
+
+
+  .indices-intro-copy h2 {
+    text-align: center;
+  }
+
+
+  .indices-table-section,
+  .indices-reasons-section,
+  .indices-articles-section {
+    padding:
+      75px 0;
+  }
+
+
+  .indices-reason-arrow {
+    display: block;
+  }
+
+
+  .indices-article-arrow {
+    width: 45px;
+
+    height: 45px;
+  }
+
+
+  .indices-articles-prev {
+    left: -10px;
+  }
+
+
+  .indices-articles-next {
+    right: -10px;
+  }
+
+
+  .indices-final-layout {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .indices-final-copy {
+    padding:
+      70px 0 15px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .indices-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .indices-hero {
+    min-height: 170px;
+  }
+
+
+  .indices-hero h1 {
+    font-size: 28px;
+  }
+
+
+  .indices-intro-section {
+    padding-top: 38px;
+
+    padding-bottom: 60px;
+  }
+
+
+  .indices-intro-layout {
+    padding-top: 55px;
+  }
+
+
+  .indices-main-image {
+    height: 330px;
+
+    border-radius: 14px;
+  }
+
+
+  .indices-gradient-title,
+  .indices-intro-copy h2,
+  .indices-final-copy h2 {
+    font-size: 28px;
+
+    line-height: 1.25;
+  }
+
+
+  .indices-intro-paragraphs {
+    gap: 16px;
+  }
+
+
+  .indices-intro-paragraphs p,
+  .indices-final-paragraphs p {
+    font-size: 13px;
+
+    line-height: 1.65;
+  }
+
+
+  .indices-table-wrapper {
+    margin-top: 35px;
+  }
+
+
+  .indices-reason-card {
+    min-height: 230px;
+  }
+
+
+  .indices-reason-card h3 {
+    font-size: 19px;
+  }
+
+
+  .indices-reason-card p {
+    font-size: 13px;
+  }
+
+
+  .indices-articles-slider {
+    margin-top: 35px;
+  }
+
+
+  .indices-article-image {
+    height: 200px;
+  }
+
+
+  .indices-article-content {
+    padding:
+      23px 22px 26px;
+  }
+
+
+  .indices-article-content p {
+    font-size: 14px;
+  }
+
+
+  .indices-article-date {
+    font-size: 12px;
+  }
+
+
+  .indices-article-arrow {
+    display: none;
+  }
+
+
+  .indices-final-copy {
+    padding-top: 55px;
+  }
+
+
+  .indices-back-top {
+    width: 55px;
+
+    height: 55px;
+
+    bottom: -27px;
+  }
+
+
+  .indices-back-top img {
+    width: 21px;
+
+    height: 21px;
+  }
+
+}

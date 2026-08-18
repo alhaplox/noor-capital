@@ -1,0 +1,1314 @@
+/* =========================================================
+   SERVICES PAGE
+========================================================= */
+
+.services-page {
+  width: 100%;
+  overflow: hidden;
+  color: #ffffff;
+  background: #06142e;
+}
+
+
+.services-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin:
+    0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.services-hero {
+  display: flex;
+  align-items: center;
+
+  min-height: 285px;
+
+  background-image:
+    var(--services-hero);
+
+  background-size:
+    cover;
+
+  background-position:
+    center;
+
+  background-repeat:
+    no-repeat;
+}
+
+
+.services-hero h1 {
+  max-width: 950px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 53px;
+
+  line-height: 1.18;
+
+  font-weight: 900;
+
+  letter-spacing:
+    -0.025em;
+}
+
+
+.services-hero p {
+  margin:
+    18px 0 0;
+
+  color:
+    rgba(255,
+      255,
+      255,
+      0.94);
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.services-intro-section {
+  padding:
+    48px 0 64px;
+
+  background-image:
+    var(--services-pattern);
+
+  background-size:
+    cover;
+
+  background-position:
+    top center;
+
+  background-repeat:
+    repeat-x;
+}
+
+
+/* =========================================================
+   TABS
+========================================================= */
+
+.services-tabs-shell {
+  position: sticky;
+
+  top: 15px;
+
+  z-index: 35;
+
+  display: flex;
+
+  justify-content: center;
+
+  width: 100%;
+}
+
+
+.services-tabs {
+  display: flex;
+
+  gap: 8px;
+
+  max-width:
+    calc(100% - 30px);
+
+  padding: 6px;
+
+  overflow-x: auto;
+
+  border:
+    1px solid rgba(255,
+      255,
+      255,
+      0.09);
+
+  border-radius: 7px;
+
+  background:
+    rgba(5,
+      20,
+      47,
+      0.88);
+
+  backdrop-filter:
+    blur(18px);
+
+  scrollbar-width:
+    none;
+}
+
+
+.services-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+
+.services-tabs a {
+  flex: 0 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 34px;
+
+  padding:
+    0 18px;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+
+.services-tabs a:hover {
+  background:
+    #284168;
+}
+
+
+.services-tabs a.is-active {
+  color:
+    #f3cd6d;
+
+  background:
+    linear-gradient(90deg,
+      #76443d,
+      #533958,
+      #302b6f);
+}
+
+
+/* =========================================================
+   MEDIA LAYOUT
+========================================================= */
+
+.services-media-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(450px, 589px) minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 85px;
+
+  padding-top: 105px;
+}
+
+
+/* =========================================================
+   FEATURE IMAGE
+========================================================= */
+
+.services-feature-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 529px;
+
+  padding: 1px;
+
+  overflow: hidden;
+
+  border-radius: 23px;
+
+  background:
+    linear-gradient(145deg,
+      #6455c5,
+      #77508f,
+      #bd7440);
+
+  box-shadow:
+    -25px 28px 60px rgba(0,
+      0,
+      0,
+      0.22);
+}
+
+
+.services-feature-image img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  border-radius: 22px;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   FEATURE COPY
+========================================================= */
+
+.services-feature-copy h2,
+.services-section-heading h2,
+.services-other-title,
+.services-cta-copy h2 {
+  margin: 0;
+
+  color:
+    #edb235;
+
+  font-size: 45px;
+
+  line-height: 1.33;
+
+  font-weight: 800;
+
+  letter-spacing:
+    -0.025em;
+
+  background:
+    linear-gradient(90deg,
+      #f6c343,
+      #da9729);
+
+  -webkit-background-clip:
+    text;
+
+  background-clip:
+    text;
+
+  -webkit-text-fill-color:
+    transparent;
+}
+
+
+.services-feature-copy>p,
+.services-financial-list p {
+  color:
+    rgba(255,
+      255,
+      255,
+      0.91);
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+.services-feature-copy>p {
+  margin:
+    28px 0 0;
+}
+
+
+.services-financial-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  margin-top: 25px;
+}
+
+
+.services-financial-list p {
+  margin: 0;
+}
+
+
+.services-financial-list strong {
+  color: #ffffff;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   DEBT
+========================================================= */
+
+.services-debt-section {
+  padding:
+    110px 0 120px;
+
+  background:
+    radial-gradient(circle at 50% 0%,
+      rgba(31,
+        57,
+        110,
+        0.45),
+      transparent 45%),
+    linear-gradient(180deg,
+      #071832,
+      #061329);
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.services-section-heading {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+
+.services-section-heading>p {
+  max-width: 830px;
+
+  margin:
+    15px auto 0;
+
+  color:
+    rgba(255,
+      255,
+      255,
+      0.9);
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   DEBT GRID
+========================================================= */
+
+.services-debt-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,
+      minmax(0,
+        1fr));
+
+  gap: 30px;
+
+  margin-top: 55px;
+}
+
+
+/* =========================================================
+   DEBT CARD
+========================================================= */
+
+.services-debt-card {
+  min-height: 285px;
+
+  padding:
+    38px 32px;
+
+  border:
+    1px solid transparent;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(#0a1933,
+      #0a1933) padding-box,
+
+    linear-gradient(135deg,
+      #6254bd,
+      #735095,
+      #b56a40) border-box;
+}
+
+
+.services-debt-card h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 27px;
+
+  line-height: 1.2;
+
+  font-weight: 500;
+}
+
+
+.services-debt-card p {
+  margin:
+    27px 0 0;
+
+  color:
+    rgba(255,
+      255,
+      255,
+      0.9);
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   EQUITY
+========================================================= */
+
+.services-equity-section {
+  padding:
+    0 0 120px;
+
+  background-image:
+    var(--services-equity-bg);
+
+  background-size:
+    cover;
+
+  background-position:
+    top center;
+
+  background-repeat:
+    repeat-x;
+}
+
+
+.services-equity-section .services-media-layout {
+  padding-top: 120px;
+}
+
+
+/* =========================================================
+   CTA SHARED
+========================================================= */
+
+.services-advisor-cta,
+.services-trading-cta {
+  background-size:
+    cover;
+
+  background-position:
+    center;
+
+  background-repeat:
+    no-repeat;
+}
+
+
+.services-advisor-cta {
+  background-image:
+    var(--services-advisor-bg);
+}
+
+
+.services-trading-cta {
+  background-image:
+    var(--services-trading-bg);
+}
+
+
+.services-cta-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.9fr) minmax(0, 1.1fr);
+
+  align-items: center;
+
+  gap: 50px;
+}
+
+
+.services-cta-copy {
+  padding:
+    100px 0;
+}
+
+
+.services-cta-copy ul {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 11px;
+
+  margin:
+    25px 0 0;
+
+  padding-left: 20px;
+}
+
+
+.services-cta-copy li {
+  color: #ffffff;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+}
+
+
+.services-cta-image {
+  align-self: end;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
+}
+
+
+.services-cta-image img {
+  display: block;
+
+  width: 100%;
+
+  max-width: 867px;
+
+  height: auto;
+}
+
+
+/* =========================================================
+   GOLD BUTTON
+========================================================= */
+
+.services-gold-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  min-height: 45px;
+
+  margin-top: 30px;
+
+  padding:
+    0 22px;
+
+  border:
+    1px solid #e2a81e;
+
+  border-radius: 4px;
+
+  color: #0c2e6d;
+
+  background:
+    linear-gradient(180deg,
+      #f7ca52,
+      #e9a925);
+
+  font-size: 13px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+
+.services-gold-button:hover {
+  transform:
+    translateY(-2px);
+
+  filter:
+    brightness(1.05);
+}
+
+
+.services-cta-buttons {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+}
+
+
+/* =========================================================
+   OTHER SERVICES
+========================================================= */
+
+.services-other-section {
+  padding:
+    110px 0 120px;
+
+  background-image:
+    var(--services-other-bg);
+
+  background-size:
+    cover;
+
+  background-position:
+    top center;
+
+  background-repeat:
+    repeat-x;
+}
+
+
+.services-other-title {
+  text-align: center;
+}
+
+
+.services-other-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,
+      minmax(0,
+        1fr));
+
+  gap: 30px;
+
+  margin-top: 55px;
+}
+
+
+/* =========================================================
+   OTHER CARD
+========================================================= */
+
+.services-other-card {
+  display: flex;
+
+  flex-direction: column;
+
+  overflow: hidden;
+
+  border-radius: 23px;
+
+  background: #061123;
+}
+
+
+.services-other-image {
+  position: relative;
+
+  height: 264px;
+
+  overflow: hidden;
+}
+
+
+.services-other-image::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(180deg,
+      transparent 55%,
+      rgba(2,
+        10,
+        24,
+        0.58));
+}
+
+
+.services-other-image img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.services-other-copy {
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1;
+
+  padding:
+    30px 26px 45px;
+
+  border:
+    1px solid #222426;
+
+  border-top: 0;
+
+  border-radius:
+    0 0 23px 23px;
+}
+
+
+.services-other-copy h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 27px;
+
+  line-height: 1.2;
+
+  font-weight: 500;
+}
+
+
+.services-other-copy p {
+  margin:
+    20px 0 0;
+
+  color:
+    rgba(255,
+      255,
+      255,
+      0.89);
+
+  font-size: 14px;
+
+  line-height: 1.57;
+}
+
+
+.services-other-paragraphs {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.services-other-bottom {
+  display: flex;
+
+  align-items: flex-end;
+
+  flex: 1;
+
+  padding-top: 30px;
+}
+
+
+/* =========================================================
+   BORDER BUTTON
+========================================================= */
+
+.services-border-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 130px;
+
+  min-height: 40px;
+
+  padding:
+    0 18px;
+
+  border:
+    1px solid #daa12c;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.services-border-button:hover {
+  color: #0c2e6d;
+
+  background: #e8ad31;
+}
+
+
+/* =========================================================
+   BACK TOP
+========================================================= */
+
+.services-back-top-shell {
+  position: relative;
+
+  z-index: 40;
+
+  height: 0;
+}
+
+
+.services-back-top {
+  position: absolute;
+
+  left: 50%;
+
+  bottom: -45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 90px;
+
+  height: 90px;
+
+  padding: 0;
+
+  border:
+    1px solid rgba(255,
+      255,
+      255,
+      0.2);
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56,
+        47,
+        112,
+        0.84),
+      rgba(17,
+        38,
+        79,
+        0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter:
+    blur(20px);
+
+  cursor: pointer;
+}
+
+
+.services-back-top img {
+  width: 30px;
+
+  height: 30px;
+
+  animation:
+    servicesJump 1.6s ease-in-out infinite;
+}
+
+
+@keyframes servicesJump {
+
+  0%,
+  100% {
+    transform:
+      translateY(3px);
+  }
+
+  50% {
+    transform:
+      translateY(-4px);
+  }
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .services-page {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .services-hero,
+html[dir="rtl"] .services-feature-copy,
+html[dir="rtl"] .services-cta-copy,
+html[dir="rtl"] .services-other-copy {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .services-cta-copy ul {
+  padding-left: 0;
+
+  padding-right: 20px;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .services-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .services-hero {
+    min-height: 235px;
+  }
+
+
+  .services-hero h1 {
+    font-size: 40px;
+  }
+
+
+  .services-media-layout {
+    grid-template-columns:
+      minmax(390px,
+        480px) minmax(0,
+        1fr);
+
+    gap: 55px;
+  }
+
+
+  .services-feature-image {
+    height: 440px;
+  }
+
+
+  .services-feature-copy h2,
+  .services-section-heading h2,
+  .services-other-title,
+  .services-cta-copy h2 {
+    font-size: 36px;
+  }
+
+
+  .services-debt-card h3,
+  .services-other-copy h3 {
+    font-size: 23px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .services-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .services-hero {
+    min-height: 205px;
+  }
+
+
+  .services-hero h1 {
+    font-size: 35px;
+
+    text-align: center;
+  }
+
+
+  .services-hero p {
+    text-align: center;
+  }
+
+
+  .services-media-layout {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    padding-top: 75px;
+  }
+
+
+  .services-feature-image {
+    width:
+      min(100%,
+        590px);
+
+    height: 450px;
+
+    margin:
+      0 auto;
+  }
+
+
+  .services-feature-copy {
+    width: 100%;
+  }
+
+
+  .services-feature-copy h2 {
+    text-align: center;
+  }
+
+
+  .services-debt-section,
+  .services-other-section {
+    padding:
+      75px 0 80px;
+  }
+
+
+  .services-debt-grid {
+    grid-template-columns:
+      repeat(2,
+        minmax(0,
+          1fr));
+  }
+
+
+  .services-equity-section {
+    padding-bottom: 80px;
+  }
+
+
+  .services-equity-section .services-media-layout {
+    padding-top: 80px;
+  }
+
+
+  .services-cta-layout {
+    grid-template-columns: 1fr;
+  }
+
+
+  .services-cta-copy {
+    padding:
+      70px 0 20px;
+  }
+
+
+  .services-other-grid {
+    grid-template-columns:
+      repeat(2,
+        minmax(0,
+          1fr));
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .services-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .services-hero {
+    min-height: 165px;
+  }
+
+
+  .services-hero h1 {
+    font-size: 28px;
+
+    line-height: 1.3;
+  }
+
+
+  .services-hero p {
+    margin-top: 10px;
+
+    font-size: 13px;
+  }
+
+
+  .services-intro-section {
+    padding-top: 38px;
+  }
+
+
+  .services-tabs-shell {
+    justify-content:
+      flex-start;
+  }
+
+
+  .services-tabs {
+    max-width: 100%;
+  }
+
+
+  .services-tabs a {
+    min-height: 31px;
+
+    padding:
+      0 12px;
+
+    font-size: 11px;
+  }
+
+
+  .services-media-layout {
+    padding-top: 55px;
+  }
+
+
+  .services-feature-image {
+    height: 330px;
+
+    border-radius: 14px;
+  }
+
+
+  .services-feature-copy h2,
+  .services-section-heading h2,
+  .services-other-title,
+  .services-cta-copy h2 {
+    font-size: 28px;
+
+    line-height: 1.25;
+  }
+
+
+  .services-feature-copy>p,
+  .services-financial-list p,
+  .services-section-heading>p {
+    font-size: 13px;
+
+    line-height: 1.65;
+  }
+
+
+  .services-debt-grid,
+  .services-other-grid {
+    grid-template-columns: 1fr;
+
+    gap: 17px;
+  }
+
+
+  .services-debt-grid,
+  .services-other-grid {
+    margin-top: 35px;
+  }
+
+
+  .services-debt-card {
+    min-height: auto;
+
+    padding:
+      27px 23px;
+  }
+
+
+  .services-debt-card h3,
+  .services-other-copy h3 {
+    font-size: 21px;
+  }
+
+
+  .services-debt-card p {
+    margin-top: 17px;
+
+    font-size: 13px;
+  }
+
+
+  .services-other-image {
+    height: 210px;
+  }
+
+
+  .services-other-copy {
+    padding:
+      25px 22px 32px;
+  }
+
+
+  .services-other-copy p {
+    font-size: 12px;
+  }
+
+
+  .services-cta-copy {
+    padding-top: 55px;
+  }
+
+
+  .services-cta-copy li {
+    font-size: 13px;
+  }
+
+
+  .services-cta-buttons {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .services-back-top {
+    width: 55px;
+
+    height: 55px;
+
+    bottom: -27px;
+  }
+
+
+  .services-back-top img {
+    width: 21px;
+
+    height: 21px;
+  }
+
+}

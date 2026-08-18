@@ -1,0 +1,704 @@
+/* =========================================================
+   RESEARCH & DEVELOPMENT
+========================================================= */
+
+.research-section {
+  position: relative;
+
+  width: 100%;
+
+  padding:
+    110px 0 80px;
+
+  overflow: hidden;
+
+  color:
+    #ffffff;
+
+  background-color:
+    #071936;
+
+  background-image:
+    linear-gradient(rgba(5,
+        22,
+        51,
+        0.08),
+      rgba(5,
+        22,
+        51,
+        0.08)),
+    var(--research-background);
+
+  background-size:
+    cover;
+
+  background-position:
+    center bottom;
+
+  background-repeat:
+    no-repeat;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.research-container {
+  width:
+    min(1440px,
+      calc(100% - 60px));
+
+  margin:
+    0 auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.research-heading {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+
+.research-heading h2 {
+  margin: 0;
+
+  color:
+    #ffffff;
+
+  font-size:
+    42px;
+
+  line-height:
+    1.25;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    -0.02em;
+}
+
+
+.research-heading p {
+  max-width:
+    780px;
+
+  margin:
+    16px auto 0;
+
+  color:
+    rgba(255,
+      255,
+      255,
+      0.9);
+
+  font-size:
+    16px;
+
+  line-height:
+    1.55;
+
+  font-weight:
+    400;
+}
+
+
+/* =========================================================
+   SLIDER
+========================================================= */
+
+.research-slider {
+  width: 100%;
+
+  margin-top:
+    48px;
+
+  overflow:
+    hidden;
+}
+
+
+.research-swiper {
+  width: 100%;
+
+  overflow:
+    visible;
+}
+
+
+.research-swiper .swiper-wrapper {
+  align-items:
+    stretch;
+}
+
+
+.research-swiper .swiper-slide {
+  display: flex;
+
+  height:
+    auto;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.research-card {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  color:
+    #ffffff;
+
+  text-decoration:
+    none;
+}
+
+
+/* =========================================================
+   CARD INNER
+========================================================= */
+
+.research-card-inner {
+  position: relative;
+
+  display: flex;
+
+  align-items:
+    flex-start;
+
+  width: 100%;
+
+  min-height:
+    205px;
+
+  height: 100%;
+
+  padding:
+    22px 20px;
+
+  overflow:
+    hidden;
+
+  border:
+    1px solid transparent;
+
+  border-radius:
+    10px;
+
+  background:
+    linear-gradient(110deg,
+      rgba(24,
+        42,
+        91,
+        0.96),
+      rgba(26,
+        36,
+        76,
+        0.95)) padding-box,
+
+    linear-gradient(110deg,
+      #6251c4 0%,
+      #7052ae 45%,
+      #bf6842 100%) border-box;
+
+  box-shadow:
+    0 0 60px rgba(0,
+      0,
+      0,
+      0.05);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.research-card:hover .research-card-inner {
+  transform:
+    translateY(-4px);
+
+  box-shadow:
+    0 18px 40px rgba(0,
+      0,
+      0,
+      0.2);
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.research-card-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex:
+    0 0 80px;
+
+  width:
+    80px;
+
+  height:
+    80px;
+
+  margin-right:
+    20px;
+}
+
+
+.research-card-icon img {
+  display: block;
+
+  width:
+    80px;
+
+  height:
+    80px;
+
+  max-width:
+    none;
+
+  object-fit:
+    contain;
+}
+
+
+/* =========================================================
+   COPY
+========================================================= */
+
+.research-card-copy {
+  min-width: 0;
+
+  flex:
+    1;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.research-card-copy h3 {
+  margin:
+    0 0 15px;
+
+  color:
+    #ffffff;
+
+  font-size:
+    25px;
+
+  line-height:
+    1.25;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    -0.015em;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.research-card-copy p {
+  margin: 0;
+
+  color:
+    rgba(255,
+      255,
+      255,
+      0.9);
+
+  font-size:
+    14px;
+
+  line-height:
+    1.6;
+
+  font-weight:
+    400;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.research-navigation {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap:
+    13px;
+
+  margin-top:
+    55px;
+}
+
+
+/* =========================================================
+   NAV BUTTON
+========================================================= */
+
+.research-navigation button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width:
+    57px;
+
+  height:
+    47px;
+
+  margin: 0;
+
+  padding: 0;
+
+  border: 0;
+
+  outline: 0;
+
+  background:
+    transparent;
+
+  cursor:
+    pointer;
+
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+
+.research-navigation button:hover {
+  transform:
+    scale(1.06);
+
+  filter:
+    brightness(1.1);
+}
+
+
+/* =========================================================
+   NAV IMAGE
+========================================================= */
+
+.research-navigation img {
+  display: block;
+
+  width:
+    57px;
+
+  height:
+    47px;
+
+  max-width:
+    none;
+
+  object-fit:
+    contain;
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .research-heading {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .research-card-inner {
+  direction: rtl;
+
+  text-align:
+    right;
+}
+
+
+html[dir="rtl"] .research-card-icon {
+  margin-right: 0;
+
+  margin-left:
+    20px;
+}
+
+
+html[dir="rtl"] .research-navigation {
+  direction: rtl;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .research-section {
+    padding:
+      82px 0 65px;
+  }
+
+
+  .research-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .research-heading h2 {
+    font-size:
+      36px;
+  }
+
+
+  .research-card-inner {
+    min-height:
+      195px;
+
+    padding:
+      20px 18px;
+  }
+
+
+  .research-card-copy h3 {
+    font-size:
+      22px;
+  }
+
+
+  .research-card-copy p {
+    font-size:
+      13px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .research-section {
+    padding:
+      72px 0 55px;
+  }
+
+
+  .research-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .research-heading h2 {
+    font-size:
+      31px;
+  }
+
+
+  .research-heading p {
+    font-size:
+      14px;
+  }
+
+
+  .research-slider {
+    margin-top:
+      38px;
+  }
+
+
+  .research-navigation {
+    margin-top:
+      38px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .research-section {
+    padding:
+      52px 0 42px;
+  }
+
+
+  .research-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .research-heading h2 {
+    font-size:
+      26px;
+
+    line-height:
+      1.3;
+  }
+
+
+  .research-heading p {
+    margin-top:
+      12px;
+
+    font-size:
+      13px;
+
+    line-height:
+      1.55;
+  }
+
+
+  .research-slider {
+    margin-top:
+      30px;
+  }
+
+
+  .research-card-inner {
+    min-height:
+      180px;
+
+    padding:
+      18px;
+  }
+
+
+  .research-card-icon {
+    flex-basis:
+      65px;
+
+    width:
+      65px;
+
+    height:
+      65px;
+
+    margin-right:
+      15px;
+  }
+
+
+  .research-card-icon img {
+    width:
+      65px;
+
+    height:
+      65px;
+  }
+
+
+  html[dir="rtl"] .research-card-icon {
+    margin-right: 0;
+
+    margin-left:
+      15px;
+  }
+
+
+  .research-card-copy h3 {
+    margin-bottom:
+      10px;
+
+    font-size:
+      19px;
+  }
+
+
+  .research-card-copy p {
+    font-size:
+      12px;
+
+    line-height:
+      1.55;
+  }
+
+
+  .research-navigation {
+    margin-top:
+      30px;
+  }
+
+
+  .research-navigation button,
+
+  .research-navigation img {
+    width:
+      48px;
+
+    height:
+      40px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 390px) {
+
+  .research-card-inner {
+    flex-direction:
+      column;
+
+    min-height:
+      220px;
+  }
+
+
+  .research-card-icon {
+    margin:
+      0 0 15px;
+  }
+
+
+  html[dir="rtl"] .research-card-icon {
+    margin:
+      0 0 15px;
+  }
+
+}

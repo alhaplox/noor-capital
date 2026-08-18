@@ -1,0 +1,1291 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.energies-page {
+  width: 100%;
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background: #06142e;
+}
+
+
+.energies-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   GRADIENT
+========================================================= */
+
+.energies-gradient-title,
+.energies-intro-copy h2,
+.energies-final-copy h2,
+.energies-article-date {
+  color: #eeb235;
+
+  background:
+    linear-gradient(90deg,
+      #f7c442,
+      #dfa02d 55%,
+      #cb8927);
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.energies-hero {
+  display: flex;
+
+  align-items: center;
+
+  min-height: 285px;
+
+  background-image:
+    var(--energies-hero);
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+
+
+.energies-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 53px;
+
+  line-height: 1.18;
+
+  font-weight: 900;
+
+  letter-spacing:
+    -0.025em;
+}
+
+
+.energies-hero ul {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+
+  margin:
+    16px 0 0;
+
+  padding-left: 20px;
+}
+
+
+.energies-hero li {
+  color: #ffffff;
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.energies-intro-section {
+  padding:
+    48px 0 120px;
+
+  background-image:
+    var(--energies-intro-bg);
+
+  background-position:
+    top center;
+
+  background-size: cover;
+
+  background-repeat: repeat-x;
+}
+
+
+.energies-intro-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(450px, 589px) minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 85px;
+
+  padding-top: 105px;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.energies-main-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 529px;
+
+  padding: 1px;
+
+  overflow: hidden;
+
+  border-radius: 23px;
+
+  background:
+    linear-gradient(145deg,
+      #6556c8,
+      #765091,
+      #bf7340);
+
+  box-shadow:
+    -25px 28px 60px rgba(0, 0, 0, 0.22);
+}
+
+
+.energies-main-image img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  border-radius: 22px;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   INTRO COPY
+========================================================= */
+
+.energies-intro-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+
+  line-height: 1.33;
+
+  font-weight: 800;
+}
+
+
+.energies-intro-paragraphs {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 28px;
+
+  margin-top: 28px;
+}
+
+
+.energies-intro-paragraphs p {
+  margin: 0;
+
+  color:
+    rgba(255, 255, 255, 0.91);
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.energies-gradient-title {
+  margin: 0;
+
+  font-size: 45px;
+
+  line-height: 1.25;
+
+  font-weight: 500;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.energies-table-section {
+  padding:
+    110px 0 120px;
+
+  background: #06142e;
+}
+
+
+.energies-table-wrapper {
+  max-height: 671px;
+
+  margin-top: 50px;
+
+  overflow: auto;
+
+  border-radius: 20px;
+
+  background: #0f1539;
+}
+
+
+.energies-table-wrapper table {
+  width: 100%;
+
+  min-width: 1420px;
+
+  border-collapse: collapse;
+}
+
+
+.energies-table-wrapper thead {
+  position: sticky;
+
+  top: 0;
+
+  z-index: 5;
+
+  background:
+    linear-gradient(#060b28,
+      #0a0e23);
+}
+
+
+.energies-table-wrapper th,
+.energies-table-wrapper td {
+  padding:
+    17px 20px;
+
+  border-bottom:
+    1px solid rgba(109, 117, 143, 0.25);
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  font-weight: 400;
+
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+
+.energies-table-wrapper th {
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   REASONS
+========================================================= */
+
+.energies-reasons-section {
+  padding:
+    110px 0 60px;
+
+  overflow: hidden;
+
+  background-image:
+    var(--energies-why-bg);
+
+  background-position: center;
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+
+
+.energies-reasons-slider {
+  position: relative;
+
+  margin-top: 35px;
+}
+
+
+.energies-reasons-slider .swiper {
+  overflow: visible;
+}
+
+
+.energies-reasons-slider .swiper-slide {
+  height: auto;
+
+  padding:
+    58px 0 5px;
+}
+
+
+/* =========================================================
+   REASON CARD
+========================================================= */
+
+.energies-reason-card {
+  position: relative;
+
+  height: 100%;
+
+  min-height: 250px;
+
+  padding:
+    70px 25px 38px;
+
+  border:
+    1px solid transparent;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(#091830,
+      #091830) padding-box,
+
+    linear-gradient(135deg,
+      #6554c4,
+      #755093,
+      #bb7040) border-box;
+}
+
+
+.energies-reason-icon {
+  position: absolute;
+
+  top: 0;
+
+  left: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 109px;
+
+  height: 106px;
+
+  background-image:
+    var(--energies-icon-bg);
+
+  background-position: center;
+
+  background-size: contain;
+
+  background-repeat: no-repeat;
+
+  transform:
+    translate(-50%,
+      -50%);
+}
+
+
+.energies-reason-icon img {
+  display: block;
+
+  width: 80px;
+
+  height: 80px;
+
+  object-fit: contain;
+}
+
+
+.energies-reason-card h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 22px;
+
+  line-height: 1.4;
+
+  font-weight: 400;
+}
+
+
+.energies-reason-card p {
+  margin:
+    10px 0 0;
+
+  color:
+    rgba(255, 255, 255, 0.9);
+
+  font-size: 15px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   REASON ARROWS
+========================================================= */
+
+.energies-reason-arrow {
+  display: none;
+
+  position: absolute;
+
+  top: 50%;
+
+  z-index: 12;
+
+  width: 46px;
+
+  height: 46px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  transform:
+    translateY(-50%);
+
+  cursor: pointer;
+}
+
+
+.energies-reason-arrow img {
+  width: 100%;
+
+  height: 100%;
+}
+
+
+.energies-reasons-prev {
+  left: -8px;
+}
+
+
+.energies-reasons-next {
+  right: -8px;
+}
+
+
+/* =========================================================
+   ARTICLES
+========================================================= */
+
+.energies-articles-section {
+  padding:
+    105px 0 60px;
+
+  background: #06142e;
+}
+
+
+.energies-articles-slider {
+  position: relative;
+
+  margin-top: 55px;
+}
+
+
+.energies-articles-slider .swiper-slide {
+  height: auto;
+}
+
+
+/* =========================================================
+   ARTICLE CARD
+========================================================= */
+
+.energies-article-card {
+  display: flex;
+
+  flex-direction: column;
+
+  height: 100%;
+
+  overflow: hidden;
+
+  border:
+    1px solid #222426;
+
+  border-radius: 23px;
+
+  background: #061123;
+}
+
+
+.energies-article-image {
+  width: 100%;
+
+  height: 203px;
+
+  overflow: hidden;
+}
+
+
+.energies-article-image img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+.energies-article-card:hover .energies-article-image img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   ARTICLE CONTENT
+========================================================= */
+
+.energies-article-content {
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1;
+
+  gap: 15px;
+
+  padding:
+    28px 28px 30px;
+}
+
+
+.energies-article-date {
+  font-size: 15px;
+
+  line-height: 1.35;
+
+  font-weight: 500;
+}
+
+
+.energies-article-content p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+.energies-article-bottom {
+  display: flex;
+
+  align-items: flex-end;
+
+  flex: 1;
+
+  padding-top: 14px;
+}
+
+
+/* =========================================================
+   OUTLINE BUTTON
+========================================================= */
+
+.energies-outline-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 150px;
+
+  min-height: 42px;
+
+  padding:
+    0 18px;
+
+  border:
+    1px solid #daa12c;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  background: transparent;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.energies-outline-button:hover {
+  color: #0c2e6d;
+
+  background: #e9ad31;
+}
+
+
+/* =========================================================
+   ARTICLE ARROWS
+========================================================= */
+
+.energies-article-arrow {
+  position: absolute;
+
+  top: 50%;
+
+  z-index: 10;
+
+  width: 57px;
+
+  height: 57px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  transform:
+    translateY(-50%);
+
+  cursor: pointer;
+}
+
+
+.energies-article-arrow img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+.energies-articles-prev {
+  left: -75px;
+}
+
+
+.energies-articles-next {
+  right: -75px;
+}
+
+
+/* =========================================================
+   VIEW ALL
+========================================================= */
+
+.energies-view-all {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 45px;
+}
+
+
+/* =========================================================
+   GOLD BUTTON
+========================================================= */
+
+.energies-gold-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  width: fit-content;
+
+  min-height: 45px;
+
+  padding:
+    0 22px;
+
+  border:
+    1px solid #e2a91f;
+
+  border-radius: 4px;
+
+  color: #0c2e6d;
+
+  background:
+    linear-gradient(180deg,
+      #f7ca52,
+      #e9a824);
+
+  font-size: 13px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+
+.energies-gold-button:hover {
+  transform:
+    translateY(-2px);
+
+  filter:
+    brightness(1.05);
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.energies-final-section {
+  background-image:
+    var(--energies-final-bg);
+
+  background-position: center;
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+
+
+.energies-final-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.95fr) minmax(0, 1.05fr);
+
+  align-items: center;
+
+  gap: 50px;
+}
+
+
+.energies-final-copy {
+  padding:
+    90px 0;
+}
+
+
+.energies-final-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+
+  line-height: 1.22;
+
+  font-weight: 900;
+}
+
+
+.energies-final-copy p {
+  margin:
+    25px 0 0;
+
+  color:
+    rgba(255, 255, 255, 0.91);
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+.energies-final-copy .energies-gold-button {
+  margin-top: 30px;
+}
+
+
+/* =========================================================
+   FINAL IMAGE
+========================================================= */
+
+.energies-final-image {
+  align-self: end;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
+}
+
+
+.energies-final-image img {
+  display: block;
+
+  width: 100%;
+
+  max-width: 867px;
+
+  height: auto;
+}
+
+
+/* =========================================================
+   BACK TOP
+========================================================= */
+
+.energies-back-top-shell {
+  position: relative;
+
+  z-index: 40;
+
+  height: 0;
+}
+
+
+.energies-back-top {
+  position: absolute;
+
+  left: 50%;
+
+  bottom: -45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 90px;
+
+  height: 90px;
+
+  padding: 0;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.2);
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56, 47, 112, 0.84),
+      rgba(17, 38, 79, 0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter:
+    blur(20px);
+
+  cursor: pointer;
+}
+
+
+.energies-back-top img {
+  width: 30px;
+
+  height: 30px;
+
+  animation:
+    energiesJump 1.6s ease-in-out infinite;
+}
+
+
+@keyframes energiesJump {
+
+  0%,
+  100% {
+    transform:
+      translateY(3px);
+  }
+
+
+  50% {
+    transform:
+      translateY(-4px);
+  }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .energies-page {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .energies-hero,
+html[dir="rtl"] .energies-intro-copy,
+html[dir="rtl"] .energies-article-content,
+html[dir="rtl"] .energies-final-copy {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .energies-hero ul {
+  padding-left: 0;
+
+  padding-right: 20px;
+}
+
+
+html[dir="rtl"] .energies-table-wrapper th,
+html[dir="rtl"] .energies-table-wrapper td {
+  text-align: right;
+}
+
+
+/* =========================================================
+   LARGE
+========================================================= */
+
+@media (max-width: 1350px) {
+
+  .energies-articles-prev {
+    left: -20px;
+  }
+
+
+  .energies-articles-next {
+    right: -20px;
+  }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .energies-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .energies-hero {
+    min-height: 235px;
+  }
+
+
+  .energies-hero h1 {
+    font-size: 40px;
+  }
+
+
+  .energies-intro-layout {
+    grid-template-columns:
+      minmax(390px, 480px) minmax(0, 1fr);
+
+    gap: 55px;
+  }
+
+
+  .energies-main-image {
+    height: 440px;
+  }
+
+
+  .energies-gradient-title,
+  .energies-intro-copy h2,
+  .energies-final-copy h2 {
+    font-size: 36px;
+  }
+
+
+  .energies-article-image {
+    height: 180px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .energies-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .energies-hero {
+    min-height: 205px;
+  }
+
+
+  .energies-hero h1 {
+    font-size: 35px;
+
+    text-align: center;
+  }
+
+
+  .energies-hero ul {
+    width: fit-content;
+
+    margin:
+      15px auto 0;
+  }
+
+
+  .energies-intro-layout {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    padding-top: 75px;
+  }
+
+
+  .energies-main-image {
+    width:
+      min(100%,
+        590px);
+
+    height: 450px;
+
+    margin:
+      0 auto;
+  }
+
+
+  .energies-intro-copy h2 {
+    text-align: center;
+  }
+
+
+  .energies-table-section,
+  .energies-reasons-section,
+  .energies-articles-section {
+    padding:
+      75px 0;
+  }
+
+
+  .energies-reason-arrow {
+    display: block;
+  }
+
+
+  .energies-article-arrow {
+    width: 45px;
+
+    height: 45px;
+  }
+
+
+  .energies-articles-prev {
+    left: -10px;
+  }
+
+
+  .energies-articles-next {
+    right: -10px;
+  }
+
+
+  .energies-final-layout {
+    grid-template-columns: 1fr;
+  }
+
+
+  .energies-final-copy {
+    padding:
+      70px 0 15px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .energies-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .energies-hero {
+    min-height: 180px;
+  }
+
+
+  .energies-hero h1 {
+    font-size: 28px;
+  }
+
+
+  .energies-hero li {
+    font-size: 12px;
+  }
+
+
+  .energies-intro-section {
+    padding-top: 38px;
+
+    padding-bottom: 60px;
+  }
+
+
+  .energies-intro-layout {
+    padding-top: 55px;
+  }
+
+
+  .energies-main-image {
+    height: 330px;
+
+    border-radius: 14px;
+  }
+
+
+  .energies-gradient-title,
+  .energies-intro-copy h2,
+  .energies-final-copy h2 {
+    font-size: 28px;
+
+    line-height: 1.25;
+  }
+
+
+  .energies-intro-paragraphs {
+    gap: 16px;
+  }
+
+
+  .energies-intro-paragraphs p,
+  .energies-final-copy p {
+    font-size: 13px;
+
+    line-height: 1.65;
+  }
+
+
+  .energies-table-wrapper {
+    margin-top: 35px;
+  }
+
+
+  .energies-reason-card {
+    min-height: 230px;
+  }
+
+
+  .energies-reason-card h3 {
+    font-size: 19px;
+  }
+
+
+  .energies-reason-card p {
+    font-size: 13px;
+  }
+
+
+  .energies-articles-slider {
+    margin-top: 35px;
+  }
+
+
+  .energies-article-image {
+    height: 200px;
+  }
+
+
+  .energies-article-content {
+    padding:
+      23px 22px 26px;
+  }
+
+
+  .energies-article-content p {
+    font-size: 14px;
+  }
+
+
+  .energies-article-date {
+    font-size: 12px;
+  }
+
+
+  .energies-article-arrow {
+    display: none;
+  }
+
+
+  .energies-final-copy {
+    padding-top: 55px;
+  }
+
+
+  .energies-back-top {
+    width: 55px;
+
+    height: 55px;
+
+    bottom: -27px;
+  }
+
+
+  .energies-back-top img {
+    width: 21px;
+
+    height: 21px;
+  }
+
+}
