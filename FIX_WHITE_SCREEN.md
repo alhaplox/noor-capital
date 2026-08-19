@@ -14,3 +14,4 @@ Then open the exact URL printed by Vite, followed by `/en`.
 /ru
 /ar
 /tr
+/dosya adı düzenlendi
