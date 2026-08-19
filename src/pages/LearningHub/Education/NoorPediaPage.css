@@ -1,0 +1,533 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.noor-pedia-page {
+  width: 100%;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background: #06142e;
+}
+
+
+.noor-pedia-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.noor-pedia-hero {
+  display: flex;
+  align-items: center;
+
+  min-height: 285px;
+
+  background-image:
+    var(--noor-pedia-hero);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.noor-pedia-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 53px;
+  line-height: 63px;
+  font-weight: 900;
+
+  letter-spacing:
+    -0.025em;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.noor-pedia-main-section {
+  padding:
+    48px 0 120px;
+
+  background-image:
+    var(--noor-pedia-background);
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+
+.noor-pedia-content {
+  padding-top: 120px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.noor-pedia-gradient-title {
+  display: inline-block;
+
+  margin:
+    0 0 20px;
+
+  color: #eeb235;
+
+  background:
+    linear-gradient(90deg,
+      #f7c442,
+      #dfa02d 55%,
+      #cb8927);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   ACCORDION
+========================================================= */
+
+.noor-pedia-accordion {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+
+.noor-pedia-item {
+  overflow: hidden;
+
+  border-bottom:
+    1px solid rgba(255,
+      255,
+      255,
+      0.09);
+
+  transition:
+    background 0.3s ease;
+}
+
+
+.noor-pedia-item h3 {
+  margin: 0;
+}
+
+
+/* =========================================================
+   TRIGGER
+========================================================= */
+
+.noor-pedia-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  width: 100%;
+
+  min-height: 66px;
+
+  padding:
+    20px 0;
+
+  border: 0;
+
+  color: #ffffff;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+
+.noor-pedia-trigger:hover {
+  color: #e9b33f;
+}
+
+
+.noor-pedia-indicator {
+  flex:
+    0 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 28px;
+  height: 28px;
+
+  color: #e5ab37;
+
+  font-size: 22px;
+  line-height: 1;
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+/* =========================================================
+   ANSWER ANIMATION
+========================================================= */
+
+.noor-pedia-answer-grid {
+  display: grid;
+
+  grid-template-rows: 0fr;
+
+  padding-left: 40px;
+
+  transition:
+    grid-template-rows 0.3s ease;
+}
+
+
+.noor-pedia-item.is-open .noor-pedia-answer-grid {
+  grid-template-rows: 1fr;
+}
+
+
+.noor-pedia-answer-inner {
+  min-height: 0;
+
+  overflow: hidden;
+}
+
+
+.noor-pedia-answer-inner p {
+  margin: 0;
+
+  padding:
+    0 0 20px;
+
+  color:
+    rgba(255,
+      255,
+      255,
+      0.91);
+
+  font-size: 14px;
+  line-height: 22px;
+}
+
+
+/* =========================================================
+   OPEN STATE
+========================================================= */
+
+.noor-pedia-item.is-open .noor-pedia-trigger {
+  color: #e9b33f;
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.noor-pedia-back-top-shell {
+  position: relative;
+
+  z-index: 36;
+
+  height: 0;
+}
+
+
+.noor-pedia-back-top {
+  position: absolute;
+
+  left: 50%;
+  bottom: -45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+
+  padding: 0;
+
+  border:
+    1px solid rgba(255,
+      255,
+      255,
+      0.2);
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56,
+        47,
+        112,
+        0.84),
+      rgba(17,
+        38,
+        79,
+        0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter:
+    blur(20px);
+
+  -webkit-backdrop-filter:
+    blur(20px);
+
+  cursor: pointer;
+}
+
+
+.noor-pedia-back-top img {
+  width: 30px;
+  height: 30px;
+
+  animation:
+    noorPediaJump 1.6s ease-in-out infinite;
+}
+
+
+@keyframes noorPediaJump {
+
+  0%,
+  100% {
+    transform:
+      translateY(3px);
+  }
+
+
+  50% {
+    transform:
+      translateY(-4px);
+  }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .noor-pedia-page {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .noor-pedia-hero,
+html[dir="rtl"] .noor-pedia-content,
+html[dir="rtl"] .noor-pedia-trigger {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .noor-pedia-answer-grid {
+  padding-right: 40px;
+  padding-left: 0;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .noor-pedia-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .noor-pedia-hero {
+    min-height: 235px;
+  }
+
+
+  .noor-pedia-hero h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+
+  .noor-pedia-content {
+    padding-top: 80px;
+  }
+
+
+  .noor-pedia-gradient-title {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+
+  .noor-pedia-trigger {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .noor-pedia-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .noor-pedia-hero {
+    min-height: 205px;
+  }
+
+
+  .noor-pedia-hero h1 {
+    font-size: 35px;
+
+    text-align: center;
+  }
+
+
+  .noor-pedia-content {
+    padding-top: 60px;
+  }
+
+
+  .noor-pedia-answer-grid {
+    padding-left: 35px;
+  }
+
+
+  html[dir="rtl"] .noor-pedia-answer-grid {
+    padding-right: 35px;
+    padding-left: 0;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .noor-pedia-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .noor-pedia-hero {
+    min-height: 170px;
+  }
+
+
+  .noor-pedia-hero h1 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+
+  .noor-pedia-main-section {
+    padding-top: 38px;
+    padding-bottom: 60px;
+  }
+
+
+  .noor-pedia-content {
+    padding-top: 60px;
+  }
+
+
+  .noor-pedia-gradient-title {
+    margin-bottom: 20px;
+
+    font-size: 28px;
+    line-height: 32px;
+
+    text-align: center;
+  }
+
+
+  .noor-pedia-trigger {
+    min-height: 60px;
+
+    padding:
+      20px 0;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+
+  .noor-pedia-answer-grid {
+    padding-left: 35px;
+  }
+
+
+  html[dir="rtl"] .noor-pedia-answer-grid {
+    padding-right: 35px;
+    padding-left: 0;
+  }
+
+
+  .noor-pedia-answer-inner p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+
+  .noor-pedia-back-top {
+    width: 50px;
+    height: 50px;
+
+    bottom: -25px;
+  }
+
+
+  .noor-pedia-back-top img {
+    width: 20px;
+    height: 20px;
+  }
+
+}

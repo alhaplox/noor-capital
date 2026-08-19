@@ -1,0 +1,1301 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.institutional-liquidity-page {
+  width: 100%;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background: #06142e;
+}
+
+
+.institutional-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   GRADIENT
+========================================================= */
+
+.institutional-gradient-text,
+.institutional-section-title,
+.institutional-liquidity-copy h2,
+.institutional-demo-copy h2 {
+  color: #eeb235;
+
+  background:
+    linear-gradient(90deg,
+      #be811a 15%,
+      #f4d48d 45%,
+      #f4d48d 55%,
+      #f3b62e 85%);
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.institutional-liquidity-hero {
+  display: flex;
+  align-items: center;
+
+  min-height: 285px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.institutional-liquidity-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 53px;
+  line-height: 63px;
+  font-weight: 900;
+
+  letter-spacing:
+    -0.025em;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.institutional-liquidity-intro {
+  padding:
+    48px 0 64px;
+
+  background-size: cover;
+  background-position: top center;
+  background-repeat: repeat-x;
+}
+
+
+.institutional-liquidity-intro-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 112px;
+
+  padding-top: 110px;
+}
+
+
+/* =========================================================
+   INTRO IMAGE
+========================================================= */
+
+.institutional-liquidity-visual {
+  position: relative;
+
+  flex:
+    0 0 589px;
+
+  width: 589px;
+  height: 529px;
+
+  overflow: hidden;
+
+  border:
+    1px solid rgba(209,
+      159,
+      63,
+      0.55);
+
+  border-radius: 23px;
+}
+
+
+.institutional-liquidity-visual img {
+  position: relative;
+
+  z-index: 1;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.institutional-liquidity-image-shadow {
+  position: absolute;
+
+  z-index: 2;
+
+  inset: 0;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(180deg,
+      rgba(0,
+        0,
+        0,
+        0) 50%,
+      rgba(3,
+        8,
+        23,
+        0.45) 100%);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   INTRO COPY
+========================================================= */
+
+.institutional-liquidity-copy {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+
+  flex: 1;
+}
+
+
+.institutional-liquidity-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+
+.institutional-liquidity-copy p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.institutional-email-line a {
+  color: #efbd4a;
+
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   PILLARS
+========================================================= */
+
+.institutional-pillars {
+  padding:
+    120px 0;
+
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+
+.institutional-section-title {
+  max-width: 850px;
+
+  margin:
+    0 auto 60px;
+
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 900;
+
+  text-align: center;
+}
+
+
+.institutional-pillars-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,
+      minmax(0, 1fr));
+
+  gap: 0;
+}
+
+
+.institutional-pillar-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 32px;
+
+  height: 100%;
+
+  padding:
+    36px 20px;
+
+  overflow: hidden;
+
+  border:
+    1px solid transparent;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(#091830,
+      #091830) padding-box,
+
+    linear-gradient(145deg,
+      rgba(244,
+        212,
+        141,
+        0.55),
+      rgba(64,
+        43,
+        117,
+        0.7)) border-box;
+}
+
+
+.institutional-pillar-icon {
+  width: 70px;
+  height: 70px;
+
+  object-fit: contain;
+}
+
+
+.institutional-pillar-card h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+
+.institutional-pillar-card p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+/* =========================================================
+   REQUEST DEMO
+========================================================= */
+
+.institutional-demo {
+  padding:
+    110px 0 120px;
+
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: repeat-x;
+}
+
+
+.institutional-demo-layout {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2,
+      minmax(0, 1fr));
+
+  gap: 80px;
+
+  align-items: start;
+}
+
+
+.institutional-demo-copy {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  padding-right: 10%;
+}
+
+
+.institutional-demo-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+
+.institutional-demo-copy p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.institutional-demo-copy .institutional-demo-subtitle {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.institutional-demo-form-shell {
+  padding: 40px;
+
+  border:
+    1px solid rgba(238,
+      186,
+      70,
+      0.35);
+
+  border-radius: 20px;
+
+  background:
+    rgba(6,
+      17,
+      35,
+      0.52);
+}
+
+
+.institutional-demo-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+
+.institutional-demo-form label {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+
+.institutional-demo-form label>span:first-child {
+  color: #ffffff;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+
+.institutional-form-two {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2,
+      minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+
+.institutional-demo-form input[ type="text"
+],
+.institutional-demo-form input[ type="email"
+
+] {
+  width: 100%;
+  height: 46px;
+
+  padding:
+    9px 20px;
+
+  border:
+    1px solid rgba(242,
+      185,
+      47,
+      0.55);
+
+  border-radius: 8px;
+
+  outline: none;
+
+  color: #d9d9d9;
+
+  background:
+    transparent;
+
+  font-family: inherit;
+
+  font-size: 16px;
+
+  box-sizing: border-box;
+}
+
+
+.institutional-demo-form input::placeholder {
+  color: #d9d9d9;
+
+  opacity: 0.75;
+}
+
+
+/* =========================================================
+   FAUX SELECT
+========================================================= */
+
+.institutional-faux-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 46px;
+
+  padding:
+    0 16px;
+
+  border:
+    1px solid rgba(242,
+      185,
+      47,
+      0.55);
+
+  border-radius: 8px;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  box-sizing: border-box;
+}
+
+
+.institutional-faux-select>span {
+  color:
+    rgba(255,
+      255,
+      255,
+      0.68);
+}
+
+
+/* =========================================================
+   CHECKBOX
+========================================================= */
+
+.institutional-demo-form .institutional-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  gap: 8px;
+}
+
+
+.institutional-checkbox input {
+  margin-top: 7px;
+}
+
+
+.institutional-demo-form .institutional-checkbox span {
+  color: #ffffff;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   SUBMIT
+========================================================= */
+
+.institutional-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  width: fit-content;
+
+  min-width: 140px;
+  height: 46px;
+
+  padding:
+    0 24px;
+
+  border: 0;
+
+  border-radius: 4px;
+
+  color: #0c2e6d;
+
+  background:
+    linear-gradient(90deg,
+      #be811a,
+      #f4d48d 45%,
+      #f3b62e);
+
+  font-family: inherit;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   FEATURED
+========================================================= */
+
+.institutional-featured {
+  padding:
+    105px 0 60px;
+
+  background: #06142e;
+}
+
+
+.institutional-featured .institutional-section-title {
+  margin-bottom: 55px;
+}
+
+
+.institutional-featured-slider-shell {
+  position: relative;
+}
+
+
+.institutional-featured-slider {
+  display: flex;
+
+  gap: 25px;
+
+  width: 100%;
+
+  overflow-x: auto;
+
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+}
+
+
+.institutional-featured-slider::-webkit-scrollbar {
+  display: none;
+}
+
+
+.institutional-featured-card {
+  flex:
+    0 0 calc(25% - 19px);
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  border:
+    1px solid #222426;
+
+  border-radius: 23px;
+
+  background: #061123;
+}
+
+
+.institutional-featured-image {
+  width: 100%;
+  height: 203px;
+}
+
+
+.institutional-featured-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.institutional-featured-card-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  gap: 16px;
+
+  padding: 32px;
+}
+
+
+.institutional-featured-card-content>span {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+
+.institutional-featured-card-content p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.institutional-featured-button-row {
+  display: flex;
+  align-items: flex-end;
+
+  flex: 1;
+
+  padding-top: 14px;
+}
+
+
+.institutional-featured-button-row a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 165px;
+  height: 42px;
+
+  border:
+    1px solid #dba32b;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.institutional-featured-button-row a:hover {
+  color: #0c2e6d;
+
+  background: #eab037;
+}
+
+
+/* =========================================================
+   FEATURED ARROWS
+========================================================= */
+
+.institutional-featured-arrow {
+  position: absolute;
+
+  top: 50%;
+
+  z-index: 4;
+
+  width: 57px;
+  height: 57px;
+
+  padding: 0;
+
+  border: 0;
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  transform:
+    translateY(-50%);
+
+  cursor: pointer;
+}
+
+
+.institutional-featured-arrow img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.institutional-featured-arrow-left {
+  left: -28px;
+}
+
+
+.institutional-featured-arrow-right {
+  right: -28px;
+}
+
+
+/* =========================================================
+   VIEW ALL
+========================================================= */
+
+.institutional-featured-view-all {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 60px;
+}
+
+
+.institutional-featured-view-all a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 150px;
+  height: 46px;
+
+  padding:
+    0 24px;
+
+  border-radius: 4px;
+
+  color: #0c2e6d;
+
+  background:
+    linear-gradient(90deg,
+      #be811a,
+      #f4d48d 45%,
+      #f3b62e);
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   BACK TOP
+========================================================= */
+
+.institutional-back-top-shell {
+  position: relative;
+
+  z-index: 36;
+
+  height: 0;
+}
+
+
+.institutional-back-top {
+  position: absolute;
+
+  left: 50%;
+  bottom: -45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+
+  padding: 0;
+
+  border:
+    1px solid rgba(255,
+      255,
+      255,
+      0.2);
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56,
+        47,
+        112,
+        0.84),
+      rgba(17,
+        38,
+        79,
+        0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter:
+    blur(20px);
+
+  -webkit-backdrop-filter:
+    blur(20px);
+
+  cursor: pointer;
+}
+
+
+.institutional-back-top img {
+  width: 30px;
+  height: 30px;
+
+  animation:
+    institutionalJump 1.6s ease-in-out infinite;
+}
+
+
+@keyframes institutionalJump {
+
+  0%,
+  100% {
+    transform:
+      translateY(3px);
+  }
+
+
+  50% {
+    transform:
+      translateY(-4px);
+  }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .institutional-liquidity-page {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .institutional-liquidity-copy,
+html[dir="rtl"] .institutional-demo-copy,
+html[dir="rtl"] .institutional-demo-form {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .institutional-demo-copy {
+  padding-right: 0;
+  padding-left: 10%;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .institutional-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .institutional-liquidity-hero {
+    min-height: 235px;
+  }
+
+
+  .institutional-liquidity-hero h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+
+  .institutional-liquidity-intro-layout {
+    gap: 60px;
+
+    padding-top: 70px;
+  }
+
+
+  .institutional-liquidity-visual {
+    flex-basis: 430px;
+
+    width: 430px;
+    height: 380px;
+  }
+
+
+  .institutional-liquidity-copy h2,
+  .institutional-demo-copy h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+
+  .institutional-liquidity-copy p,
+  .institutional-demo-copy p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .institutional-pillars {
+    padding:
+      80px 0;
+  }
+
+
+  .institutional-section-title {
+    margin-bottom: 40px;
+
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+
+  .institutional-pillar-card {
+    gap: 20px;
+  }
+
+
+  .institutional-pillar-card h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+
+  .institutional-pillar-card p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .institutional-demo {
+    padding:
+      80px 0;
+  }
+
+
+  .institutional-demo-layout {
+    gap: 40px;
+  }
+
+
+  .institutional-demo-form-shell {
+    padding: 32px;
+  }
+
+
+  .institutional-demo-form label>span:first-child {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+
+  .institutional-demo-form input[ type="text"
+  ],
+  .institutional-demo-form input[ type="email"
+
+  ],
+  .institutional-faux-select {
+    height: 38px;
+
+    font-size: 13px;
+  }
+
+
+  .institutional-featured {
+    padding-top: 70px;
+  }
+
+
+  .institutional-featured-card {
+    flex-basis:
+      calc(33.333% - 17px);
+  }
+
+
+  .institutional-featured-image {
+    height: 160px;
+  }
+
+
+  .institutional-featured-card-content {
+    padding:
+      16px 28px 24px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .institutional-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .institutional-liquidity-hero {
+    min-height: 205px;
+  }
+
+
+  .institutional-liquidity-hero h1 {
+    font-size: 36px;
+    line-height: 46px;
+
+    text-align: center;
+  }
+
+
+  .institutional-liquidity-intro-layout {
+    flex-direction: column;
+
+    gap: 40px;
+
+    padding-top: 70px;
+  }
+
+
+  .institutional-liquidity-copy {
+    width: 100%;
+  }
+
+
+  .institutional-liquidity-copy h2 {
+    text-align: center;
+  }
+
+
+  .institutional-pillars-grid {
+    grid-template-columns:
+      repeat(2,
+        minmax(0, 1fr));
+  }
+
+
+  .institutional-demo-layout {
+    grid-template-columns: 1fr;
+  }
+
+
+  .institutional-demo-copy,
+  html[dir="rtl"] .institutional-demo-copy {
+    padding:
+      0;
+  }
+
+
+  .institutional-featured-card {
+    flex-basis:
+      calc(50% - 13px);
+  }
+
+
+  .institutional-featured-image {
+    height: 180px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .institutional-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .institutional-liquidity-hero {
+    min-height: 170px;
+  }
+
+
+  .institutional-liquidity-hero h1 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+
+  .institutional-liquidity-intro {
+    padding:
+      48px 0;
+  }
+
+
+  .institutional-liquidity-intro-layout {
+    padding-top: 50px;
+  }
+
+
+  .institutional-liquidity-visual {
+    flex-basis: 300px;
+
+    width: 300px;
+    height: 300px;
+
+    max-width: 100%;
+
+    border-radius: 12px;
+  }
+
+
+  .institutional-liquidity-copy {
+    gap: 15px;
+  }
+
+
+  .institutional-liquidity-copy h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+
+  .institutional-pillars {
+    padding:
+      60px 0;
+  }
+
+
+  .institutional-section-title {
+    margin-bottom: 40px;
+
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+
+  .institutional-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .institutional-pillar-card {
+    padding:
+      36px 20px;
+  }
+
+
+  .institutional-demo {
+    padding:
+      50px 0 60px;
+  }
+
+
+  .institutional-demo-form-shell {
+    padding: 24px;
+  }
+
+
+  .institutional-form-two {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+
+  .institutional-checkbox input {
+    margin-top: 5px;
+  }
+
+
+  .institutional-demo-form .institutional-checkbox span {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .institutional-featured {
+    padding:
+      50px 0;
+  }
+
+
+  .institutional-featured .institutional-section-title {
+    margin-bottom: 35px;
+  }
+
+
+  .institutional-featured-card {
+    flex-basis: 100%;
+  }
+
+
+  .institutional-featured-image {
+    height: 180px;
+  }
+
+
+  .institutional-featured-card-content {
+    padding: 16px;
+  }
+
+
+  .institutional-featured-arrow {
+    display: none;
+  }
+
+
+  .institutional-featured-view-all {
+    margin-top: 40px;
+  }
+
+
+  .institutional-back-top {
+    width: 50px;
+    height: 50px;
+
+    bottom: -25px;
+  }
+
+
+  .institutional-back-top img {
+    width: 20px;
+    height: 20px;
+  }
+
+}

@@ -1,0 +1,940 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.technical-analysis-page {
+  width: 100%;
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background: #06142e;
+}
+
+
+.technical-analysis-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   GRADIENT
+========================================================= */
+
+.technical-gradient-text {
+  color: #eeb235;
+
+  background:
+    linear-gradient(90deg,
+      #f7c442,
+      #dfa02d 55%,
+      #cb8927);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.technical-analysis-hero {
+  display: flex;
+  align-items: center;
+
+  min-height: 285px;
+
+  background-image:
+    var(--technical-hero);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.technical-analysis-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 53px;
+  line-height: 63px;
+  font-weight: 900;
+
+  letter-spacing:
+    -0.025em;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.technical-analysis-main {
+  padding:
+    48px 0 120px;
+
+  background-image:
+    var(--technical-background);
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+
+.technical-analysis-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 60px;
+
+  padding-top: 115px;
+}
+
+
+/* =========================================================
+   CATEGORY BUTTONS
+========================================================= */
+
+.technical-category-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 10px;
+
+  width: 100%;
+}
+
+
+.technical-category-row button {
+  padding:
+    10px 15px;
+
+  border: 0;
+
+  border-radius: 7px;
+
+  color: #ffffff;
+
+  background: #284168;
+
+  font-family: inherit;
+
+  font-size: 15px;
+  line-height: 16px;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   BODY LAYOUT
+========================================================= */
+
+.technical-body-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(250px, 25%) minmax(0, 75%);
+
+  align-items: start;
+
+  gap: 36px;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.technical-sidebar {
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+
+  padding-bottom: 64px;
+}
+
+
+.technical-sidebar-card {
+  position: relative;
+
+  overflow: hidden;
+
+  border:
+    1px solid transparent;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(#091830,
+      #091830) padding-box,
+
+    linear-gradient(145deg,
+      rgba(91, 72, 175, 0.85),
+      rgba(184, 111, 64, 0.65)) border-box;
+}
+
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+.technical-filter-card {
+  padding:
+    22px 18px;
+}
+
+
+.technical-filter-tabs {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  overflow-x: auto;
+
+  scrollbar-width: none;
+}
+
+
+.technical-filter-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+
+.technical-filter-tabs button {
+  flex: 0 0 auto;
+
+  padding:
+    10px 15px;
+
+  border: 0;
+
+  border-radius: 7px;
+
+  color: #ffffff;
+
+  background: #284168;
+
+  font-family: inherit;
+
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+
+.technical-filter-tabs button.is-active {
+  background:
+    rgba(255,
+      255,
+      255,
+      0.035);
+}
+
+
+/* =========================================================
+   SIDEBAR POSTS
+========================================================= */
+
+.technical-sidebar-posts {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.technical-sidebar-post {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  padding:
+    30px 0;
+
+  border-bottom:
+    1px solid #313b4c;
+
+  cursor: pointer;
+}
+
+
+.technical-sidebar-post:last-child {
+  padding-bottom: 0;
+
+  border-bottom: 0;
+}
+
+
+.technical-sidebar-image {
+  position: relative;
+
+  flex:
+    0 0 70px;
+
+  width: 70px;
+  height: 70px;
+
+  overflow: hidden;
+
+  border-radius: 6px;
+}
+
+
+.technical-sidebar-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.technical-sidebar-copy {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+
+.technical-sidebar-copy span {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+
+.technical-sidebar-copy p {
+  display: -webkit-box;
+
+  margin: 0;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  line-height: 22px;
+
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.technical-timeline {
+  padding:
+    36px 30px 28px;
+}
+
+
+.technical-timeline h2 {
+  margin:
+    0 0 36px;
+
+  color: #ffffff;
+
+  font-size: 25px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+
+.technical-timeline-list {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.technical-timeline-item {
+  position: relative;
+
+  padding:
+    0 0 28px 16px;
+
+  border-left:
+    1px solid #36405a;
+}
+
+
+.technical-timeline-item::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -4px;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #dba52f;
+}
+
+
+.technical-timeline-item p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  line-height: 22px;
+}
+
+
+.technical-timeline-item span {
+  display: block;
+
+  margin-top: 4px;
+
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   ARTICLE GRID
+========================================================= */
+
+.technical-grid-column {
+  width: 100%;
+}
+
+
+.technical-article-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,
+      minmax(0, 1fr));
+
+  gap: 36px;
+
+  width: 100%;
+
+  padding-bottom: 64px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.technical-article-card {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+  height: 100%;
+
+  overflow: hidden;
+
+  border-radius: 23px;
+
+  background: #061123;
+
+  cursor: pointer;
+}
+
+
+.technical-article-image {
+  position: relative;
+
+  width: 100%;
+  height: 203px;
+
+  overflow: hidden;
+}
+
+
+.technical-article-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+.technical-article-card:hover .technical-article-image img {
+  transform:
+    scale(1.04);
+}
+
+
+.technical-image-shadow {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(180deg,
+      rgba(0, 0, 0, 0) 45%,
+      rgba(1, 8, 25, 0.52) 100%);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.technical-article-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  gap: 24px;
+
+  padding:
+    20px 26px 40px;
+
+  border:
+    1px solid #222426;
+
+  border-top: 0;
+
+  border-radius:
+    0 0 23px 23px;
+
+  background: #061123;
+}
+
+
+.technical-article-content>span {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+
+.technical-article-main {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  flex: 1;
+
+  gap: 24px;
+}
+
+
+.technical-article-main h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   READ MORE
+========================================================= */
+
+.technical-read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+
+  min-width: 145px;
+  min-height: 42px;
+
+  padding:
+    0 20px;
+
+  border:
+    1px solid #daa12c;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.technical-read-more:hover {
+  color: #0c2e6d;
+
+  background: #e9ad31;
+}
+
+
+/* =========================================================
+   BACK TOP
+========================================================= */
+
+.technical-back-top-shell {
+  position: relative;
+
+  z-index: 36;
+
+  height: 0;
+}
+
+
+.technical-back-top {
+  position: absolute;
+
+  left: 50%;
+  bottom: -45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+
+  padding: 0;
+
+  border:
+    1px solid rgba(255,
+      255,
+      255,
+      0.2);
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56, 47, 112, 0.84),
+      rgba(17, 38, 79, 0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter:
+    blur(20px);
+
+  -webkit-backdrop-filter:
+    blur(20px);
+
+  cursor: pointer;
+}
+
+
+.technical-back-top img {
+  width: 30px;
+  height: 30px;
+
+  animation:
+    technicalJump 1.6s ease-in-out infinite;
+}
+
+
+@keyframes technicalJump {
+
+  0%,
+  100% {
+    transform:
+      translateY(3px);
+  }
+
+  50% {
+    transform:
+      translateY(-4px);
+  }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .technical-analysis-page {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .technical-analysis-hero,
+html[dir="rtl"] .technical-sidebar,
+html[dir="rtl"] .technical-article-content {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .technical-timeline-item {
+  padding:
+    0 16px 28px 0;
+
+  border-left: 0;
+
+  border-right:
+    1px solid #36405a;
+}
+
+
+html[dir="rtl"] .technical-timeline-item::before {
+  right: -4px;
+  left: auto;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .technical-analysis-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .technical-analysis-hero {
+    min-height: 235px;
+  }
+
+
+  .technical-analysis-hero h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+
+  .technical-analysis-content {
+    gap: 40px;
+
+    padding-top: 75px;
+  }
+
+
+  .technical-body-layout {
+    grid-template-columns:
+      280px minmax(0, 1fr);
+
+    gap: 30px;
+  }
+
+
+  .technical-article-grid {
+    grid-template-columns:
+      repeat(2,
+        minmax(0, 1fr));
+
+    gap: 26px;
+  }
+
+
+  .technical-sidebar-image {
+    flex-basis: 50px;
+
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .technical-analysis-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .technical-analysis-hero {
+    min-height: 205px;
+  }
+
+
+  .technical-analysis-hero h1 {
+    font-size: 35px;
+
+    text-align: center;
+  }
+
+
+  .technical-body-layout {
+    grid-template-columns: 1fr;
+  }
+
+
+  .technical-sidebar {
+    display: grid;
+
+    grid-template-columns:
+      repeat(2,
+        minmax(0, 1fr));
+
+    gap: 25px;
+
+    padding-bottom: 20px;
+  }
+
+
+  .technical-article-grid {
+    grid-template-columns:
+      repeat(2,
+        minmax(0, 1fr));
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .technical-analysis-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .technical-analysis-hero {
+    min-height: 170px;
+  }
+
+
+  .technical-analysis-hero h1 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+
+  .technical-analysis-main {
+    padding-top: 38px;
+
+    padding-bottom: 60px;
+  }
+
+
+  .technical-analysis-content {
+    padding-top: 50px;
+  }
+
+
+  .technical-category-row button {
+    padding:
+      6px 10px;
+
+    font-size: 11px;
+  }
+
+
+  .technical-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+
+  .technical-filter-tabs button {
+    padding:
+      4px 10px;
+
+    border-radius: 4px;
+
+    font-size: 11px;
+  }
+
+
+  .technical-timeline {
+    padding:
+      28px 24px;
+  }
+
+
+  .technical-timeline h2 {
+    margin-bottom: 28px;
+
+    font-size: 16px;
+  }
+
+
+  .technical-article-grid {
+    grid-template-columns: 1fr;
+
+    gap: 26px;
+  }
+
+
+  .technical-article-image {
+    height: 170px;
+  }
+
+
+  .technical-article-content {
+    padding:
+      20px 15px;
+  }
+
+
+  .technical-article-main h3 {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .technical-back-top {
+    width: 50px;
+    height: 50px;
+
+    bottom: -25px;
+  }
+
+
+  .technical-back-top img {
+    width: 20px;
+    height: 20px;
+  }
+
+}

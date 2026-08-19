@@ -78,6 +78,60 @@ import CashEquitiesPage from "./pages/Products/CashEquitiesPage";
 
 
 /* =========================================================
+   LEARNING HUB — EDUCATION
+========================================================= */
+
+import LearnToInvestPage from "./pages/LearningHub/Education/LearnToInvestPage";
+
+import VideoTutorialsPage from "./pages/LearningHub/Education/VideoTutorialsPage";
+
+import WebinarsPage from "./pages/LearningHub/Education/WebinarsPage";
+
+import WorkshopPage from "./pages/LearningHub/Education/WorkshopPage";
+
+import NoorPediaPage from "./pages/LearningHub/Education/NoorPediaPage";
+
+
+/* =========================================================
+   LEARNING HUB — NEWS & UPDATES
+========================================================= */
+
+import MarketUpdatesPage from "./pages/LearningHub/NewsUpdates/MarketUpdatesPage";
+
+import TechnicalAnalysisPage from "./pages/LearningHub/NewsUpdates/TechnicalAnalysisPage";
+
+import EconomicReportsPage from "./pages/LearningHub/NewsUpdates/EconomicReportsPage";
+
+import EconomicCalendarPage from "./pages/LearningHub/NewsUpdates/EconomicCalendarPage";
+
+import CentralBankRatesPage from "./pages/LearningHub/NewsUpdates/CentralBankRatesPage";
+
+
+/* =========================================================
+   LEARNING HUB — MEDIA CENTER
+========================================================= */
+
+import PressReleasePage from "./pages/LearningHub/MediaCenter/PressReleasePage";
+
+import ActivitiesPage from "./pages/LearningHub/MediaCenter/ActivitiesPage";
+
+import AwardsPage from "./pages/LearningHub/MediaCenter/AwardsPage";
+
+
+/* =========================================================
+   PARTNERSHIP
+========================================================= */
+
+import InstitutionalLiquiditySolutionsPage from "./pages/Partnership/InstitutionalLiquiditySolutionsPage";
+
+import MoneyManagersPage from "./pages/Partnership/MoneyManagersPage";
+
+import PartnershipProgramPage from "./pages/Partnership/PartnershipProgramPage";
+
+import WhiteLabelSolutionsPage from "./pages/Partnership/WhiteLabelSolutionsPage";
+
+
+/* =========================================================
    TRANSLATIONS
 ========================================================= */
 
@@ -170,7 +224,9 @@ export default function App() {
         language
         ] ||
         translations.en,
-      [language]
+      [
+        language,
+      ]
     );
 
 
@@ -232,9 +288,7 @@ export default function App() {
      NAVIGATE
   ======================================================= */
 
-  function navigate(
-    href
-  ) {
+  function navigate(href) {
     window.history.pushState(
       {},
       "",
@@ -257,9 +311,7 @@ export default function App() {
     ) {
       window.scrollTo({
         top: 0,
-
-        behavior:
-          "auto",
+        behavior: "auto",
       });
     }
   }
@@ -323,100 +375,59 @@ export default function App() {
       <main>
 
         <Hero
-          language={
-            language
-          }
+          language={language}
         />
 
 
         <MarketTabs
-          language={
-            language
-          }
-
-          t={
-            t
-          }
+          language={language}
+          t={t}
         />
 
 
         <About
-          language={
-            language
-          }
-
-          t={
-            t
-          }
-
-          navigate={
-            navigate
-          }
+          language={language}
+          t={t}
+          navigate={navigate}
         />
 
 
         <WhyUs
-          language={
-            language
-          }
+          language={language}
         />
 
 
         <TradingOffers
-          language={
-            language
-          }
+          language={language}
         />
 
 
         <Markets
-          language={
-            language
-          }
+          language={language}
         />
 
 
         <Platforms
-          language={
-            language
-          }
-
-          navigate={
-            navigate
-          }
+          language={language}
+          navigate={navigate}
         />
 
 
         <Research
-          language={
-            language
-          }
-
-          navigate={
-            navigate
-          }
+          language={language}
+          navigate={navigate}
         />
 
 
         <LatestUpdates
-          language={
-            language
-          }
-
-          navigate={
-            navigate
-          }
+          language={language}
+          navigate={navigate}
         />
 
 
         <Collaborations
-          language={
-            language
-          }
-
-          navigate={
-            navigate
-          }
+          language={language}
+          navigate={navigate}
         />
 
       </main>
@@ -460,34 +471,26 @@ export default function App() {
     ===================================================== */
 
     if (
-      route === "about-us"
+      route ===
+      "about-us"
     ) {
       return (
         <AboutUs
-          language={
-            language
-          }
-
-          navigate={
-            navigate
-          }
+          language={language}
+          navigate={navigate}
         />
       );
     }
 
 
     if (
-      route === "contact-us"
+      route ===
+      "contact-us"
     ) {
       return (
         <ContactUs
-          language={
-            language
-          }
-
-          navigate={
-            navigate
-          }
+          language={language}
+          navigate={navigate}
         />
       );
     }
@@ -503,13 +506,8 @@ export default function App() {
     ) {
       return (
         <ServicesPage
-          language={
-            language
-          }
-
-          navigate={
-            navigate
-          }
+          language={language}
+          navigate={navigate}
         />
       );
     }
@@ -521,13 +519,8 @@ export default function App() {
     ) {
       return (
         <AssetManagementPage
-          language={
-            language
-          }
-
-          navigate={
-            navigate
-          }
+          language={language}
+          navigate={navigate}
         />
       );
     }
@@ -539,13 +532,8 @@ export default function App() {
     ) {
       return (
         <InvestmentServicesPage
-          language={
-            language
-          }
-
-          navigate={
-            navigate
-          }
+          language={language}
+          navigate={navigate}
         />
       );
     }
@@ -557,13 +545,8 @@ export default function App() {
     ) {
       return (
         <FundsAdministrationPage
-          language={
-            language
-          }
-
-          navigate={
-            navigate
-          }
+          language={language}
+          navigate={navigate}
         />
       );
     }
@@ -579,13 +562,8 @@ export default function App() {
     ) {
       return (
         <SharesCFDPage
-          language={
-            language
-          }
-
-          navigate={
-            navigate
-          }
+          language={language}
+          navigate={navigate}
         />
       );
     }
@@ -597,13 +575,8 @@ export default function App() {
     ) {
       return (
         <ForexTradingPage
-          language={
-            language
-          }
-
-          navigate={
-            navigate
-          }
+          language={language}
+          navigate={navigate}
         />
       );
     }
@@ -615,13 +588,8 @@ export default function App() {
     ) {
       return (
         <IndicesPage
-          language={
-            language
-          }
-
-          navigate={
-            navigate
-          }
+          language={language}
+          navigate={navigate}
         />
       );
     }
@@ -633,13 +601,8 @@ export default function App() {
     ) {
       return (
         <CommoditiesPage
-          language={
-            language
-          }
-
-          navigate={
-            navigate
-          }
+          language={language}
+          navigate={navigate}
         />
       );
     }
@@ -651,13 +614,8 @@ export default function App() {
     ) {
       return (
         <EnergiesPage
-          language={
-            language
-          }
-
-          navigate={
-            navigate
-          }
+          language={language}
+          navigate={navigate}
         />
       );
     }
@@ -669,21 +627,12 @@ export default function App() {
     ) {
       return (
         <CryptoPage
-          language={
-            language
-          }
-
-          navigate={
-            navigate
-          }
+          language={language}
+          navigate={navigate}
         />
       );
     }
 
-
-    /* =====================================================
-       NEXT PRODUCT
-    ===================================================== */
 
     if (
       route ===
@@ -691,17 +640,253 @@ export default function App() {
     ) {
       return (
         <CashEquitiesPage
-          language={
-            language
-          }
-
-          navigate={
-            navigate
-          }
+          language={language}
+          navigate={navigate}
         />
       );
     }
 
+
+    /* =====================================================
+       LEARNING HUB — EDUCATION
+    ===================================================== */
+
+    if (
+      route ===
+      "learning-hub/education/learn-to-invest"
+    ) {
+      return (
+        <LearnToInvestPage
+          language={language}
+          navigate={navigate}
+        />
+      );
+    }
+
+
+    if (
+      route ===
+      "learning-hub/education/video-tutorials"
+    ) {
+      return (
+        <VideoTutorialsPage
+          language={language}
+          navigate={navigate}
+        />
+      );
+    }
+
+
+    if (
+      route ===
+      "learning-hub/education/webinars"
+    ) {
+      return (
+        <WebinarsPage
+          language={language}
+          navigate={navigate}
+        />
+      );
+    }
+
+
+    if (
+      route ===
+      "learning-hub/education/workshop"
+    ) {
+      return (
+        <WorkshopPage
+          language={language}
+          navigate={navigate}
+        />
+      );
+    }
+
+
+    if (
+      route ===
+      "learning-hub/education/noor-pedia"
+    ) {
+      return (
+        <NoorPediaPage
+          language={language}
+          navigate={navigate}
+        />
+      );
+    }
+
+
+    /* =====================================================
+       LEARNING HUB — NEWS & UPDATES
+    ===================================================== */
+
+    if (
+      route ===
+      "learning-hub/news-updates/market-updates"
+    ) {
+      return (
+        <MarketUpdatesPage
+          language={language}
+          navigate={navigate}
+        />
+      );
+    }
+
+
+    if (
+      route ===
+      "learning-hub/news-updates/technical-analysis"
+    ) {
+      return (
+        <TechnicalAnalysisPage
+          language={language}
+          navigate={navigate}
+        />
+      );
+    }
+
+
+    if (
+      route ===
+      "learning-hub/news-updates/economic-reports"
+    ) {
+      return (
+        <EconomicReportsPage
+          language={language}
+          navigate={navigate}
+        />
+      );
+    }
+
+
+    if (
+      route ===
+      "learning-hub/news-updates/economic-calendar"
+    ) {
+      return (
+        <EconomicCalendarPage
+          language={language}
+          navigate={navigate}
+        />
+      );
+    }
+
+
+    if (
+      route ===
+      "learning-hub/news-updates/central-bank-rates"
+    ) {
+      return (
+        <CentralBankRatesPage
+          language={language}
+          navigate={navigate}
+        />
+      );
+    }
+
+
+    /* =====================================================
+       LEARNING HUB — MEDIA CENTER
+    ===================================================== */
+
+    if (
+      route ===
+      "learning-hub/media-center/press-release"
+    ) {
+      return (
+        <PressReleasePage
+          language={language}
+          navigate={navigate}
+        />
+      );
+    }
+
+
+    if (
+      route ===
+      "learning-hub/media-center/activities"
+    ) {
+      return (
+        <ActivitiesPage
+          language={language}
+          navigate={navigate}
+        />
+      );
+    }
+
+
+    if (
+      route ===
+      "learning-hub/media-center/awards"
+    ) {
+      return (
+        <AwardsPage
+          language={language}
+          navigate={navigate}
+        />
+      );
+    }
+
+
+    /* =====================================================
+       PARTNERSHIP
+    ===================================================== */
+
+    if (
+      route ===
+      "partnership/institutional-liquidity-solutions"
+    ) {
+      return (
+        <InstitutionalLiquiditySolutionsPage
+          language={language}
+          navigate={navigate}
+        />
+      );
+    }
+
+
+    if (
+      route ===
+      "partnership/money-managers"
+    ) {
+      return (
+        <MoneyManagersPage
+          language={language}
+          navigate={navigate}
+        />
+      );
+    }
+
+
+    if (
+      route ===
+      "partnership/partnership-program"
+    ) {
+      return (
+        <PartnershipProgramPage
+          language={language}
+          navigate={navigate}
+        />
+      );
+    }
+
+
+    if (
+      route ===
+      "partnership/white-label-solutions"
+    ) {
+      return (
+        <WhiteLabelSolutionsPage
+          language={language}
+          navigate={navigate}
+        />
+      );
+    }
+
+
+    /* =====================================================
+       FALLBACK
+    ===================================================== */
 
     return renderEmptyPage();
   }
@@ -717,25 +902,11 @@ export default function App() {
 
 
       <Navbar
-        language={
-          language
-        }
-
-        languages={
-          languages
-        }
-
-        changeLanguage={
-          changeLanguage
-        }
-
-        t={
-          t
-        }
-
-        navigate={
-          navigate
-        }
+        language={language}
+        languages={languages}
+        changeLanguage={changeLanguage}
+        t={t}
+        navigate={navigate}
       />
 
 
@@ -743,15 +914,9 @@ export default function App() {
 
 
       <Footer
-        language={
-          language
-        }
-
-        navigate={
-          navigate
-        }
+        language={language}
+        navigate={navigate}
       />
-
     </>
   );
 }

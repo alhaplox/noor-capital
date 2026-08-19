@@ -1,0 +1,1308 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.partnership-program-page {
+  width: 100%;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background: #06142e;
+}
+
+
+.partnership-program-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   GRADIENT
+========================================================= */
+
+.partnership-program-gradient-text,
+.partnership-program-section-title,
+.partnership-program-intro-copy h2,
+.partnership-program-enquiry-copy h2 {
+  color: #eeb235;
+
+  background:
+    linear-gradient(90deg,
+      #be811a 15%,
+      #f4d48d 45%,
+      #f4d48d 55%,
+      #f3b62e 85%);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.partnership-program-hero {
+  display: flex;
+  align-items: center;
+
+  min-height: 285px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.partnership-program-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 53px;
+  line-height: 63px;
+  font-weight: 900;
+
+  letter-spacing:
+    -0.025em;
+}
+
+
+.partnership-program-hero-subtitle {
+  margin:
+    20px 0 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.partnership-program-intro {
+  padding:
+    48px 0 64px;
+
+  background-size: cover;
+  background-position: top center;
+  background-repeat: repeat-x;
+}
+
+
+.partnership-program-intro-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 112px;
+
+  padding-top: 110px;
+}
+
+
+/* =========================================================
+   INTRO IMAGE
+========================================================= */
+
+.partnership-program-intro-visual {
+  position: relative;
+
+  flex:
+    0 0 589px;
+
+  width: 589px;
+  height: 529px;
+
+  overflow: hidden;
+
+  border:
+    1px solid rgba(209,
+      159,
+      63,
+      0.55);
+
+  border-radius: 23px;
+}
+
+
+.partnership-program-intro-visual img {
+  position: relative;
+
+  z-index: 1;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.partnership-program-intro-shadow {
+  position: absolute;
+
+  z-index: 2;
+
+  inset: 0;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(180deg,
+      transparent 50%,
+      rgba(3,
+        8,
+        23,
+        0.45) 100%);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   INTRO COPY
+========================================================= */
+
+.partnership-program-intro-copy {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  gap: 30px;
+}
+
+
+.partnership-program-intro-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+
+.partnership-program-intro-copy p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.partnership-program-features {
+  padding:
+    120px 0;
+
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+
+.partnership-program-section-title {
+  max-width: 850px;
+
+  margin:
+    0 auto 60px;
+
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 900;
+
+  text-align: center;
+}
+
+
+.partnership-program-features-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,
+      minmax(0, 1fr));
+
+  gap: 0;
+}
+
+
+.partnership-program-feature-card {
+  display: flex;
+  flex-direction: column;
+
+  gap: 32px;
+
+  height: 100%;
+
+  padding:
+    36px 20px;
+
+  border:
+    1px solid transparent;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(#091830,
+      #091830) padding-box,
+
+    linear-gradient(145deg,
+      rgba(244,
+        212,
+        141,
+        0.55),
+      rgba(64,
+        43,
+        117,
+        0.7)) border-box;
+
+  box-sizing: border-box;
+}
+
+
+.partnership-program-feature-icon {
+  width: 70px;
+  height: 70px;
+
+  object-fit: contain;
+}
+
+
+.partnership-program-feature-card h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+
+.partnership-program-feature-card p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+/* =========================================================
+   ENQUIRY
+========================================================= */
+
+.partnership-program-enquiry {
+  padding:
+    110px 0 120px;
+
+  background: #06142e;
+}
+
+
+.partnership-program-enquiry-layout {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2,
+      minmax(0, 1fr));
+
+  align-items: start;
+
+  gap: 80px;
+}
+
+
+.partnership-program-enquiry-copy {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  padding-right: 10%;
+}
+
+
+.partnership-program-enquiry-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+
+.partnership-program-enquiry-copy p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.partnership-program-enquiry-copy .partnership-program-enquiry-subtitle {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.partnership-program-form-shell {
+  padding: 40px;
+
+  border:
+    1px solid rgba(238,
+      186,
+      70,
+      0.35);
+
+  border-radius: 20px;
+
+  background:
+    rgba(6,
+      17,
+      35,
+      0.52);
+}
+
+
+.partnership-program-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+
+.partnership-program-form label {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+
+.partnership-program-form label>span:first-child {
+  color: #ffffff;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+
+.partnership-program-form-two {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2,
+      minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+
+.partnership-program-form input[ type="text"
+],
+.partnership-program-form input[ type="email"
+
+] {
+  width: 100%;
+  height: 46px;
+
+  padding:
+    9px 20px;
+
+  border:
+    1px solid rgba(242,
+      185,
+      47,
+      0.55);
+
+  border-radius: 8px;
+
+  outline: none;
+
+  color: #d9d9d9;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  font-size: 16px;
+
+  box-sizing: border-box;
+}
+
+
+.partnership-program-form input::placeholder {
+  color: #d9d9d9;
+
+  opacity: 0.75;
+}
+
+
+/* =========================================================
+   FAUX SELECT
+========================================================= */
+
+.partnership-program-faux-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 46px;
+
+  padding:
+    0 16px;
+
+  border:
+    1px solid rgba(242,
+      185,
+      47,
+      0.55);
+
+  border-radius: 8px;
+
+  box-sizing: border-box;
+
+  color: #ffffff;
+
+  font-size: 16px;
+}
+
+
+.partnership-program-faux-select>span {
+  color:
+    rgba(255,
+      255,
+      255,
+      0.68);
+}
+
+
+/* =========================================================
+   CHECKBOX
+========================================================= */
+
+.partnership-program-form .partnership-program-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  gap: 8px;
+}
+
+
+.partnership-program-checkbox input {
+  margin-top: 7px;
+}
+
+
+.partnership-program-form .partnership-program-checkbox span {
+  color: #ffffff;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   SUBMIT
+========================================================= */
+
+.partnership-program-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  width: fit-content;
+
+  min-width: 140px;
+  height: 46px;
+
+  padding:
+    0 24px;
+
+  border: 0;
+
+  border-radius: 4px;
+
+  color: #0c2e6d;
+
+  background:
+    linear-gradient(90deg,
+      #be811a,
+      #f4d48d 45%,
+      #f3b62e);
+
+  font-family: inherit;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   FEATURED
+========================================================= */
+
+.partnership-program-featured {
+  padding:
+    105px 0 60px;
+
+  background: #06142e;
+}
+
+
+.partnership-program-featured .partnership-program-section-title {
+  margin-bottom: 55px;
+}
+
+
+.partnership-program-featured-shell {
+  position: relative;
+}
+
+
+.partnership-program-featured-slider {
+  display: flex;
+
+  gap: 25px;
+
+  width: 100%;
+
+  overflow-x: auto;
+
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+}
+
+
+.partnership-program-featured-slider::-webkit-scrollbar {
+  display: none;
+}
+
+
+.partnership-program-featured-card {
+  flex:
+    0 0 calc(25% - 19px);
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  border:
+    1px solid #222426;
+
+  border-radius: 23px;
+
+  background: #061123;
+}
+
+
+.partnership-program-featured-image {
+  width: 100%;
+  height: 203px;
+}
+
+
+.partnership-program-featured-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.partnership-program-featured-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  gap: 16px;
+
+  padding: 32px;
+}
+
+
+.partnership-program-featured-content>span {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+
+.partnership-program-featured-content p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.partnership-program-featured-button-row {
+  display: flex;
+  align-items: flex-end;
+
+  flex: 1;
+
+  padding-top: 14px;
+}
+
+
+.partnership-program-featured-button-row a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 165px;
+  height: 42px;
+
+  border:
+    1px solid #dba32b;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+
+.partnership-program-featured-button-row a:hover {
+  color: #0c2e6d;
+
+  background: #eab037;
+}
+
+
+/* =========================================================
+   ARROWS
+========================================================= */
+
+.partnership-program-featured-arrow {
+  position: absolute;
+
+  top: 50%;
+
+  z-index: 4;
+
+  width: 57px;
+  height: 57px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  transform:
+    translateY(-50%);
+
+  cursor: pointer;
+}
+
+
+.partnership-program-featured-arrow img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.partnership-program-featured-arrow-left {
+  left: -28px;
+}
+
+
+.partnership-program-featured-arrow-right {
+  right: -28px;
+}
+
+
+/* =========================================================
+   VIEW ALL
+========================================================= */
+
+.partnership-program-view-all {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 60px;
+}
+
+
+.partnership-program-view-all a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 150px;
+  height: 46px;
+
+  padding:
+    0 24px;
+
+  border-radius: 4px;
+
+  color: #0c2e6d;
+
+  background:
+    linear-gradient(90deg,
+      #be811a,
+      #f4d48d 45%,
+      #f3b62e);
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.partnership-program-back-top-shell {
+  position: relative;
+
+  z-index: 36;
+
+  height: 0;
+}
+
+
+.partnership-program-back-top {
+  position: absolute;
+
+  left: 50%;
+  bottom: -45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+
+  padding: 0;
+
+  border:
+    1px solid rgba(255,
+      255,
+      255,
+      0.2);
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56,
+        47,
+        112,
+        0.84),
+      rgba(17,
+        38,
+        79,
+        0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter:
+    blur(20px);
+
+  -webkit-backdrop-filter:
+    blur(20px);
+
+  cursor: pointer;
+}
+
+
+.partnership-program-back-top img {
+  width: 30px;
+  height: 30px;
+
+  animation:
+    partnershipProgramJump 1.6s ease-in-out infinite;
+}
+
+
+@keyframes partnershipProgramJump {
+
+  0%,
+  100% {
+    transform:
+      translateY(3px);
+  }
+
+
+  50% {
+    transform:
+      translateY(-4px);
+  }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .partnership-program-page {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .partnership-program-intro-copy,
+html[dir="rtl"] .partnership-program-enquiry-copy,
+html[dir="rtl"] .partnership-program-form {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .partnership-program-enquiry-copy {
+  padding-right: 0;
+  padding-left: 10%;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .partnership-program-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .partnership-program-hero {
+    min-height: 235px;
+  }
+
+
+  .partnership-program-hero h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+
+  .partnership-program-hero-subtitle {
+    margin-top: 12px;
+
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .partnership-program-intro-layout {
+    gap: 60px;
+
+    padding-top: 70px;
+  }
+
+
+  .partnership-program-intro-visual {
+    flex-basis: 430px;
+
+    width: 430px;
+    height: 380px;
+  }
+
+
+  .partnership-program-intro-copy h2,
+  .partnership-program-enquiry-copy h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+
+  .partnership-program-intro-copy p,
+  .partnership-program-enquiry-copy p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .partnership-program-features {
+    padding:
+      80px 0;
+  }
+
+
+  .partnership-program-section-title {
+    margin-bottom: 40px;
+
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+
+  .partnership-program-feature-card {
+    gap: 20px;
+  }
+
+
+  .partnership-program-feature-card h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+
+  .partnership-program-feature-card p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .partnership-program-enquiry {
+    padding:
+      80px 0;
+  }
+
+
+  .partnership-program-enquiry-layout {
+    gap: 40px;
+  }
+
+
+  .partnership-program-form-shell {
+    padding: 32px;
+  }
+
+
+  .partnership-program-form label>span:first-child {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+
+  .partnership-program-form input[ type="text"
+  ],
+  .partnership-program-form input[ type="email"
+
+  ],
+  .partnership-program-faux-select {
+    height: 38px;
+
+    font-size: 13px;
+  }
+
+
+  .partnership-program-featured {
+    padding-top: 70px;
+  }
+
+
+  .partnership-program-featured-card {
+    flex-basis:
+      calc(33.333% - 17px);
+  }
+
+
+  .partnership-program-featured-image {
+    height: 160px;
+  }
+
+
+  .partnership-program-featured-content {
+    padding:
+      16px 28px 24px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .partnership-program-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .partnership-program-hero {
+    min-height: 205px;
+  }
+
+
+  .partnership-program-hero h1,
+  .partnership-program-hero-subtitle {
+    text-align: center;
+  }
+
+
+  .partnership-program-hero h1 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+
+  .partnership-program-intro-layout {
+    flex-direction: column;
+
+    gap: 40px;
+
+    padding-top: 70px;
+  }
+
+
+  .partnership-program-intro-copy {
+    width: 100%;
+  }
+
+
+  .partnership-program-intro-copy h2 {
+    text-align: center;
+  }
+
+
+  .partnership-program-features-grid {
+    grid-template-columns:
+      repeat(2,
+        minmax(0, 1fr));
+  }
+
+
+  .partnership-program-enquiry-layout {
+    grid-template-columns: 1fr;
+  }
+
+
+  .partnership-program-enquiry-copy,
+  html[dir="rtl"] .partnership-program-enquiry-copy {
+    padding: 0;
+  }
+
+
+  .partnership-program-featured-card {
+    flex-basis:
+      calc(50% - 13px);
+  }
+
+
+  .partnership-program-featured-image {
+    height: 180px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .partnership-program-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .partnership-program-hero {
+    min-height: 190px;
+  }
+
+
+  .partnership-program-hero h1 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+
+  .partnership-program-hero-subtitle {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .partnership-program-intro {
+    padding:
+      48px 0;
+  }
+
+
+  .partnership-program-intro-layout {
+    padding-top: 50px;
+  }
+
+
+  .partnership-program-intro-visual {
+    flex-basis: 300px;
+
+    width: 300px;
+    height: 300px;
+
+    max-width: 100%;
+
+    border-radius: 12px;
+  }
+
+
+  .partnership-program-intro-copy {
+    gap: 15px;
+  }
+
+
+  .partnership-program-intro-copy h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+
+  .partnership-program-features {
+    padding:
+      60px 0;
+  }
+
+
+  .partnership-program-section-title {
+    margin-bottom: 40px;
+
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+
+  .partnership-program-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .partnership-program-feature-card {
+    padding:
+      36px 20px;
+  }
+
+
+  .partnership-program-enquiry {
+    padding:
+      50px 0 60px;
+  }
+
+
+  .partnership-program-form-shell {
+    padding: 24px;
+  }
+
+
+  .partnership-program-form-two {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+
+  .partnership-program-checkbox input {
+    margin-top: 5px;
+  }
+
+
+  .partnership-program-form .partnership-program-checkbox span {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .partnership-program-featured {
+    padding:
+      50px 0;
+  }
+
+
+  .partnership-program-featured .partnership-program-section-title {
+    margin-bottom: 35px;
+  }
+
+
+  .partnership-program-featured-card {
+    flex-basis: 100%;
+  }
+
+
+  .partnership-program-featured-image {
+    height: 180px;
+  }
+
+
+  .partnership-program-featured-content {
+    padding: 16px;
+  }
+
+
+  .partnership-program-featured-arrow {
+    display: none;
+  }
+
+
+  .partnership-program-view-all {
+    margin-top: 40px;
+  }
+
+
+  .partnership-program-back-top {
+    width: 50px;
+    height: 50px;
+
+    bottom: -25px;
+  }
+
+
+  .partnership-program-back-top img {
+    width: 20px;
+    height: 20px;
+  }
+
+}

@@ -1,0 +1,1293 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.white-label-page {
+  width: 100%;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background: #06142e;
+}
+
+
+.white-label-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   GRADIENT
+========================================================= */
+
+.white-label-gradient-text,
+.white-label-section-title,
+.white-label-intro-copy h2,
+.white-label-callback-copy h2 {
+  color: #eeb235;
+
+  background:
+    linear-gradient(90deg,
+      #be811a 15%,
+      #f4d48d 45%,
+      #f4d48d 55%,
+      #f3b62e 85%);
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.white-label-hero {
+  display: flex;
+  align-items: center;
+
+  min-height: 285px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.white-label-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 53px;
+  line-height: 63px;
+  font-weight: 900;
+
+  letter-spacing: -0.025em;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.white-label-intro {
+  padding:
+    48px 0 64px;
+
+  background-size: cover;
+  background-position: top center;
+  background-repeat: repeat-x;
+}
+
+
+.white-label-intro-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 112px;
+
+  padding-top: 110px;
+}
+
+
+/* =========================================================
+   INTRO IMAGE
+========================================================= */
+
+.white-label-intro-visual {
+  position: relative;
+
+  flex:
+    0 0 589px;
+
+  width: 589px;
+  height: 529px;
+
+  overflow: hidden;
+
+  border:
+    1px solid rgba(209,
+      159,
+      63,
+      0.55);
+
+  border-radius: 23px;
+}
+
+
+.white-label-intro-visual img {
+  position: relative;
+
+  z-index: 1;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.white-label-intro-shadow {
+  position: absolute;
+
+  z-index: 2;
+
+  inset: 0;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(180deg,
+      transparent 50%,
+      rgba(3,
+        8,
+        23,
+        0.45) 100%);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   INTRO COPY
+========================================================= */
+
+.white-label-intro-copy {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  gap: 30px;
+}
+
+
+.white-label-intro-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+
+.white-label-intro-copy p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.white-label-features {
+  padding:
+    120px 0;
+
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+
+.white-label-section-title {
+  max-width: 850px;
+
+  margin:
+    0 auto 60px;
+
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 900;
+
+  text-align: center;
+}
+
+
+.white-label-features-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,
+      minmax(0, 1fr));
+
+  gap: 0;
+}
+
+
+.white-label-feature-card {
+  display: flex;
+  flex-direction: column;
+
+  gap: 32px;
+
+  height: 100%;
+
+  padding:
+    36px 20px;
+
+  border:
+    1px solid transparent;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(#091830,
+      #091830) padding-box,
+
+    linear-gradient(145deg,
+      rgba(244,
+        212,
+        141,
+        0.55),
+      rgba(64,
+        43,
+        117,
+        0.7)) border-box;
+
+  box-sizing: border-box;
+}
+
+
+.white-label-feature-icon {
+  width: 70px;
+  height: 70px;
+
+  object-fit: contain;
+}
+
+
+.white-label-feature-card h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   CALLBACK
+========================================================= */
+
+.white-label-callback {
+  padding:
+    110px 0 120px;
+
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: repeat-x;
+}
+
+
+.white-label-callback-layout {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2,
+      minmax(0, 1fr));
+
+  align-items: start;
+
+  gap: 80px;
+}
+
+
+.white-label-callback-copy {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  padding-right: 10%;
+}
+
+
+.white-label-callback-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+
+.white-label-callback-copy p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.white-label-callback-copy .white-label-callback-subtitle {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.white-label-form-shell {
+  padding: 40px;
+
+  border:
+    1px solid rgba(238,
+      186,
+      70,
+      0.35);
+
+  border-radius: 20px;
+
+  background:
+    rgba(6,
+      17,
+      35,
+      0.52);
+}
+
+
+.white-label-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+
+.white-label-form label {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+
+.white-label-form label>span:first-child {
+  color: #ffffff;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+
+.white-label-form-two {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2,
+      minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+
+.white-label-form input[ type="text"
+],
+.white-label-form input[ type="email"
+
+] {
+  width: 100%;
+  height: 46px;
+
+  padding:
+    9px 20px;
+
+  border:
+    1px solid rgba(242,
+      185,
+      47,
+      0.55);
+
+  border-radius: 8px;
+
+  outline: none;
+
+  color: #d9d9d9;
+
+  background: transparent;
+
+  font-family: inherit;
+  font-size: 16px;
+
+  box-sizing: border-box;
+}
+
+
+.white-label-form input::placeholder {
+  color: #d9d9d9;
+
+  opacity: 0.75;
+}
+
+
+/* =========================================================
+   FAUX SELECT
+========================================================= */
+
+.white-label-faux-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 46px;
+
+  padding:
+    0 16px;
+
+  border:
+    1px solid rgba(242,
+      185,
+      47,
+      0.55);
+
+  border-radius: 8px;
+
+  box-sizing: border-box;
+
+  color: #ffffff;
+
+  font-size: 16px;
+}
+
+
+.white-label-faux-select>span {
+  color:
+    rgba(255,
+      255,
+      255,
+      0.68);
+}
+
+
+/* =========================================================
+   CHECKBOX
+========================================================= */
+
+.white-label-form .white-label-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  gap: 8px;
+}
+
+
+.white-label-checkbox input {
+  margin-top: 7px;
+}
+
+
+.white-label-form .white-label-checkbox span {
+  color: #ffffff;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   SUBMIT
+========================================================= */
+
+.white-label-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  width: fit-content;
+
+  min-width: 140px;
+  height: 46px;
+
+  padding:
+    0 24px;
+
+  border: 0;
+
+  border-radius: 4px;
+
+  color: #0c2e6d;
+
+  background:
+    linear-gradient(90deg,
+      #be811a,
+      #f4d48d 45%,
+      #f3b62e);
+
+  font-family: inherit;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   FEATURED
+========================================================= */
+
+.white-label-featured {
+  padding:
+    105px 0 60px;
+
+  background: #06142e;
+}
+
+
+.white-label-featured .white-label-section-title {
+  margin-bottom: 55px;
+}
+
+
+.white-label-featured-shell {
+  position: relative;
+}
+
+
+.white-label-featured-slider {
+  display: flex;
+
+  gap: 25px;
+
+  width: 100%;
+
+  overflow-x: auto;
+
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+}
+
+
+.white-label-featured-slider::-webkit-scrollbar {
+  display: none;
+}
+
+
+.white-label-featured-card {
+  flex:
+    0 0 calc(25% - 19px);
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  border:
+    1px solid #222426;
+
+  border-radius: 23px;
+
+  background: #061123;
+}
+
+
+.white-label-featured-image {
+  width: 100%;
+  height: 203px;
+}
+
+
+.white-label-featured-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.white-label-featured-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  gap: 16px;
+
+  padding: 32px;
+}
+
+
+.white-label-featured-content>span {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+
+.white-label-featured-content p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.white-label-featured-button-row {
+  display: flex;
+  align-items: flex-end;
+
+  flex: 1;
+
+  padding-top: 14px;
+}
+
+
+.white-label-featured-button-row a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 165px;
+  height: 42px;
+
+  border:
+    1px solid #dba32b;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+
+.white-label-featured-button-row a:hover {
+  color: #0c2e6d;
+
+  background: #eab037;
+}
+
+
+/* =========================================================
+   ARROWS
+========================================================= */
+
+.white-label-featured-arrow {
+  position: absolute;
+
+  top: 50%;
+
+  z-index: 4;
+
+  width: 57px;
+  height: 57px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  transform:
+    translateY(-50%);
+
+  cursor: pointer;
+}
+
+
+.white-label-featured-arrow img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.white-label-featured-arrow-left {
+  left: -28px;
+}
+
+
+.white-label-featured-arrow-right {
+  right: -28px;
+}
+
+
+/* =========================================================
+   VIEW ALL
+========================================================= */
+
+.white-label-view-all {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 60px;
+}
+
+
+.white-label-view-all a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 150px;
+  height: 46px;
+
+  padding:
+    0 24px;
+
+  border-radius: 4px;
+
+  color: #0c2e6d;
+
+  background:
+    linear-gradient(90deg,
+      #be811a,
+      #f4d48d 45%,
+      #f3b62e);
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.white-label-back-top-shell {
+  position: relative;
+
+  z-index: 36;
+
+  height: 0;
+}
+
+
+.white-label-back-top {
+  position: absolute;
+
+  left: 50%;
+  bottom: -25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+
+  padding: 0;
+
+  border:
+    1px solid rgba(255,
+      255,
+      255,
+      0.2);
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56,
+        47,
+        112,
+        0.84),
+      rgba(17,
+        38,
+        79,
+        0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter:
+    blur(20px);
+
+  -webkit-backdrop-filter:
+    blur(20px);
+
+  cursor: pointer;
+}
+
+
+.white-label-back-top img {
+  width: 20px;
+  height: 20px;
+
+  animation:
+    whiteLabelJump 1.6s ease-in-out infinite;
+}
+
+
+@keyframes whiteLabelJump {
+
+  0%,
+  100% {
+    transform:
+      translateY(3px);
+  }
+
+
+  50% {
+    transform:
+      translateY(-4px);
+  }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .white-label-page {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .white-label-intro-copy,
+html[dir="rtl"] .white-label-callback-copy,
+html[dir="rtl"] .white-label-form {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .white-label-callback-copy {
+  padding-right: 0;
+  padding-left: 10%;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .white-label-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .white-label-hero {
+    min-height: 235px;
+  }
+
+
+  .white-label-hero h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+
+  .white-label-intro-layout {
+    gap: 60px;
+
+    padding-top: 70px;
+  }
+
+
+  .white-label-intro-visual {
+    flex-basis: 430px;
+
+    width: 430px;
+    height: 380px;
+  }
+
+
+  .white-label-intro-copy h2,
+  .white-label-callback-copy h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+
+  .white-label-intro-copy p,
+  .white-label-callback-copy p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .white-label-features {
+    padding:
+      80px 0;
+  }
+
+
+  .white-label-section-title {
+    margin-bottom: 40px;
+
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+
+  .white-label-feature-card {
+    gap: 20px;
+  }
+
+
+  .white-label-feature-card h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+
+  .white-label-callback {
+    padding:
+      80px 0;
+  }
+
+
+  .white-label-callback-layout {
+    gap: 40px;
+  }
+
+
+  .white-label-form-shell {
+    padding: 32px;
+  }
+
+
+  .white-label-form label>span:first-child {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+
+  .white-label-form input[ type="text"
+  ],
+  .white-label-form input[ type="email"
+
+  ],
+  .white-label-faux-select {
+    height: 38px;
+
+    font-size: 13px;
+  }
+
+
+  .white-label-featured {
+    padding-top: 70px;
+  }
+
+
+  .white-label-featured-card {
+    flex-basis:
+      calc(33.333% - 17px);
+  }
+
+
+  .white-label-featured-image {
+    height: 160px;
+  }
+
+
+  .white-label-featured-content {
+    padding:
+      16px 28px 24px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .white-label-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .white-label-hero {
+    min-height: 205px;
+  }
+
+
+  .white-label-hero h1 {
+    font-size: 36px;
+    line-height: 46px;
+
+    text-align: center;
+  }
+
+
+  .white-label-intro-layout {
+    flex-direction: column;
+
+    gap: 40px;
+
+    padding-top: 70px;
+  }
+
+
+  .white-label-intro-copy {
+    width: 100%;
+  }
+
+
+  .white-label-intro-copy h2 {
+    text-align: center;
+  }
+
+
+  .white-label-features-grid {
+    grid-template-columns:
+      repeat(2,
+        minmax(0, 1fr));
+  }
+
+
+  .white-label-callback-layout {
+    grid-template-columns: 1fr;
+  }
+
+
+  .white-label-callback-copy,
+  html[dir="rtl"] .white-label-callback-copy {
+    padding: 0;
+  }
+
+
+  .white-label-featured-card {
+    flex-basis:
+      calc(50% - 13px);
+  }
+
+
+  .white-label-featured-image {
+    height: 180px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .white-label-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .white-label-hero {
+    min-height: 170px;
+  }
+
+
+  .white-label-hero h1 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+
+  .white-label-intro {
+    padding:
+      48px 0;
+  }
+
+
+  .white-label-intro-layout {
+    padding-top: 50px;
+  }
+
+
+  .white-label-intro-visual {
+    flex-basis: 300px;
+
+    width: 300px;
+    height: 300px;
+
+    max-width: 100%;
+
+    border-radius: 12px;
+  }
+
+
+  .white-label-intro-copy {
+    gap: 15px;
+  }
+
+
+  .white-label-intro-copy h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+
+  .white-label-features {
+    padding:
+      60px 0;
+  }
+
+
+  .white-label-section-title {
+    margin-bottom: 40px;
+
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+
+  .white-label-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .white-label-feature-card {
+    padding:
+      36px 20px;
+  }
+
+
+  .white-label-callback {
+    padding:
+      50px 0 60px;
+  }
+
+
+  .white-label-form-shell {
+    padding: 24px;
+  }
+
+
+  .white-label-form-two {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+
+  .white-label-checkbox input {
+    margin-top: 5px;
+  }
+
+
+  .white-label-form .white-label-checkbox span {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .white-label-featured {
+    padding:
+      50px 0;
+  }
+
+
+  .white-label-featured .white-label-section-title {
+    margin-bottom: 35px;
+  }
+
+
+  .white-label-featured-card {
+    flex-basis: 100%;
+  }
+
+
+  .white-label-featured-image {
+    height: 180px;
+  }
+
+
+  .white-label-featured-content {
+    padding: 16px;
+  }
+
+
+  .white-label-featured-arrow {
+    display: none;
+  }
+
+
+  .white-label-view-all {
+    margin-top: 40px;
+  }
+
+}
+
+
+/* =========================================================
+   BACK TOP — TABLET
+========================================================= */
+
+@media (min-width: 768px) {
+
+  .white-label-back-top {
+    width: 70px;
+    height: 70px;
+
+    bottom: -35px;
+  }
+
+
+  .white-label-back-top img {
+    width: 25px;
+    height: 25px;
+  }
+
+}
+
+
+/* =========================================================
+   BACK TOP — 2XL
+========================================================= */
+
+@media (min-width: 1536px) {
+
+  .white-label-back-top {
+    width: 90px;
+    height: 90px;
+
+    bottom: -45px;
+  }
+
+
+  .white-label-back-top img {
+    width: 30px;
+    height: 30px;
+  }
+
+}

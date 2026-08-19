@@ -1,0 +1,1285 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.money-managers-page {
+  width: 100%;
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background: #06142e;
+}
+
+
+.money-managers-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   GRADIENT
+========================================================= */
+
+.money-managers-gradient-text,
+.money-managers-section-title,
+.money-managers-intro-copy h2,
+.money-managers-callback-copy h2 {
+  color: #eeb235;
+
+  background:
+    linear-gradient(90deg,
+      #be811a 15%,
+      #f4d48d 45%,
+      #f4d48d 55%,
+      #f3b62e 85%);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.money-managers-hero {
+  display: flex;
+  align-items: center;
+
+  min-height: 285px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.money-managers-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 53px;
+  line-height: 63px;
+  font-weight: 900;
+
+  letter-spacing:
+    -0.025em;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.money-managers-intro {
+  padding:
+    48px 0 64px;
+
+  background-size: cover;
+  background-position: top center;
+  background-repeat: repeat-x;
+}
+
+
+.money-managers-intro-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 112px;
+
+  padding-top: 110px;
+}
+
+
+/* =========================================================
+   INTRO IMAGE
+========================================================= */
+
+.money-managers-intro-visual {
+  position: relative;
+
+  flex:
+    0 0 589px;
+
+  width: 589px;
+  height: 529px;
+
+  overflow: hidden;
+
+  border:
+    1px solid rgba(209,
+      159,
+      63,
+      0.55);
+
+  border-radius: 23px;
+}
+
+
+.money-managers-intro-visual img {
+  position: relative;
+
+  z-index: 1;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.money-managers-intro-shadow {
+  position: absolute;
+
+  z-index: 2;
+
+  inset: 0;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(180deg,
+      transparent 50%,
+      rgba(3,
+        8,
+        23,
+        0.45) 100%);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   INTRO COPY
+========================================================= */
+
+.money-managers-intro-copy {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  gap: 30px;
+}
+
+
+.money-managers-intro-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+
+.money-managers-intro-copy p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+/* =========================================================
+   ROLES
+========================================================= */
+
+.money-managers-roles {
+  padding:
+    120px 0;
+
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+
+.money-managers-section-title {
+  max-width: 850px;
+
+  margin:
+    0 auto 60px;
+
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 900;
+
+  text-align: center;
+}
+
+
+.money-managers-roles-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,
+      minmax(0, 1fr));
+
+  gap: 0;
+}
+
+
+.money-managers-role-card {
+  display: flex;
+  flex-direction: column;
+
+  gap: 32px;
+
+  height: 100%;
+
+  padding:
+    36px 20px;
+
+  border:
+    1px solid transparent;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(#091830,
+      #091830) padding-box,
+
+    linear-gradient(145deg,
+      rgba(244,
+        212,
+        141,
+        0.55),
+      rgba(64,
+        43,
+        117,
+        0.7)) border-box;
+
+  box-sizing: border-box;
+}
+
+
+.money-managers-role-icon {
+  width: 70px;
+  height: 70px;
+
+  object-fit: contain;
+}
+
+
+.money-managers-role-card h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+
+.money-managers-role-card p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+/* =========================================================
+   CALLBACK
+========================================================= */
+
+.money-managers-callback {
+  padding:
+    110px 0 120px;
+
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: repeat-x;
+}
+
+
+.money-managers-callback-layout {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2,
+      minmax(0, 1fr));
+
+  align-items: start;
+
+  gap: 80px;
+}
+
+
+.money-managers-callback-copy {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  padding-right: 10%;
+}
+
+
+.money-managers-callback-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+
+.money-managers-callback-copy p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.money-managers-callback-copy .money-managers-callback-subtitle {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.money-managers-form-shell {
+  padding: 40px;
+
+  border:
+    1px solid rgba(238,
+      186,
+      70,
+      0.35);
+
+  border-radius: 20px;
+
+  background:
+    rgba(6,
+      17,
+      35,
+      0.52);
+}
+
+
+.money-managers-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+
+.money-managers-form label {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+
+.money-managers-form label>span:first-child {
+  color: #ffffff;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+
+.money-managers-form-two {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2,
+      minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+
+.money-managers-form input[ type="text"
+],
+.money-managers-form input[ type="email"
+
+] {
+  width: 100%;
+  height: 46px;
+
+  padding:
+    9px 20px;
+
+  border:
+    1px solid rgba(242,
+      185,
+      47,
+      0.55);
+
+  border-radius: 8px;
+
+  outline: none;
+
+  color: #d9d9d9;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  font-size: 16px;
+
+  box-sizing: border-box;
+}
+
+
+.money-managers-form input::placeholder {
+  color: #d9d9d9;
+
+  opacity: 0.75;
+}
+
+
+/* =========================================================
+   FAUX SELECT
+========================================================= */
+
+.money-managers-faux-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 46px;
+
+  padding:
+    0 16px;
+
+  border:
+    1px solid rgba(242,
+      185,
+      47,
+      0.55);
+
+  border-radius: 8px;
+
+  box-sizing: border-box;
+
+  color: #ffffff;
+
+  font-size: 16px;
+}
+
+
+.money-managers-faux-select>span {
+  color:
+    rgba(255,
+      255,
+      255,
+      0.68);
+}
+
+
+/* =========================================================
+   CHECKBOX
+========================================================= */
+
+.money-managers-form .money-managers-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  gap: 8px;
+}
+
+
+.money-managers-checkbox input {
+  margin-top: 7px;
+}
+
+
+.money-managers-form .money-managers-checkbox span {
+  color: #ffffff;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   SUBMIT
+========================================================= */
+
+.money-managers-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  width: fit-content;
+
+  min-width: 140px;
+  height: 46px;
+
+  padding:
+    0 24px;
+
+  border: 0;
+
+  border-radius: 4px;
+
+  color: #0c2e6d;
+
+  background:
+    linear-gradient(90deg,
+      #be811a,
+      #f4d48d 45%,
+      #f3b62e);
+
+  font-family: inherit;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   FEATURED ARTICLES
+========================================================= */
+
+.money-managers-featured {
+  padding:
+    105px 0 60px;
+
+  background: #06142e;
+}
+
+
+.money-managers-featured .money-managers-section-title {
+  margin-bottom: 55px;
+}
+
+
+.money-managers-featured-shell {
+  position: relative;
+}
+
+
+.money-managers-featured-slider {
+  display: flex;
+
+  gap: 25px;
+
+  width: 100%;
+
+  overflow-x: auto;
+
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+}
+
+
+.money-managers-featured-slider::-webkit-scrollbar {
+  display: none;
+}
+
+
+.money-managers-featured-card {
+  flex:
+    0 0 calc(25% - 19px);
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  border:
+    1px solid #222426;
+
+  border-radius: 23px;
+
+  background: #061123;
+}
+
+
+.money-managers-featured-image {
+  width: 100%;
+  height: 203px;
+}
+
+
+.money-managers-featured-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.money-managers-featured-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  gap: 16px;
+
+  padding: 32px;
+}
+
+
+.money-managers-featured-content>span {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+
+.money-managers-featured-content p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.money-managers-featured-button-row {
+  display: flex;
+  align-items: flex-end;
+
+  flex: 1;
+
+  padding-top: 14px;
+}
+
+
+.money-managers-featured-button-row a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 165px;
+  height: 42px;
+
+  border:
+    1px solid #dba32b;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.money-managers-featured-button-row a:hover {
+  color: #0c2e6d;
+
+  background: #eab037;
+}
+
+
+/* =========================================================
+   ARROWS
+========================================================= */
+
+.money-managers-featured-arrow {
+  position: absolute;
+
+  top: 50%;
+
+  z-index: 4;
+
+  width: 57px;
+  height: 57px;
+
+  padding: 0;
+
+  border: 0;
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  transform:
+    translateY(-50%);
+
+  cursor: pointer;
+}
+
+
+.money-managers-featured-arrow img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.money-managers-featured-arrow-left {
+  left: -28px;
+}
+
+
+.money-managers-featured-arrow-right {
+  right: -28px;
+}
+
+
+/* =========================================================
+   VIEW ALL
+========================================================= */
+
+.money-managers-view-all {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 60px;
+}
+
+
+.money-managers-view-all a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 150px;
+  height: 46px;
+
+  padding:
+    0 24px;
+
+  border-radius: 4px;
+
+  color: #0c2e6d;
+
+  background:
+    linear-gradient(90deg,
+      #be811a,
+      #f4d48d 45%,
+      #f3b62e);
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.money-managers-back-top-shell {
+  position: relative;
+
+  z-index: 36;
+
+  height: 0;
+}
+
+
+.money-managers-back-top {
+  position: absolute;
+
+  left: 50%;
+  bottom: -45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+
+  padding: 0;
+
+  border:
+    1px solid rgba(255,
+      255,
+      255,
+      0.2);
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56,
+        47,
+        112,
+        0.84),
+      rgba(17,
+        38,
+        79,
+        0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter:
+    blur(20px);
+
+  -webkit-backdrop-filter:
+    blur(20px);
+
+  cursor: pointer;
+}
+
+
+.money-managers-back-top img {
+  width: 30px;
+  height: 30px;
+
+  animation:
+    moneyManagersJump 1.6s ease-in-out infinite;
+}
+
+
+@keyframes moneyManagersJump {
+
+  0%,
+  100% {
+    transform:
+      translateY(3px);
+  }
+
+
+  50% {
+    transform:
+      translateY(-4px);
+  }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .money-managers-page {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .money-managers-intro-copy,
+html[dir="rtl"] .money-managers-callback-copy,
+html[dir="rtl"] .money-managers-form {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .money-managers-callback-copy {
+  padding-right: 0;
+  padding-left: 10%;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .money-managers-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .money-managers-hero {
+    min-height: 235px;
+  }
+
+
+  .money-managers-hero h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+
+  .money-managers-intro-layout {
+    gap: 60px;
+
+    padding-top: 70px;
+  }
+
+
+  .money-managers-intro-visual {
+    flex-basis: 430px;
+
+    width: 430px;
+    height: 380px;
+  }
+
+
+  .money-managers-intro-copy h2,
+  .money-managers-callback-copy h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+
+  .money-managers-intro-copy p,
+  .money-managers-callback-copy p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .money-managers-roles {
+    padding:
+      80px 0;
+  }
+
+
+  .money-managers-section-title {
+    margin-bottom: 40px;
+
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+
+  .money-managers-role-card {
+    gap: 20px;
+  }
+
+
+  .money-managers-role-card h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+
+  .money-managers-role-card p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .money-managers-callback {
+    padding:
+      80px 0;
+  }
+
+
+  .money-managers-callback-layout {
+    gap: 40px;
+  }
+
+
+  .money-managers-form-shell {
+    padding: 32px;
+  }
+
+
+  .money-managers-form label>span:first-child {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+
+  .money-managers-form input[ type="text"
+  ],
+  .money-managers-form input[ type="email"
+
+  ],
+  .money-managers-faux-select {
+    height: 38px;
+
+    font-size: 13px;
+  }
+
+
+  .money-managers-featured {
+    padding-top: 70px;
+  }
+
+
+  .money-managers-featured-card {
+    flex-basis:
+      calc(33.333% - 17px);
+  }
+
+
+  .money-managers-featured-image {
+    height: 160px;
+  }
+
+
+  .money-managers-featured-content {
+    padding:
+      16px 28px 24px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .money-managers-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .money-managers-hero {
+    min-height: 205px;
+  }
+
+
+  .money-managers-hero h1 {
+    font-size: 36px;
+    line-height: 46px;
+
+    text-align: center;
+  }
+
+
+  .money-managers-intro-layout {
+    flex-direction: column;
+
+    gap: 40px;
+
+    padding-top: 70px;
+  }
+
+
+  .money-managers-intro-copy {
+    width: 100%;
+  }
+
+
+  .money-managers-intro-copy h2 {
+    text-align: center;
+  }
+
+
+  .money-managers-roles-grid {
+    grid-template-columns:
+      repeat(2,
+        minmax(0, 1fr));
+  }
+
+
+  .money-managers-callback-layout {
+    grid-template-columns: 1fr;
+  }
+
+
+  .money-managers-callback-copy,
+  html[dir="rtl"] .money-managers-callback-copy {
+    padding: 0;
+  }
+
+
+  .money-managers-featured-card {
+    flex-basis:
+      calc(50% - 13px);
+  }
+
+
+  .money-managers-featured-image {
+    height: 180px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .money-managers-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .money-managers-hero {
+    min-height: 170px;
+  }
+
+
+  .money-managers-hero h1 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+
+  .money-managers-intro {
+    padding:
+      48px 0;
+  }
+
+
+  .money-managers-intro-layout {
+    padding-top: 50px;
+  }
+
+
+  .money-managers-intro-visual {
+    flex-basis: 300px;
+
+    width: 300px;
+    height: 300px;
+
+    max-width: 100%;
+
+    border-radius: 12px;
+  }
+
+
+  .money-managers-intro-copy {
+    gap: 15px;
+  }
+
+
+  .money-managers-intro-copy h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+
+  .money-managers-roles {
+    padding:
+      60px 0;
+  }
+
+
+  .money-managers-section-title {
+    margin-bottom: 40px;
+
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+
+  .money-managers-roles-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .money-managers-role-card {
+    padding:
+      36px 20px;
+  }
+
+
+  .money-managers-callback {
+    padding:
+      50px 0 60px;
+  }
+
+
+  .money-managers-form-shell {
+    padding: 24px;
+  }
+
+
+  .money-managers-form-two {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+
+  .money-managers-checkbox input {
+    margin-top: 5px;
+  }
+
+
+  .money-managers-form .money-managers-checkbox span {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .money-managers-featured {
+    padding:
+      50px 0;
+  }
+
+
+  .money-managers-featured .money-managers-section-title {
+    margin-bottom: 35px;
+  }
+
+
+  .money-managers-featured-card {
+    flex-basis: 100%;
+  }
+
+
+  .money-managers-featured-image {
+    height: 180px;
+  }
+
+
+  .money-managers-featured-content {
+    padding: 16px;
+  }
+
+
+  .money-managers-featured-arrow {
+    display: none;
+  }
+
+
+  .money-managers-view-all {
+    margin-top: 40px;
+  }
+
+
+  .money-managers-back-top {
+    width: 50px;
+    height: 50px;
+
+    bottom: -25px;
+  }
+
+
+  .money-managers-back-top img {
+    width: 20px;
+    height: 20px;
+  }
+
+}

@@ -1,0 +1,871 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.learn-page {
+  width: 100%;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background: #06142e;
+}
+
+
+.learn-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.learn-hero {
+  display: flex;
+  align-items: center;
+
+  min-height: 285px;
+
+  background-image:
+    var(--learn-hero);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.learn-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 53px;
+  line-height: 63px;
+  font-weight: 900;
+
+  letter-spacing: -0.025em;
+}
+
+
+/* =========================================================
+   MAIN BACKGROUND
+========================================================= */
+
+.learn-main-section {
+  padding:
+    48px 0 120px;
+
+  background-image:
+    var(--learn-background);
+
+  background-size: contain;
+  background-position: center top;
+  background-repeat: repeat-x;
+}
+
+
+/* =========================================================
+   CONTENT LAYOUT
+========================================================= */
+
+.learn-content-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(250px, 25%) minmax(0, 75%);
+
+  align-items: start;
+
+  gap: 36px;
+
+  padding-top: 115px;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.learn-sidebar {
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+
+  padding-bottom: 64px;
+}
+
+
+.learn-sidebar-card {
+  position: relative;
+
+  overflow: hidden;
+
+  padding:
+    22px 20px;
+
+  border:
+    1px solid transparent;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(#091830,
+      #091830) padding-box,
+
+    linear-gradient(145deg,
+      rgba(91, 72, 175, 0.85),
+      rgba(184, 111, 64, 0.65)) border-box;
+}
+
+
+/* =========================================================
+   FILTER TABS
+========================================================= */
+
+.learn-filter-tabs {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  overflow-x: auto;
+
+  scrollbar-width: none;
+}
+
+
+.learn-filter-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+
+.learn-filter-tabs button {
+  flex: 0 0 auto;
+
+  min-height: 30px;
+
+  padding:
+    4px 10px;
+
+  border: 0;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  background: #284168;
+
+  font-family: inherit;
+
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+
+.learn-filter-tabs button.is-active {
+  color: #f0bd45;
+
+  background:
+    rgba(255,
+      255,
+      255,
+      0.04);
+}
+
+
+/* =========================================================
+   SIDEBAR POSTS
+========================================================= */
+
+.learn-sidebar-posts {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.learn-sidebar-post {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  padding:
+    30px 0;
+
+  border-bottom:
+    1px solid #313b4c;
+
+  cursor: pointer;
+}
+
+
+.learn-sidebar-post:last-child {
+  padding-bottom: 0;
+
+  border-bottom: 0;
+}
+
+
+.learn-sidebar-post-image {
+  position: relative;
+
+  flex:
+    0 0 70px;
+
+  width: 70px;
+  height: 70px;
+
+  overflow: hidden;
+
+  border-radius: 6px;
+}
+
+
+.learn-sidebar-post-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.learn-sidebar-post-copy {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+
+.learn-sidebar-post-copy span,
+.learn-gradient-text,
+.learn-timeline-item span {
+  color: #eeb235;
+
+  background:
+    linear-gradient(90deg,
+      #f6c442,
+      #dfa02d,
+      #c98a28);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+.learn-sidebar-post-copy span {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+
+.learn-sidebar-post-copy p {
+  display: -webkit-box;
+
+  margin: 0;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  line-height: 20px;
+
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.learn-timeline {
+  padding:
+    36px 30px 28px;
+}
+
+
+.learn-timeline h2 {
+  margin:
+    0 0 36px;
+
+  color: #ffffff;
+
+  font-size: 25px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+
+.learn-timeline-list {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.learn-timeline-item {
+  position: relative;
+
+  padding:
+    0 0 28px 16px;
+
+  border-left:
+    1px solid #36405a;
+}
+
+
+.learn-timeline-item::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -4px;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #dba52f;
+}
+
+
+.learn-timeline-item p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  line-height: 20px;
+}
+
+
+.learn-timeline-item span {
+  display: block;
+
+  margin-top: 4px;
+
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   ARTICLE GRID
+========================================================= */
+
+.learn-article-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,
+      minmax(0, 1fr));
+
+  gap:
+    36px 26px;
+
+  width: 100%;
+
+  padding-bottom: 64px;
+}
+
+
+/* =========================================================
+   ARTICLE CARD
+========================================================= */
+
+.learn-article-card {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  border-radius: 23px;
+
+  background: #061123;
+
+  cursor: pointer;
+}
+
+
+.learn-article-image {
+  position: relative;
+
+  width: 100%;
+  height: 203px;
+
+  overflow: hidden;
+}
+
+
+.learn-article-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+.learn-article-card:hover .learn-article-image img {
+  transform:
+    scale(1.04);
+}
+
+
+.learn-article-image-shadow {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(180deg,
+      rgba(0, 0, 0, 0) 45%,
+      rgba(1, 8, 25, 0.52) 100%);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   ARTICLE CONTENT
+========================================================= */
+
+.learn-article-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  gap: 20px;
+
+  padding:
+    20px 26px 40px;
+
+  border:
+    1px solid #222426;
+
+  border-top: 0;
+
+  border-radius:
+    0 0 23px 23px;
+
+  background: #061123;
+}
+
+
+.learn-gradient-text {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+
+.learn-article-content h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+
+.learn-card-bottom {
+  display: flex;
+  align-items: flex-end;
+
+  flex: 1;
+
+  padding-top: 4px;
+}
+
+
+/* =========================================================
+   READ MORE
+========================================================= */
+
+.learn-outline-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 145px;
+  min-height: 42px;
+
+  padding:
+    0 20px;
+
+  border:
+    1px solid #d8a02b;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.learn-outline-button:hover {
+  color: #0a285e;
+
+  background: #e8ad31;
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.learn-back-top-shell {
+  position: relative;
+
+  z-index: 36;
+
+  height: 0;
+}
+
+
+.learn-back-top {
+  position: absolute;
+
+  left: 50%;
+  bottom: -45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+
+  padding: 0;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.2);
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56, 47, 112, 0.84),
+      rgba(17, 38, 79, 0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter:
+    blur(20px);
+
+  cursor: pointer;
+}
+
+
+.learn-back-top img {
+  width: 30px;
+  height: 30px;
+
+  animation:
+    learnJump 1.6s ease-in-out infinite;
+}
+
+
+@keyframes learnJump {
+
+  0%,
+  100% {
+    transform:
+      translateY(3px);
+  }
+
+  50% {
+    transform:
+      translateY(-4px);
+  }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .learn-page {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .learn-hero,
+html[dir="rtl"] .learn-sidebar,
+html[dir="rtl"] .learn-article-content {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .learn-timeline-item {
+  padding:
+    0 16px 28px 0;
+
+  border-left: 0;
+
+  border-right:
+    1px solid #36405a;
+}
+
+
+html[dir="rtl"] .learn-timeline-item::before {
+  right: -4px;
+  left: auto;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .learn-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .learn-hero {
+    min-height: 235px;
+  }
+
+
+  .learn-hero h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+
+  .learn-content-layout {
+    grid-template-columns:
+      280px minmax(0, 1fr);
+
+    gap: 30px;
+
+    padding-top: 75px;
+  }
+
+
+  .learn-article-grid {
+    grid-template-columns:
+      repeat(2,
+        minmax(0, 1fr));
+  }
+
+
+  .learn-sidebar-post-image {
+    flex-basis: 50px;
+
+    width: 50px;
+    height: 50px;
+  }
+
+
+  .learn-sidebar-post {
+    gap: 14px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .learn-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .learn-hero {
+    min-height: 205px;
+  }
+
+
+  .learn-hero h1 {
+    font-size: 35px;
+
+    text-align: center;
+  }
+
+
+  .learn-content-layout {
+    grid-template-columns: 1fr;
+
+    padding-top: 65px;
+  }
+
+
+  .learn-sidebar {
+    display: grid;
+
+    grid-template-columns:
+      repeat(2,
+        minmax(0, 1fr));
+
+    gap: 25px;
+
+    padding-bottom: 20px;
+  }
+
+
+  .learn-article-grid {
+    grid-template-columns:
+      repeat(2,
+        minmax(0, 1fr));
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .learn-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .learn-hero {
+    min-height: 170px;
+  }
+
+
+  .learn-hero h1 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+
+  .learn-main-section {
+    padding-top: 38px;
+    padding-bottom: 60px;
+  }
+
+
+  .learn-content-layout {
+    padding-top: 50px;
+  }
+
+
+  .learn-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+
+  .learn-sidebar-card {
+    padding:
+      20px 18px;
+  }
+
+
+  .learn-timeline {
+    padding:
+      28px 24px;
+  }
+
+
+  .learn-timeline h2 {
+    margin-bottom: 28px;
+
+    font-size: 20px;
+  }
+
+
+  .learn-article-grid {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+
+  .learn-article-image {
+    height: 203px;
+  }
+
+
+  .learn-article-content {
+    padding:
+      20px 20px 30px;
+  }
+
+
+  .learn-article-content h3 {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .learn-gradient-text {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+
+  .learn-back-top {
+    width: 50px;
+    height: 50px;
+
+    bottom: -25px;
+  }
+
+
+  .learn-back-top img {
+    width: 20px;
+    height: 20px;
+  }
+
+}

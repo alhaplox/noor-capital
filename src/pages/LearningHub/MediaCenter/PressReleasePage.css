@@ -1,0 +1,693 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.press-release-page {
+  width: 100%;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background: #06142e;
+}
+
+
+.press-release-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.press-release-hero {
+  display: flex;
+  align-items: center;
+
+  min-height: 285px;
+
+  background-image:
+    var(--press-release-hero);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.press-release-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 53px;
+  line-height: 63px;
+  font-weight: 900;
+
+  letter-spacing:
+    -0.025em;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.press-release-main {
+  padding:
+    48px 0 120px;
+
+  background-image:
+    var(--press-release-background);
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+
+.press-release-content {
+  padding-top: 115px;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.press-release-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,
+      minmax(0, 1fr));
+
+  gap: 36px;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.press-release-card {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+  height: 100%;
+
+  overflow: hidden;
+
+  border-radius: 23px;
+
+  background: #061123;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.press-release-image {
+  position: relative;
+
+  width: 100%;
+  height: 264px;
+
+  overflow: hidden;
+}
+
+
+.press-release-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+.press-release-card:hover .press-release-image img {
+  transform:
+    scale(1.04);
+}
+
+
+.press-release-image-shadow {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(180deg,
+      rgba(0, 0, 0, 0) 45%,
+      rgba(3, 10, 28, 0.55) 100%);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.press-release-card-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  gap: 24px;
+
+  padding:
+    32px 26px 40px;
+
+  border:
+    1px solid #222426;
+
+  border-top: 0;
+
+  border-radius:
+    0 0 23px 23px;
+
+  background: #061123;
+}
+
+
+.press-release-author {
+  color: #eeb235;
+
+  background:
+    linear-gradient(90deg,
+      #f7c442,
+      #dfa02d 55%,
+      #cb8927);
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+
+.press-release-card-main {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  flex: 1;
+
+  gap: 24px;
+}
+
+
+.press-release-card-main h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   READ MORE
+========================================================= */
+
+.press-release-read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+
+  min-width: 145px;
+  min-height: 42px;
+
+  padding:
+    0 20px;
+
+  border:
+    1px solid #daa12c;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  background: transparent;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.press-release-read-more:hover {
+  color: #0c2e6d;
+
+  background: #e9ad31;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.press-release-cta {
+  background-image:
+    var(--press-release-cta-background);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.press-release-cta-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.95fr) minmax(0, 1.05fr);
+
+  align-items: center;
+
+  gap: 50px;
+}
+
+
+.press-release-cta-copy {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+
+  padding:
+    127px 0;
+}
+
+
+.press-release-cta-copy h2 {
+  margin: 0;
+
+  color: #eeb235;
+
+  background:
+    linear-gradient(90deg,
+      #f7c442,
+      #dfa02d 55%,
+      #cb8927);
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 900;
+}
+
+
+.press-release-cta-copy p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.press-release-cta-image {
+  align-self: end;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  height: 591px;
+}
+
+
+.press-release-cta-image img {
+  display: block;
+
+  width: auto;
+  max-width: 867px;
+
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   BACK TOP
+========================================================= */
+
+.press-release-back-top-shell {
+  position: relative;
+
+  z-index: 36;
+
+  height: 0;
+}
+
+
+.press-release-back-top {
+  position: absolute;
+
+  left: 50%;
+  bottom: -45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+
+  padding: 0;
+
+  border:
+    1px solid rgba(255,
+      255,
+      255,
+      0.2);
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56, 47, 112, 0.84),
+      rgba(17, 38, 79, 0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter:
+    blur(20px);
+
+  -webkit-backdrop-filter:
+    blur(20px);
+
+  cursor: pointer;
+}
+
+
+.press-release-back-top img {
+  width: 30px;
+  height: 30px;
+
+  animation:
+    pressReleaseJump 1.6s ease-in-out infinite;
+}
+
+
+@keyframes pressReleaseJump {
+
+  0%,
+  100% {
+    transform:
+      translateY(3px);
+  }
+
+
+  50% {
+    transform:
+      translateY(-4px);
+  }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .press-release-page {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .press-release-hero,
+html[dir="rtl"] .press-release-card-content,
+html[dir="rtl"] .press-release-cta-copy {
+  text-align: right;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .press-release-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .press-release-hero {
+    min-height: 235px;
+  }
+
+
+  .press-release-hero h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+
+  .press-release-content {
+    padding-top: 75px;
+  }
+
+
+  .press-release-grid {
+    grid-template-columns:
+      repeat(2,
+        minmax(0, 1fr));
+  }
+
+
+  .press-release-image {
+    height: 185px;
+  }
+
+
+  .press-release-card-content {
+    padding:
+      20px 24px 28px;
+  }
+
+
+  .press-release-cta-layout {
+    gap: 25px;
+  }
+
+
+  .press-release-cta-copy {
+    padding:
+      88px 0;
+  }
+
+
+  .press-release-cta-copy h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+
+  .press-release-cta-image {
+    height: 430px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .press-release-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .press-release-hero {
+    min-height: 205px;
+  }
+
+
+  .press-release-hero h1 {
+    font-size: 35px;
+
+    text-align: center;
+  }
+
+
+  .press-release-cta-layout {
+    grid-template-columns: 1fr;
+  }
+
+
+  .press-release-cta-copy {
+    padding:
+      60px 0 20px;
+  }
+
+
+  .press-release-cta-image {
+    height: 350px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .press-release-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .press-release-hero {
+    min-height: 170px;
+  }
+
+
+  .press-release-hero h1 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+
+  .press-release-main {
+    padding:
+      38px 0 60px;
+  }
+
+
+  .press-release-content {
+    padding-top: 50px;
+  }
+
+
+  .press-release-grid {
+    grid-template-columns: 1fr;
+
+    gap: 36px;
+  }
+
+
+  .press-release-image {
+    height: 170px;
+  }
+
+
+  .press-release-card-content {
+    gap: 8px;
+
+    padding:
+      10px 15px 28px;
+  }
+
+
+  .press-release-author {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .press-release-card-main {
+    gap: 16px;
+  }
+
+
+  .press-release-card-main h2 {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .press-release-cta-copy {
+    gap: 22px;
+
+    padding-top: 40px;
+  }
+
+
+  .press-release-cta-copy h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+
+  .press-release-cta-copy p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .press-release-cta-image {
+    height: auto;
+  }
+
+
+  .press-release-cta-image img {
+    width: 100%;
+    height: auto;
+  }
+
+
+  .press-release-back-top {
+    width: 50px;
+    height: 50px;
+
+    bottom: -25px;
+  }
+
+
+  .press-release-back-top img {
+    width: 20px;
+    height: 20px;
+  }
+
+}

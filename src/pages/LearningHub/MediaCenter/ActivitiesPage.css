@@ -1,0 +1,568 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.activities-page {
+  width: 100%;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background: #06142e;
+}
+
+
+.activities-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.activities-hero {
+  display: flex;
+  align-items: center;
+
+  min-height: 285px;
+
+  background-image:
+    var(--activities-hero);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.activities-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 53px;
+  line-height: 63px;
+  font-weight: 900;
+
+  letter-spacing:
+    -0.025em;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.activities-main {
+  padding:
+    48px 0 120px;
+
+  background-image:
+    var(--activities-background);
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+
+.activities-content {
+  padding-top: 115px;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.activities-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,
+      minmax(0, 1fr));
+
+  gap: 36px;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.activity-card {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  height: 100%;
+
+  overflow: hidden;
+
+  border-radius: 23px;
+
+  background: #061123;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.activity-card-image {
+  position: relative;
+
+  width: 100%;
+  height: 264px;
+
+  overflow: hidden;
+}
+
+
+.activity-card-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+.activity-card:hover .activity-card-image img {
+  transform:
+    scale(1.04);
+}
+
+
+.activity-card-image-shadow {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(180deg,
+      rgba(0,
+        0,
+        0,
+        0) 45%,
+      rgba(3,
+        10,
+        28,
+        0.55) 100%);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.activity-card-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  gap: 24px;
+
+  padding:
+    32px 26px 40px;
+
+  border:
+    1px solid #222426;
+
+  border-top: 0;
+
+  border-radius:
+    0 0 23px 23px;
+
+  background: #061123;
+}
+
+
+/* =========================================================
+   AUTHOR
+========================================================= */
+
+.activity-card-author {
+  color: #eeb235;
+
+  background:
+    linear-gradient(90deg,
+      #f7c442,
+      #dfa02d 55%,
+      #cb8927);
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   CARD MAIN
+========================================================= */
+
+.activity-card-main {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  flex: 1;
+
+  gap: 24px;
+}
+
+
+.activity-card-main h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   READ MORE
+========================================================= */
+
+.activity-read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+
+  min-width: 145px;
+  min-height: 42px;
+
+  padding:
+    0 20px;
+
+  border:
+    1px solid #daa12c;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  background: transparent;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.activity-read-more:hover {
+  color: #0c2e6d;
+
+  background: #e9ad31;
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.activities-back-top-shell {
+  position: relative;
+
+  z-index: 36;
+
+  height: 0;
+}
+
+
+.activities-back-top {
+  position: absolute;
+
+  left: 50%;
+  bottom: -45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+
+  padding: 0;
+
+  border:
+    1px solid rgba(255,
+      255,
+      255,
+      0.2);
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56,
+        47,
+        112,
+        0.84),
+      rgba(17,
+        38,
+        79,
+        0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter:
+    blur(20px);
+
+  -webkit-backdrop-filter:
+    blur(20px);
+
+  cursor: pointer;
+}
+
+
+.activities-back-top img {
+  width: 30px;
+  height: 30px;
+
+  animation:
+    activitiesJump 1.6s ease-in-out infinite;
+}
+
+
+@keyframes activitiesJump {
+
+  0%,
+  100% {
+    transform:
+      translateY(3px);
+  }
+
+
+  50% {
+    transform:
+      translateY(-4px);
+  }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .activities-page {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .activities-hero,
+html[dir="rtl"] .activity-card-content {
+  text-align: right;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .activities-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .activities-hero {
+    min-height: 235px;
+  }
+
+
+  .activities-hero h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+
+  .activities-content {
+    padding-top: 75px;
+  }
+
+
+  .activities-grid {
+    grid-template-columns:
+      repeat(2,
+        minmax(0,
+          1fr));
+
+    gap: 36px;
+  }
+
+
+  .activity-card-image {
+    height: 170px;
+  }
+
+
+  .activity-card-content {
+    gap: 8px;
+
+    padding:
+      10px 24px 28px;
+  }
+
+
+  .activity-card-author {
+    font-size: 13px;
+  }
+
+
+  .activity-card-main {
+    gap: 24px;
+  }
+
+
+  .activity-card-main h2 {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .activities-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .activities-hero {
+    min-height: 205px;
+  }
+
+
+  .activities-hero h1 {
+    font-size: 35px;
+    line-height: 46px;
+
+    text-align: center;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .activities-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .activities-hero {
+    min-height: 170px;
+  }
+
+
+  .activities-hero h1 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+
+  .activities-main {
+    padding:
+      38px 0 60px;
+  }
+
+
+  .activities-content {
+    padding-top: 50px;
+  }
+
+
+  .activities-grid {
+    grid-template-columns: 1fr;
+
+    gap: 36px;
+  }
+
+
+  .activity-card-image {
+    height: 170px;
+  }
+
+
+  .activity-card-content {
+    gap: 8px;
+
+    padding:
+      10px 15px 28px;
+  }
+
+
+  .activity-card-main {
+    gap: 16px;
+  }
+
+
+  .activity-read-more {
+    min-width: 135px;
+    min-height: 40px;
+  }
+
+
+  .activities-back-top {
+    width: 50px;
+    height: 50px;
+
+    bottom: -25px;
+  }
+
+
+  .activities-back-top img {
+    width: 20px;
+    height: 20px;
+  }
+
+}

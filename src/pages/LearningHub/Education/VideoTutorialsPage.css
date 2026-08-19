@@ -1,0 +1,999 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.video-tutorials-page {
+  width: 100%;
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background: #06142e;
+}
+
+
+.video-tutorials-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   GRADIENT
+========================================================= */
+
+.video-tutorials-gradient-title,
+.video-tutorial-level,
+.video-final-copy h2 {
+  color: #eeb235;
+
+  background:
+    linear-gradient(90deg,
+      #f7c442,
+      #dfa02d 55%,
+      #cb8927);
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.video-tutorials-hero {
+  display: flex;
+  align-items: center;
+
+  min-height: 285px;
+
+  background-image:
+    var(--video-hero);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.video-tutorials-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 53px;
+  line-height: 63px;
+  font-weight: 900;
+
+  letter-spacing: -0.025em;
+}
+
+
+.video-tutorials-hero p {
+  margin:
+    20px 0 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.video-tutorials-main-section {
+  padding:
+    48px 0 120px;
+
+  background-image:
+    var(--video-background);
+
+  background-size: contain;
+  background-position: center top;
+  background-repeat: repeat-x;
+}
+
+
+.video-tutorials-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 50px;
+
+  padding-top: 115px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.video-tutorials-gradient-title {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 500;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   VIDEO GRID
+========================================================= */
+
+.video-tutorials-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4,
+      minmax(0, 1fr));
+
+  gap: 36px;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   VIDEO CARD
+========================================================= */
+
+.video-tutorial-card {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+  height: 100%;
+
+  overflow: hidden;
+
+  border:
+    1px solid #222426;
+
+  border-radius: 23px;
+
+  background: #061123;
+}
+
+
+/* =========================================================
+   THUMBNAIL
+========================================================= */
+
+.video-tutorial-thumbnail {
+  position: relative;
+
+  width: 100%;
+  height: 179px;
+
+  overflow: hidden;
+
+  border-radius:
+    23px 23px 0 0;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.video-tutorial-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    rgba(0,
+      0,
+      0,
+      0.3);
+}
+
+
+.video-tutorial-play-icon {
+  position: absolute;
+
+  left: 25px;
+  bottom: 22px;
+
+  z-index: 2;
+
+  width: 50px;
+  height: 50px;
+}
+
+
+.video-tutorial-play-icon img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   VIDEO CARD CONTENT
+========================================================= */
+
+.video-tutorial-card-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  gap: 26px;
+
+  padding:
+    32px;
+
+  background: #061123;
+}
+
+
+.video-tutorial-level {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+
+.video-tutorial-card h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+
+.video-tutorial-card-bottom {
+  display: flex;
+  align-items: flex-end;
+
+  flex: 1;
+}
+
+
+/* =========================================================
+   PLAY BUTTON
+========================================================= */
+
+.video-tutorial-play-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 145px;
+  min-height: 42px;
+
+  padding:
+    0 20px;
+
+  border:
+    1px solid #daa12c;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.video-tutorial-play-button:hover {
+  color: #0c2e6d;
+
+  background: #e9ad31;
+}
+
+
+/* =========================================================
+   WHY NOOR
+========================================================= */
+
+.video-why-section {
+  padding:
+    110px 0 60px;
+
+  overflow: hidden;
+
+  background-image:
+    var(--video-why-background);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.video-why-slider {
+  position: relative;
+
+  margin-top: 16px;
+}
+
+
+.video-why-slider .swiper {
+  overflow: visible;
+}
+
+
+.video-why-slider .swiper-slide {
+  height: auto;
+
+  padding:
+    60px 0;
+}
+
+
+/* =========================================================
+   WHY CARD
+========================================================= */
+
+.video-why-card {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  min-height: 220px;
+
+  padding:
+    78px 25px 43px;
+
+  border:
+    1px solid transparent;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(#091830,
+      #091830) padding-box,
+
+    linear-gradient(135deg,
+      #6554c4,
+      #755093,
+      #bb7040) border-box;
+}
+
+
+.video-why-icon {
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 109px;
+  height: 106px;
+
+  background-image:
+    var(--video-icon-background);
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transform:
+    translate(-50%,
+      -50%);
+}
+
+
+.video-why-icon img {
+  display: block;
+
+  width: 70px;
+  max-height: 80px;
+
+  object-fit: contain;
+}
+
+
+.video-why-card h3 {
+  max-width: 350px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   WHY ARROWS
+========================================================= */
+
+.video-why-arrow {
+  display: none;
+
+  position: absolute;
+
+  top: 50%;
+
+  z-index: 10;
+
+  width: 57px;
+  height: 57px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  transform:
+    translateY(-50%);
+
+  cursor: pointer;
+}
+
+
+.video-why-arrow img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+.video-why-prev {
+  left: -10px;
+}
+
+
+.video-why-next {
+  right: -10px;
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.video-final-section {
+  background-image:
+    var(--video-final-background);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.video-final-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.95fr) minmax(0, 1.05fr);
+
+  align-items: center;
+
+  gap: 50px;
+}
+
+
+.video-final-copy {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+
+  padding:
+    127px 0;
+}
+
+
+.video-final-copy h2 {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 900;
+}
+
+
+.video-final-copy ul {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+
+  margin: 0;
+
+  padding-left: 20px;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+/* =========================================================
+   FINAL BUTTONS
+========================================================= */
+
+.video-final-buttons {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 15px;
+}
+
+
+.video-gold-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  min-height: 46px;
+
+  padding:
+    0 22px;
+
+  border:
+    1px solid #e2a91f;
+
+  border-radius: 4px;
+
+  color: #0c2e6d;
+
+  background:
+    linear-gradient(180deg,
+      #f7ca52,
+      #e9a824);
+
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+
+.video-gold-button:hover {
+  transform:
+    translateY(-2px);
+
+  filter:
+    brightness(1.05);
+}
+
+
+/* =========================================================
+   FINAL IMAGE
+========================================================= */
+
+.video-final-image {
+  align-self: end;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+.video-final-image img {
+  display: block;
+
+  width: 100%;
+  max-width: 867px;
+
+  height: auto;
+}
+
+
+/* =========================================================
+   BACK TOP
+========================================================= */
+
+.video-back-top-shell {
+  position: relative;
+
+  z-index: 36;
+
+  height: 0;
+}
+
+
+.video-back-top {
+  position: absolute;
+
+  left: 50%;
+  bottom: -45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+
+  padding: 0;
+
+  border:
+    1px solid rgba(255,
+      255,
+      255,
+      0.2);
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56, 47, 112, 0.84),
+      rgba(17, 38, 79, 0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter:
+    blur(20px);
+
+  cursor: pointer;
+}
+
+
+.video-back-top img {
+  width: 30px;
+  height: 30px;
+
+  animation:
+    videoJump 1.6s ease-in-out infinite;
+}
+
+
+@keyframes videoJump {
+
+  0%,
+  100% {
+    transform:
+      translateY(3px);
+  }
+
+  50% {
+    transform:
+      translateY(-4px);
+  }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .video-tutorials-page {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .video-tutorials-hero,
+html[dir="rtl"] .video-final-copy {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .video-tutorial-play-icon {
+  right: 25px;
+  left: auto;
+}
+
+
+html[dir="rtl"] .video-final-copy ul {
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .video-tutorials-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .video-tutorials-hero {
+    min-height: 235px;
+  }
+
+
+  .video-tutorials-hero h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+
+  .video-tutorials-content {
+    padding-top: 75px;
+  }
+
+
+  .video-tutorials-grid {
+    grid-template-columns:
+      repeat(3,
+        minmax(0, 1fr));
+
+    gap: 28px;
+  }
+
+
+  .video-tutorials-gradient-title,
+  .video-final-copy h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+
+  .video-tutorial-thumbnail {
+    height: 160px;
+  }
+
+
+  .video-tutorial-card-content {
+    gap: 15px;
+
+    padding:
+      24px;
+  }
+
+
+  .video-tutorial-card h3 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+
+  .video-tutorial-level {
+    font-size: 13px;
+  }
+
+
+  .video-final-copy {
+    padding:
+      88px 0;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .video-tutorials-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .video-tutorials-hero {
+    min-height: 205px;
+  }
+
+
+  .video-tutorials-hero h1,
+  .video-tutorials-hero p {
+    text-align: center;
+  }
+
+
+  .video-tutorials-hero h1 {
+    font-size: 35px;
+  }
+
+
+  .video-tutorials-grid {
+    grid-template-columns:
+      repeat(2,
+        minmax(0, 1fr));
+  }
+
+
+  .video-why-section {
+    padding:
+      75px 0 20px;
+  }
+
+
+  .video-why-arrow {
+    display: block;
+  }
+
+
+  .video-final-layout {
+    grid-template-columns: 1fr;
+  }
+
+
+  .video-final-copy {
+    padding:
+      70px 0 15px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .video-tutorials-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .video-tutorials-hero {
+    min-height: 170px;
+  }
+
+
+  .video-tutorials-hero h1 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+
+  .video-tutorials-hero p {
+    margin-top: 8px;
+
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .video-tutorials-main-section {
+    padding-top: 38px;
+    padding-bottom: 60px;
+  }
+
+
+  .video-tutorials-content {
+    gap: 25px;
+
+    padding-top: 40px;
+  }
+
+
+  .video-tutorials-gradient-title,
+  .video-final-copy h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+
+  .video-tutorials-grid {
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+  }
+
+
+  .video-tutorial-thumbnail {
+    height: 179px;
+  }
+
+
+  .video-tutorial-play-icon {
+    left: 20px;
+    bottom: 18px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+
+  html[dir="rtl"] .video-tutorial-play-icon {
+    right: 20px;
+    left: auto;
+  }
+
+
+  .video-tutorial-card-content {
+    padding:
+      24px;
+
+    gap: 15px;
+  }
+
+
+  .video-why-card {
+    min-height: 190px;
+
+    padding-top: 65px;
+  }
+
+
+  .video-why-card h3 {
+    font-size: 16px;
+  }
+
+
+  .video-final-copy {
+    gap: 22px;
+
+    padding-top: 50px;
+  }
+
+
+  .video-final-copy ul {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+
+  .video-final-buttons {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+
+  .video-back-top {
+    width: 50px;
+    height: 50px;
+
+    bottom: -25px;
+  }
+
+
+  .video-back-top img {
+    width: 20px;
+    height: 20px;
+  }
+
+}

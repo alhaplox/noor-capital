@@ -1,0 +1,379 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.central-bank-rates-page {
+  width: 100%;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background: #06142e;
+}
+
+
+.central-bank-rates-container {
+  width:
+    min(1210px,
+      calc(100% - 60px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.central-bank-rates-hero {
+  display: flex;
+  align-items: center;
+
+  min-height: 285px;
+
+  background-image:
+    var(--central-bank-rates-hero);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.central-bank-rates-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 53px;
+  line-height: 63px;
+  font-weight: 900;
+
+  letter-spacing:
+    -0.025em;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.central-bank-rates-main {
+  padding:
+    48px 0 120px;
+
+  background-image:
+    var(--central-bank-rates-background);
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.central-bank-rates-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 55px;
+
+  margin-top: 20px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.central-bank-rates-title {
+  margin: 0;
+
+  color: #eeb235;
+
+  background:
+    linear-gradient(90deg,
+      #f7c442,
+      #dfa02d 55%,
+      #cb8927);
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  font-size: 45px;
+  line-height: 70px;
+  font-weight: 500;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   WIDGET
+========================================================= */
+
+.central-bank-rates-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px;
+
+  width: 100%;
+
+  overflow: auto;
+}
+
+
+.central-bank-rates-iframe {
+  display: block;
+
+  width: 100%;
+  height: 450px;
+
+  min-width: 10px;
+
+  border: 0;
+
+  overflow-x: auto;
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.central-bank-rates-back-top-shell {
+  position: relative;
+
+  z-index: 36;
+
+  height: 0;
+}
+
+
+.central-bank-rates-back-top {
+  position: absolute;
+
+  left: 50%;
+  bottom: -45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+
+  padding: 0;
+
+  border:
+    1px solid rgba(255,
+      255,
+      255,
+      0.2);
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(145deg,
+      rgba(56,
+        47,
+        112,
+        0.84),
+      rgba(17,
+        38,
+        79,
+        0.9));
+
+  transform:
+    translateX(-50%);
+
+  backdrop-filter:
+    blur(20px);
+
+  -webkit-backdrop-filter:
+    blur(20px);
+
+  cursor: pointer;
+}
+
+
+.central-bank-rates-back-top img {
+  width: 30px;
+  height: 30px;
+
+  animation:
+    centralRatesJump 1.6s ease-in-out infinite;
+}
+
+
+@keyframes centralRatesJump {
+
+  0%,
+  100% {
+    transform:
+      translateY(3px);
+  }
+
+
+  50% {
+    transform:
+      translateY(-4px);
+  }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .central-bank-rates-page {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .central-bank-rates-hero {
+  text-align: right;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .central-bank-rates-container {
+    width:
+      calc(100% - 50px);
+  }
+
+
+  .central-bank-rates-hero {
+    min-height: 235px;
+  }
+
+
+  .central-bank-rates-hero h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+
+  .central-bank-rates-content {
+    gap: 40px;
+  }
+
+
+  .central-bank-rates-title {
+    font-size: 35px;
+    line-height: 53px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .central-bank-rates-container {
+    width:
+      calc(100% - 40px);
+  }
+
+
+  .central-bank-rates-hero {
+    min-height: 205px;
+  }
+
+
+  .central-bank-rates-hero h1 {
+    font-size: 35px;
+
+    text-align: center;
+  }
+
+
+  .central-bank-rates-title {
+    font-size: 35px;
+    line-height: 53px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .central-bank-rates-container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .central-bank-rates-hero {
+    min-height: 170px;
+  }
+
+
+  .central-bank-rates-hero h1 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+
+  .central-bank-rates-main {
+    padding:
+      38px 0 60px;
+  }
+
+
+  .central-bank-rates-content {
+    gap: 40px;
+
+    margin-top: 20px;
+  }
+
+
+  .central-bank-rates-title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+
+  .central-bank-rates-iframe {
+    height: 450px;
+  }
+
+
+  .central-bank-rates-back-top {
+    width: 50px;
+    height: 50px;
+
+    bottom: -25px;
+  }
+
+
+  .central-bank-rates-back-top img {
+    width: 20px;
+    height: 20px;
+  }
+
+}
