@@ -148,76 +148,7 @@ const navigation = [
       },
     ],
   },
-  /* =========================================================
-    {
-      key: "trading",
-      type: "dropdown",
-  
-      groups: [
-        {
-          items: [
-            {
-              key: "mt4Platform",
-              path:
-                "trading/mt4-platform",
-            },
-  
-            {
-              key: "mt5Platform",
-              path:
-                "trading/mt5-platform",
-            },
-  
-            {
-              key: "mt4WebTrader",
-              path:
-                "trading/mt4-web-trader",
-            },
-  
-            {
-              key: "mt5WebTrader",
-              path:
-                "trading/mt5-web-trader",
-            },
-  
-            {
-              key: "gtnPlatform",
-              path:
-                "trading/gtn-platform",
-            },
-          ],
-        },
-  
-        {
-          items: [
-            {
-              key: "accountFunding",
-              path:
-                "trading/account-funding",
-            },
-  
-            {
-              key: "legalDocuments",
-              path:
-                "trading/legal-documents",
-            },
-  
-            {
-              key: "tradingCondition",
-              path:
-                "trading/trading-condition",
-            },
-  
-            {
-              key: "accountSecurity",
-              path:
-                "trading/account-security",
-            },
-          ],
-        },
-      ],
-    },
-  */
+
   {
     key: "learningHub",
     type: "dropdown",
@@ -225,35 +156,41 @@ const navigation = [
 
     groups: [
       {
-        titleKey: "education",
+        titleKey:
+          "education",
 
         items: [
           {
-            key: "learnToInvest",
+            key:
+              "learnToInvest",
             path:
               "learning-hub/education/learn-to-invest",
           },
 
           {
-            key: "videoTutorials",
+            key:
+              "videoTutorials",
             path:
               "learning-hub/education/video-tutorials",
           },
 
           {
-            key: "webinars",
+            key:
+              "webinars",
             path:
               "learning-hub/education/webinars",
           },
 
           {
-            key: "workshop",
+            key:
+              "workshop",
             path:
               "learning-hub/education/workshop",
           },
 
           {
-            key: "noorPedia",
+            key:
+              "noorPedia",
             path:
               "learning-hub/education/noor-pedia",
           },
@@ -261,35 +198,41 @@ const navigation = [
       },
 
       {
-        titleKey: "newsEvents",
+        titleKey:
+          "newsEvents",
 
         items: [
           {
-            key: "marketUpdates",
+            key:
+              "marketUpdates",
             path:
               "learning-hub/news-updates/market-updates",
           },
 
           {
-            key: "technicalAnalysis",
+            key:
+              "technicalAnalysis",
             path:
               "learning-hub/news-updates/technical-analysis",
           },
 
           {
-            key: "economicReports",
+            key:
+              "economicReports",
             path:
               "learning-hub/news-updates/economic-reports",
           },
 
           {
-            key: "economicCalendar",
+            key:
+              "economicCalendar",
             path:
               "learning-hub/news-updates/economic-calendar",
           },
 
           {
-            key: "centralBankRates",
+            key:
+              "centralBankRates",
             path:
               "learning-hub/news-updates/central-bank-rates",
           },
@@ -297,23 +240,27 @@ const navigation = [
       },
 
       {
-        titleKey: "mediaCenter",
+        titleKey:
+          "mediaCenter",
 
         items: [
           {
-            key: "pressReleases",
+            key:
+              "pressReleases",
             path:
               "learning-hub/media-center/press-release",
           },
 
           {
-            key: "activities",
+            key:
+              "activities",
             path:
               "learning-hub/media-center/activities",
           },
 
           {
-            key: "awards",
+            key:
+              "awards",
             path:
               "learning-hub/media-center/awards",
           },
@@ -330,25 +277,29 @@ const navigation = [
       {
         items: [
           {
-            key: "institutionalLiquidity",
+            key:
+              "institutionalLiquidity",
             path:
               "partnership/institutional-liquidity-solutions",
           },
 
           {
-            key: "moneyManagers",
+            key:
+              "moneyManagers",
             path:
               "partnership/money-managers",
           },
 
           {
-            key: "partnershipProgram",
+            key:
+              "partnershipProgram",
             path:
               "partnership/partnership-program",
           },
 
           {
-            key: "whiteLabel",
+            key:
+              "whiteLabel",
             path:
               "partnership/white-label-solutions",
           },
@@ -360,32 +311,28 @@ const navigation = [
 
 
 /* =========================================================
-   TRY DEMO MENU
+   LICENSE MENU
 ========================================================= */
 
-const demoItems = [
+const licenseItems = [
   {
-    key: "fxTrading",
-    path:
-      "trading/mt4-platform",
+    key:
+      "asicLicense",
+
+    href:
+      "https://connectonline.asic.gov.au/RegistrySearch/faces/landing/panelSearch.jspx?searchType=OrgAndBusNm&searchText=Noor",
+
+    external: true,
   },
 
   {
-    key: "mt5CashEquities",
-    path:
-      "trading/mt5-platform",
-  },
+    key:
+      "fcaLicense",
 
-  {
-    key: "gtnCashEquities",
-    path:
-      "trading/gtn-platform",
-  },
+    href:
+      "https://register.fca.org.uk/s/firm?id=001b000000bYdMVAA0",
 
-  {
-    key: "institutionalLiquidityShort",
-    path:
-      "partnership/institutional-liquidity-solutions",
+    external: true,
   },
 ];
 
@@ -396,28 +343,36 @@ const demoItems = [
 
 const liveItems = [
   {
-    key: "fxTrading",
+    key:
+      "fxTrading",
 
     href:
       "https://mynoor.noorcap.ae/en/mynoor-v2/register",
 
-    external: true,
+    external:
+      true,
   },
 
   {
-    key: "cashEquities",
+    key:
+      "cashEquities",
+
     path:
       "products/cash-equities",
   },
 
   {
-    key: "gtnCashEquities",
+    key:
+      "gtnCashEquities",
+
     path:
       "trading/gtn-platform",
   },
 
   {
-    key: "institutionalLiquidityShort",
+    key:
+      "institutionalLiquidityShort",
+
     path:
       "partnership/institutional-liquidity-solutions",
   },
@@ -587,10 +542,16 @@ const navCopy = {
 
       institutionalLiquidityShort:
         "Institutional Liquidity",
+
+      asicLicense:
+        "ASIC License",
+
+      fcaLicense:
+        "FCA License",
     },
 
-    tryDemo:
-      "Try a Demo",
+    license:
+      "License",
 
     openLive:
       "Open Live",
@@ -770,10 +731,16 @@ const navCopy = {
 
       institutionalLiquidityShort:
         "Kurumsal Likidite",
+
+      asicLicense:
+        "ASIC Lisansı",
+
+      fcaLicense:
+        "FCA Lisansı",
     },
 
-    tryDemo:
-      "Demo Deneyin",
+    license:
+      "Lisans",
 
     openLive:
       "Gerçek Hesap Aç",
@@ -953,10 +920,16 @@ const navCopy = {
 
       institutionalLiquidityShort:
         "Институциональная ликвидность",
+
+      asicLicense:
+        "Лицензия ASIC",
+
+      fcaLicense:
+        "Лицензия FCA",
     },
 
-    tryDemo:
-      "Попробовать демо",
+    license:
+      "Лицензии",
 
     openLive:
       "Открыть счет",
@@ -1136,10 +1109,16 @@ const navCopy = {
 
       institutionalLiquidityShort:
         "السيولة المؤسسية",
+
+      asicLicense:
+        "ترخيص ASIC",
+
+      fcaLicense:
+        "ترخيص FCA",
     },
 
-    tryDemo:
-      "جرب الحساب التجريبي",
+    license:
+      "التراخيص",
 
     openLive:
       "افتح حساباً",
@@ -1236,8 +1215,8 @@ export default function Navbar({
 
 
   const [
-    mobileDemoOpen,
-    setMobileDemoOpen,
+    mobileLicenseOpen,
+    setMobileLicenseOpen,
   ] = useState(false);
 
 
@@ -1278,7 +1257,9 @@ export default function Navbar({
               "string"
             ) {
               return {
-                code: item,
+                code:
+                  item,
+
                 label:
                   item.toUpperCase(),
               };
@@ -1549,7 +1530,6 @@ export default function Navbar({
             )
           }
         >
-
           <img
             src={
               NAV_ASSETS.logo
@@ -1557,7 +1537,6 @@ export default function Navbar({
 
             alt="Noor Capital"
           />
-
         </a>
 
 
@@ -1573,16 +1552,11 @@ export default function Navbar({
               (
                 navItem
               ) => {
-
                 const active =
                   isSectionActive(
                     navItem
                   );
 
-
-                /* ================================
-                   DIRECT LINK
-                ================================= */
 
                 if (
                   navItem.type ===
@@ -1597,11 +1571,11 @@ export default function Navbar({
                   return (
                     <li
                       className="navbar-item"
+
                       key={
                         navItem.key
                       }
                     >
-
                       <a
                         href={
                           href
@@ -1628,15 +1602,10 @@ export default function Navbar({
                           ]
                         }
                       </a>
-
                     </li>
                   );
                 }
 
-
-                /* ================================
-                   DROPDOWN
-                ================================= */
 
                 return (
                   <li
@@ -1644,6 +1613,7 @@ export default function Navbar({
                       ? "is-active"
                       : ""
                       }`}
+
                     key={
                       navItem.key
                     }
@@ -1654,7 +1624,6 @@ export default function Navbar({
 
                       className="navbar-main-link navbar-main-button"
                     >
-
                       <span>
                         {
                           content
@@ -1665,7 +1634,6 @@ export default function Navbar({
                       </span>
 
                       <Chevron />
-
                     </button>
 
 
@@ -1687,7 +1655,6 @@ export default function Navbar({
                             group,
                             groupIndex
                           ) => (
-
                             <div
                               className="navbar-dropdown-column"
 
@@ -1715,7 +1682,6 @@ export default function Navbar({
                                   (
                                     subItem
                                   ) => {
-
                                     const href =
                                       localUrl(
                                         subItem.path
@@ -1754,8 +1720,7 @@ export default function Navbar({
                                           {
                                             content
                                               .labels[
-                                            subItem
-                                              .key
+                                            subItem.key
                                             ]
                                           }
                                         </a>
@@ -1768,7 +1733,6 @@ export default function Navbar({
                               </ul>
 
                             </div>
-
                           )
                         )}
 
@@ -1815,7 +1779,6 @@ export default function Navbar({
                 (
                   option
                 ) => (
-
                   <option
                     key={
                       option.code
@@ -1829,7 +1792,6 @@ export default function Navbar({
                       option.label
                     }
                   </option>
-
                 )
               )}
 
@@ -1840,7 +1802,7 @@ export default function Navbar({
           </div>
 
 
-          {/* TRY DEMO */}
+          {/* LICENSE */}
 
           <div className="navbar-action-dropdown">
 
@@ -1852,7 +1814,7 @@ export default function Navbar({
 
               <span>
                 {
-                  content.tryDemo
+                  content.license
                 }
               </span>
 
@@ -1867,49 +1829,33 @@ export default function Navbar({
 
                 <ul>
 
-                  {demoItems.map(
+                  {licenseItems.map(
                     (
                       item
-                    ) => {
-
-                      const href =
-                        localUrl(
-                          item.path
-                        );
-
-
-                      return (
-                        <li
-                          key={
-                            item.key
+                    ) => (
+                      <li
+                        key={
+                          item.key
+                        }
+                      >
+                        <a
+                          href={
+                            item.href
                           }
+
+                          target="_blank"
+
+                          rel="noopener noreferrer"
                         >
-
-                          <a
-                            href={
-                              href
-                            }
-
-                            onClick={(
-                              event
-                            ) =>
-                              handleInternalLink(
-                                event,
-                                href
-                              )
-                            }
-                          >
-                            {
-                              content
-                                .labels[
-                              item.key
-                              ]
-                            }
-                          </a>
-
-                        </li>
-                      );
-                    }
+                          {
+                            content
+                              .labels[
+                            item.key
+                            ]
+                          }
+                        </a>
+                      </li>
+                    )
                   )}
 
                 </ul>
@@ -2172,7 +2118,6 @@ export default function Navbar({
               (
                 option
               ) => (
-
                 <option
                   key={
                     option.code
@@ -2186,7 +2131,6 @@ export default function Navbar({
                     option.label
                   }
                 </option>
-
               )
             )}
 
@@ -2205,10 +2149,6 @@ export default function Navbar({
               (
                 navItem
               ) => {
-
-                /* ================================
-                   MOBILE DIRECT LINK
-                ================================= */
 
                 if (
                   navItem.type ===
@@ -2274,10 +2214,6 @@ export default function Navbar({
                   );
 
 
-                /* ================================
-                   MOBILE DROPDOWN
-                ================================= */
-
                 return (
                   <li
                     key={
@@ -2314,6 +2250,7 @@ export default function Navbar({
                           ]
                         }
                       </span>
+
 
                       <Plus
                         open={
@@ -2407,7 +2344,7 @@ export default function Navbar({
         <div className="navbar-mobile-actions">
 
 
-          {/* DEMO */}
+          {/* LICENSE */}
 
           <div>
 
@@ -2417,7 +2354,7 @@ export default function Navbar({
               className="navbar-mobile-demo-button"
 
               onClick={() =>
-                setMobileDemoOpen(
+                setMobileLicenseOpen(
                   (
                     current
                   ) =>
@@ -2428,13 +2365,14 @@ export default function Navbar({
 
               <span>
                 {
-                  content.tryDemo
+                  content.license
                 }
               </span>
 
+
               <Chevron
                 open={
-                  mobileDemoOpen
+                  mobileLicenseOpen
                 }
               />
 
@@ -2442,51 +2380,43 @@ export default function Navbar({
 
 
             <div
-              className={`navbar-mobile-action-submenu ${mobileDemoOpen
+              className={`navbar-mobile-action-submenu ${mobileLicenseOpen
                 ? "is-open"
                 : ""
                 }`}
             >
 
-              {demoItems.map(
+              {licenseItems.map(
                 (
                   item
-                ) => {
+                ) => (
+                  <a
+                    key={
+                      item.key
+                    }
 
-                  const href =
-                    localUrl(
-                      item.path
-                    );
+                    href={
+                      item.href
+                    }
 
+                    target="_blank"
 
-                  return (
-                    <a
-                      key={
-                        item.key
-                      }
+                    rel="noopener noreferrer"
 
-                      href={
-                        href
-                      }
-
-                      onClick={(
-                        event
-                      ) =>
-                        handleInternalLink(
-                          event,
-                          href
-                        )
-                      }
-                    >
-                      {
-                        content
-                          .labels[
-                        item.key
-                        ]
-                      }
-                    </a>
-                  );
-                }
+                    onClick={() =>
+                      setMobileOpen(
+                        false
+                      )
+                    }
+                  >
+                    {
+                      content
+                        .labels[
+                      item.key
+                      ]
+                    }
+                  </a>
+                )
               )}
 
             </div>
@@ -2518,6 +2448,7 @@ export default function Navbar({
                   content.openLive
                 }
               </span>
+
 
               <Chevron
                 open={
@@ -2627,9 +2558,11 @@ export default function Navbar({
             {content.myNoor}
           </a>
 
+
           <span>
             |
           </span>
+
 
           <a
             href="https://agent.noorcap.ae"
