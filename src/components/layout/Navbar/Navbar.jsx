@@ -14,6 +14,9 @@ import "./Navbar.css";
 const NAV_ASSETS = {
   logo:
     "https://www.noorcapital.ae/images/noor-logo.png",
+
+  spkLicense:
+    "/images/licenses/spk-license.png",
 };
 
 
@@ -156,41 +159,35 @@ const navigation = [
 
     groups: [
       {
-        titleKey:
-          "education",
+        titleKey: "education",
 
         items: [
           {
-            key:
-              "learnToInvest",
+            key: "learnToInvest",
             path:
               "learning-hub/education/learn-to-invest",
           },
 
           {
-            key:
-              "videoTutorials",
+            key: "videoTutorials",
             path:
               "learning-hub/education/video-tutorials",
           },
 
           {
-            key:
-              "webinars",
+            key: "webinars",
             path:
               "learning-hub/education/webinars",
           },
 
           {
-            key:
-              "workshop",
+            key: "workshop",
             path:
               "learning-hub/education/workshop",
           },
 
           {
-            key:
-              "noorPedia",
+            key: "noorPedia",
             path:
               "learning-hub/education/noor-pedia",
           },
@@ -198,41 +195,35 @@ const navigation = [
       },
 
       {
-        titleKey:
-          "newsEvents",
+        titleKey: "newsEvents",
 
         items: [
           {
-            key:
-              "marketUpdates",
+            key: "marketUpdates",
             path:
               "learning-hub/news-updates/market-updates",
           },
 
           {
-            key:
-              "technicalAnalysis",
+            key: "technicalAnalysis",
             path:
               "learning-hub/news-updates/technical-analysis",
           },
 
           {
-            key:
-              "economicReports",
+            key: "economicReports",
             path:
               "learning-hub/news-updates/economic-reports",
           },
 
           {
-            key:
-              "economicCalendar",
+            key: "economicCalendar",
             path:
               "learning-hub/news-updates/economic-calendar",
           },
 
           {
-            key:
-              "centralBankRates",
+            key: "centralBankRates",
             path:
               "learning-hub/news-updates/central-bank-rates",
           },
@@ -240,27 +231,23 @@ const navigation = [
       },
 
       {
-        titleKey:
-          "mediaCenter",
+        titleKey: "mediaCenter",
 
         items: [
           {
-            key:
-              "pressReleases",
+            key: "pressReleases",
             path:
               "learning-hub/media-center/press-release",
           },
 
           {
-            key:
-              "activities",
+            key: "activities",
             path:
               "learning-hub/media-center/activities",
           },
 
           {
-            key:
-              "awards",
+            key: "awards",
             path:
               "learning-hub/media-center/awards",
           },
@@ -277,29 +264,25 @@ const navigation = [
       {
         items: [
           {
-            key:
-              "institutionalLiquidity",
+            key: "institutionalLiquidity",
             path:
               "partnership/institutional-liquidity-solutions",
           },
 
           {
-            key:
-              "moneyManagers",
+            key: "moneyManagers",
             path:
               "partnership/money-managers",
           },
 
           {
-            key:
-              "partnershipProgram",
+            key: "partnershipProgram",
             path:
               "partnership/partnership-program",
           },
 
           {
-            key:
-              "whiteLabel",
+            key: "whiteLabel",
             path:
               "partnership/white-label-solutions",
           },
@@ -316,23 +299,27 @@ const navigation = [
 
 const licenseItems = [
   {
-    key:
-      "asicLicense",
+    key: "asicLicense",
+
+    type: "external",
 
     href:
       "https://connectonline.asic.gov.au/RegistrySearch/faces/landing/panelSearch.jspx?searchType=OrgAndBusNm&searchText=Noor",
-
-    external: true,
   },
 
   {
-    key:
-      "fcaLicense",
+    key: "fcaLicense",
+
+    type: "external",
 
     href:
       "https://register.fca.org.uk/s/firm?id=001b000000bYdMVAA0",
+  },
 
-    external: true,
+  {
+    key: "spkLicense",
+
+    type: "lightbox",
   },
 ];
 
@@ -343,35 +330,30 @@ const licenseItems = [
 
 const liveItems = [
   {
-    key:
-      "fxTrading",
+    key: "fxTrading",
 
     href:
       "https://mynoor.noorcap.ae/en/mynoor-v2/register",
 
-    external:
-      true,
+    external: true,
   },
 
   {
-    key:
-      "cashEquities",
+    key: "cashEquities",
 
     path:
       "products/cash-equities",
   },
 
   {
-    key:
-      "gtnCashEquities",
+    key: "gtnCashEquities",
 
     path:
       "trading/gtn-platform",
   },
 
   {
-    key:
-      "institutionalLiquidityShort",
+    key: "institutionalLiquidityShort",
 
     path:
       "partnership/institutional-liquidity-solutions",
@@ -548,6 +530,9 @@ const navCopy = {
 
       fcaLicense:
         "FCA License",
+
+      spkLicense:
+        "CMB (SPK) License",
     },
 
     license:
@@ -570,6 +555,9 @@ const navCopy = {
 
     language:
       "Language",
+
+    closeLicense:
+      "Close license",
   },
 
 
@@ -737,6 +725,9 @@ const navCopy = {
 
       fcaLicense:
         "FCA Lisansı",
+
+      spkLicense:
+        "SPK Lisansı",
     },
 
     license:
@@ -759,6 +750,9 @@ const navCopy = {
 
     language:
       "Dil",
+
+    closeLicense:
+      "Lisansı kapat",
   },
 
 
@@ -926,6 +920,9 @@ const navCopy = {
 
       fcaLicense:
         "Лицензия FCA",
+
+      spkLicense:
+        "Лицензия CMB (SPK)",
     },
 
     license:
@@ -948,6 +945,9 @@ const navCopy = {
 
     language:
       "Язык",
+
+    closeLicense:
+      "Закрыть лицензию",
   },
 
 
@@ -1115,6 +1115,9 @@ const navCopy = {
 
       fcaLicense:
         "ترخيص FCA",
+
+      spkLicense:
+        "ترخيص CMB (SPK)",
     },
 
     license:
@@ -1137,6 +1140,9 @@ const navCopy = {
 
     language:
       "اللغة",
+
+    closeLicense:
+      "إغلاق الترخيص",
   },
 };
 
@@ -1226,6 +1232,12 @@ export default function Navbar({
   ] = useState(false);
 
 
+  const [
+    spkLicenseOpen,
+    setSpkLicenseOpen,
+  ] = useState(false);
+
+
   const content =
     navCopy[language] ||
     navCopy.en;
@@ -1257,8 +1269,7 @@ export default function Navbar({
               "string"
             ) {
               return {
-                code:
-                  item,
+                code: item,
 
                 label:
                   item.toUpperCase(),
@@ -1326,7 +1337,8 @@ export default function Navbar({
   useEffect(
     () => {
       if (
-        !mobileOpen
+        !mobileOpen &&
+        !spkLicenseOpen
       ) {
         document.body.style.overflow =
           "";
@@ -1346,6 +1358,53 @@ export default function Navbar({
     },
     [
       mobileOpen,
+      spkLicenseOpen,
+    ]
+  );
+
+
+  /* =======================================================
+     ESC — LICENSE LIGHTBOX
+  ======================================================= */
+
+  useEffect(
+    () => {
+      if (
+        !spkLicenseOpen
+      ) {
+        return undefined;
+      }
+
+
+      function handleKeyDown(
+        event
+      ) {
+        if (
+          event.key ===
+          "Escape"
+        ) {
+          setSpkLicenseOpen(
+            false
+          );
+        }
+      }
+
+
+      document.addEventListener(
+        "keydown",
+        handleKeyDown
+      );
+
+
+      return () => {
+        document.removeEventListener(
+          "keydown",
+          handleKeyDown
+        );
+      };
+    },
+    [
+      spkLicenseOpen,
     ]
   );
 
@@ -1501,407 +1560,412 @@ export default function Navbar({
 
 
   /* =======================================================
+     SPK LIGHTBOX
+  ======================================================= */
+
+  function openSpkLicense() {
+    setMobileLicenseOpen(
+      false
+    );
+
+    setMobileOpen(
+      false
+    );
+
+    setSpkLicenseOpen(
+      true
+    );
+  }
+
+
+  function closeSpkLicense() {
+    setSpkLicenseOpen(
+      false
+    );
+  }
+
+
+  /* =======================================================
      RENDER
   ======================================================= */
 
   return (
-    <header className="navbar-shell">
+    <>
 
-      <div className="navbar-container">
+      <header className="navbar-shell">
+
+        <div className="navbar-container">
 
 
-        {/* =========================================
-            LOGO
-        ========================================== */}
+          {/* =========================================
+              LOGO
+          ========================================== */}
 
-        <a
-          href={
-            localUrl()
-          }
-
-          className="navbar-logo"
-
-          onClick={(
-            event
-          ) =>
-            handleInternalLink(
-              event,
+          <a
+            href={
               localUrl()
-            )
-          }
-        >
-          <img
-            src={
-              NAV_ASSETS.logo
             }
 
-            alt="Noor Capital"
-          />
-        </a>
+            className="navbar-logo"
+
+            onClick={(
+              event
+            ) =>
+              handleInternalLink(
+                event,
+                localUrl()
+              )
+            }
+          >
+
+            <img
+              src={
+                NAV_ASSETS.logo
+              }
+
+              alt="Noor Capital"
+            />
+
+          </a>
 
 
-        {/* =========================================
-            DESKTOP NAVIGATION
-        ========================================== */}
+          {/* =========================================
+              DESKTOP NAVIGATION
+          ========================================== */}
 
-        <nav className="navbar-desktop">
+          <nav className="navbar-desktop">
 
-          <ul className="navbar-desktop-list">
+            <ul className="navbar-desktop-list">
 
-            {navigation.map(
-              (
-                navItem
-              ) => {
-                const active =
-                  isSectionActive(
-                    navItem
-                  );
+              {navigation.map(
+                (
+                  navItem
+                ) => {
 
-
-                if (
-                  navItem.type ===
-                  "link"
-                ) {
-                  const href =
-                    localUrl(
-                      navItem.path
+                  const active =
+                    isSectionActive(
+                      navItem
                     );
+
+
+                  if (
+                    navItem.type ===
+                    "link"
+                  ) {
+                    const href =
+                      localUrl(
+                        navItem.path
+                      );
+
+
+                    return (
+                      <li
+                        className="navbar-item"
+
+                        key={
+                          navItem.key
+                        }
+                      >
+
+                        <a
+                          href={
+                            href
+                          }
+
+                          className={`navbar-main-link ${active
+                            ? "is-active"
+                            : ""
+                            }`}
+
+                          onClick={(
+                            event
+                          ) =>
+                            handleInternalLink(
+                              event,
+                              href
+                            )
+                          }
+                        >
+                          {
+                            content
+                              .labels[
+                            navItem.key
+                            ]
+                          }
+                        </a>
+
+                      </li>
+                    );
+                  }
 
 
                   return (
                     <li
-                      className="navbar-item"
+                      className={`navbar-item has-dropdown ${active
+                        ? "is-active"
+                        : ""
+                        }`}
 
                       key={
                         navItem.key
                       }
                     >
-                      <a
-                        href={
-                          href
-                        }
 
-                        className={`navbar-main-link ${active
-                          ? "is-active"
-                          : ""
-                          }`}
+                      <button
+                        type="button"
 
-                        onClick={(
-                          event
-                        ) =>
-                          handleInternalLink(
-                            event,
-                            href
-                          )
-                        }
+                        className="navbar-main-link navbar-main-button"
                       >
-                        {
-                          content
-                            .labels[
-                          navItem.key
-                          ]
-                        }
-                      </a>
-                    </li>
-                  );
-                }
 
-
-                return (
-                  <li
-                    className={`navbar-item has-dropdown ${active
-                      ? "is-active"
-                      : ""
-                      }`}
-
-                    key={
-                      navItem.key
-                    }
-                  >
-
-                    <button
-                      type="button"
-
-                      className="navbar-main-link navbar-main-button"
-                    >
-                      <span>
-                        {
-                          content
-                            .labels[
-                          navItem.key
-                          ]
-                        }
-                      </span>
-
-                      <Chevron />
-                    </button>
-
-
-                    <div
-                      className={`navbar-dropdown ${navItem.wide
-                        ? "is-wide"
-                        : ""
-                        } ${navItem.groups.length >
-                          1
-                          ? "is-multi"
-                          : ""
-                        }`}
-                    >
-
-                      <div className="navbar-dropdown-inner">
-
-                        {navItem.groups.map(
-                          (
-                            group,
-                            groupIndex
-                          ) => (
-                            <div
-                              className="navbar-dropdown-column"
-
-                              key={
-                                `${navItem.key}-${groupIndex}`
-                              }
-                            >
-
-                              {group.titleKey && (
-                                <h3>
-                                  {
-                                    content
-                                      .labels[
-                                    group
-                                      .titleKey
-                                    ]
-                                  }
-                                </h3>
-                              )}
-
-
-                              <ul>
-
-                                {group.items.map(
-                                  (
-                                    subItem
-                                  ) => {
-                                    const href =
-                                      localUrl(
-                                        subItem.path
-                                      );
-
-
-                                    return (
-                                      <li
-                                        key={
-                                          subItem.key
-                                        }
-                                      >
-
-                                        <a
-                                          href={
-                                            href
-                                          }
-
-                                          className={
-                                            isPathActive(
-                                              subItem.path
-                                            )
-                                              ? "is-active"
-                                              : ""
-                                          }
-
-                                          onClick={(
-                                            event
-                                          ) =>
-                                            handleInternalLink(
-                                              event,
-                                              href
-                                            )
-                                          }
-                                        >
-                                          {
-                                            content
-                                              .labels[
-                                            subItem.key
-                                            ]
-                                          }
-                                        </a>
-
-                                      </li>
-                                    );
-                                  }
-                                )}
-
-                              </ul>
-
-                            </div>
-                          )
-                        )}
-
-                      </div>
-
-                    </div>
-
-                  </li>
-                );
-              }
-            )}
-
-          </ul>
-
-        </nav>
-
-
-        {/* =========================================
-            DESKTOP ACTIONS
-        ========================================== */}
-
-        <div className="navbar-actions">
-
-
-          {/* LANGUAGE */}
-
-          <div className="navbar-language">
-
-            <select
-              value={
-                language
-              }
-
-              onChange={
-                handleLanguageChange
-              }
-
-              aria-label={
-                content.language
-              }
-            >
-
-              {languageOptions.map(
-                (
-                  option
-                ) => (
-                  <option
-                    key={
-                      option.code
-                    }
-
-                    value={
-                      option.code
-                    }
-                  >
-                    {
-                      option.label
-                    }
-                  </option>
-                )
-              )}
-
-            </select>
-
-            <Chevron />
-
-          </div>
-
-
-          {/* LICENSE */}
-
-          <div className="navbar-action-dropdown">
-
-            <button
-              type="button"
-
-              className="navbar-demo-button"
-            >
-
-              <span>
-                {
-                  content.license
-                }
-              </span>
-
-              <Chevron />
-
-            </button>
-
-
-            <div className="navbar-action-menu">
-
-              <div className="navbar-action-menu-inner">
-
-                <ul>
-
-                  {licenseItems.map(
-                    (
-                      item
-                    ) => (
-                      <li
-                        key={
-                          item.key
-                        }
-                      >
-                        <a
-                          href={
-                            item.href
-                          }
-
-                          target="_blank"
-
-                          rel="noopener noreferrer"
-                        >
+                        <span>
                           {
                             content
                               .labels[
-                            item.key
+                            navItem.key
                             ]
                           }
-                        </a>
-                      </li>
-                    )
-                  )}
+                        </span>
 
-                </ul>
+                        <Chevron />
 
-              </div>
-
-            </div>
-
-          </div>
+                      </button>
 
 
-          {/* OPEN LIVE */}
+                      <div
+                        className={`navbar-dropdown ${navItem.wide
+                          ? "is-wide"
+                          : ""
+                          } ${navItem.groups.length >
+                            1
+                            ? "is-multi"
+                            : ""
+                          }`}
+                      >
 
-          <div className="navbar-action-dropdown">
+                        <div className="navbar-dropdown-inner">
 
-            <button
-              type="button"
+                          {navItem.groups.map(
+                            (
+                              group,
+                              groupIndex
+                            ) => (
 
-              className="navbar-live-button"
-            >
+                              <div
+                                className="navbar-dropdown-column"
 
-              <span>
-                {
-                  content.openLive
+                                key={
+                                  `${navItem.key}-${groupIndex}`
+                                }
+                              >
+
+                                {group.titleKey && (
+                                  <h3>
+                                    {
+                                      content
+                                        .labels[
+                                      group
+                                        .titleKey
+                                      ]
+                                    }
+                                  </h3>
+                                )}
+
+
+                                <ul>
+
+                                  {group.items.map(
+                                    (
+                                      subItem
+                                    ) => {
+
+                                      const href =
+                                        localUrl(
+                                          subItem.path
+                                        );
+
+
+                                      return (
+                                        <li
+                                          key={
+                                            subItem.key
+                                          }
+                                        >
+
+                                          <a
+                                            href={
+                                              href
+                                            }
+
+                                            className={
+                                              isPathActive(
+                                                subItem.path
+                                              )
+                                                ? "is-active"
+                                                : ""
+                                            }
+
+                                            onClick={(
+                                              event
+                                            ) =>
+                                              handleInternalLink(
+                                                event,
+                                                href
+                                              )
+                                            }
+                                          >
+                                            {
+                                              content
+                                                .labels[
+                                              subItem.key
+                                              ]
+                                            }
+                                          </a>
+
+                                        </li>
+                                      );
+                                    }
+                                  )}
+
+                                </ul>
+
+                              </div>
+
+                            )
+                          )}
+
+                        </div>
+
+                      </div>
+
+                    </li>
+                  );
                 }
-              </span>
+              )}
+
+            </ul>
+
+          </nav>
+
+
+          {/* =========================================
+              DESKTOP ACTIONS
+          ========================================== */}
+
+          <div className="navbar-actions">
+
+
+            {/* LANGUAGE */}
+
+            <div className="navbar-language">
+
+              <select
+                value={
+                  language
+                }
+
+                onChange={
+                  handleLanguageChange
+                }
+
+                aria-label={
+                  content.language
+                }
+              >
+
+                {languageOptions.map(
+                  (
+                    option
+                  ) => (
+
+                    <option
+                      key={
+                        option.code
+                      }
+
+                      value={
+                        option.code
+                      }
+                    >
+                      {
+                        option.label
+                      }
+                    </option>
+
+                  )
+                )}
+
+              </select>
 
               <Chevron />
 
-            </button>
+            </div>
 
 
-            <div className="navbar-action-menu">
+            {/* LICENSE */}
 
-              <div className="navbar-action-menu-inner">
+            <div className="navbar-action-dropdown">
 
-                <ul>
+              <button
+                type="button"
 
-                  {liveItems.map(
-                    (
-                      item
-                    ) => {
+                className="navbar-demo-button"
+              >
 
-                      if (
-                        item.external
-                      ) {
+                <span>
+                  {
+                    content.license
+                  }
+                </span>
+
+                <Chevron />
+
+              </button>
+
+
+              <div className="navbar-action-menu">
+
+                <div className="navbar-action-menu-inner">
+
+                  <ul>
+
+                    {licenseItems.map(
+                      (
+                        item
+                      ) => {
+
+                        if (
+                          item.type ===
+                          "lightbox"
+                        ) {
+                          return (
+                            <li
+                              key={
+                                item.key
+                              }
+                            >
+
+                              <button
+                                type="button"
+
+                                className="navbar-action-menu-button"
+
+                                onClick={
+                                  openSpkLicense
+                                }
+                              >
+                                {
+                                  content
+                                    .labels[
+                                  item.key
+                                  ]
+                                }
+                              </button>
+
+                            </li>
+                          );
+                        }
+
+
                         return (
                           <li
                             key={
@@ -1929,234 +1993,367 @@ export default function Navbar({
                           </li>
                         );
                       }
+                    )}
 
+                  </ul>
 
-                      const href =
-                        localUrl(
-                          item.path
-                        );
-
-
-                      return (
-                        <li
-                          key={
-                            item.key
-                          }
-                        >
-
-                          <a
-                            href={
-                              href
-                            }
-
-                            onClick={(
-                              event
-                            ) =>
-                              handleInternalLink(
-                                event,
-                                href
-                              )
-                            }
-                          >
-                            {
-                              content
-                                .labels[
-                              item.key
-                              ]
-                            }
-                          </a>
-
-                        </li>
-                      );
-                    }
-                  )}
-
-                </ul>
+                </div>
 
               </div>
 
             </div>
 
+
+            {/* OPEN LIVE */}
+
+            <div className="navbar-action-dropdown">
+
+              <button
+                type="button"
+
+                className="navbar-live-button"
+              >
+
+                <span>
+                  {
+                    content.openLive
+                  }
+                </span>
+
+                <Chevron />
+
+              </button>
+
+
+              <div className="navbar-action-menu">
+
+                <div className="navbar-action-menu-inner">
+
+                  <ul>
+
+                    {liveItems.map(
+                      (
+                        item
+                      ) => {
+
+                        if (
+                          item.external
+                        ) {
+                          return (
+                            <li
+                              key={
+                                item.key
+                              }
+                            >
+
+                              <a
+                                href={
+                                  item.href
+                                }
+
+                                target="_blank"
+
+                                rel="noopener noreferrer"
+                              >
+                                {
+                                  content
+                                    .labels[
+                                  item.key
+                                  ]
+                                }
+                              </a>
+
+                            </li>
+                          );
+                        }
+
+
+                        const href =
+                          localUrl(
+                            item.path
+                          );
+
+
+                        return (
+                          <li
+                            key={
+                              item.key
+                            }
+                          >
+
+                            <a
+                              href={
+                                href
+                              }
+
+                              onClick={(
+                                event
+                              ) =>
+                                handleInternalLink(
+                                  event,
+                                  href
+                                )
+                              }
+                            >
+                              {
+                                content
+                                  .labels[
+                                item.key
+                                ]
+                              }
+                            </a>
+
+                          </li>
+                        );
+                      }
+                    )}
+
+                  </ul>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            {/* MOBILE HAMBURGER */}
+
+            <button
+              type="button"
+
+              className="navbar-hamburger"
+
+              onClick={() =>
+                setMobileOpen(
+                  true
+                )
+              }
+
+              aria-label={
+                content.menu
+              }
+            >
+              <span />
+              <span />
+              <span />
+            </button>
+
+          </div>
+
+        </div>
+
+
+        {/* =========================================
+            MOBILE OVERLAY
+        ========================================== */}
+
+        <button
+          type="button"
+
+          className={`navbar-mobile-overlay ${mobileOpen
+            ? "is-open"
+            : ""
+            }`}
+
+          onClick={() =>
+            setMobileOpen(
+              false
+            )
+          }
+
+          aria-label={
+            content.close
+          }
+        />
+
+
+        {/* =========================================
+            MOBILE DRAWER
+        ========================================== */}
+
+        <aside
+          className={`navbar-mobile-drawer ${mobileOpen
+            ? "is-open"
+            : ""
+            }`}
+        >
+
+          {/* MOBILE HEADER */}
+
+          <div className="navbar-mobile-header">
+
+            <a
+              href={
+                localUrl()
+              }
+
+              className="navbar-mobile-logo"
+
+              onClick={(
+                event
+              ) =>
+                handleInternalLink(
+                  event,
+                  localUrl()
+                )
+              }
+            >
+
+              <img
+                src={
+                  NAV_ASSETS.logo
+                }
+
+                alt="Noor Capital"
+              />
+
+            </a>
+
+
+            <button
+              type="button"
+
+              className="navbar-mobile-close"
+
+              onClick={() =>
+                setMobileOpen(
+                  false
+                )
+              }
+
+              aria-label={
+                content.close
+              }
+            >
+              ×
+            </button>
+
           </div>
 
 
-          {/* MOBILE HAMBURGER */}
+          {/* MOBILE LANGUAGE */}
 
-          <button
-            type="button"
+          <div className="navbar-mobile-language">
 
-            className="navbar-hamburger"
-
-            onClick={() =>
-              setMobileOpen(
-                true
-              )
-            }
-
-            aria-label={
-              content.menu
-            }
-          >
-            <span />
-            <span />
-            <span />
-          </button>
-
-        </div>
-
-      </div>
+            <span>
+              {
+                content.language
+              }
+            </span>
 
 
-      {/* =========================================
-          MOBILE OVERLAY
-      ========================================== */}
-
-      <button
-        type="button"
-
-        className={`navbar-mobile-overlay ${mobileOpen
-          ? "is-open"
-          : ""
-          }`}
-
-        onClick={() =>
-          setMobileOpen(
-            false
-          )
-        }
-
-        aria-label={
-          content.close
-        }
-      />
-
-
-      {/* =========================================
-          MOBILE DRAWER
-      ========================================== */}
-
-      <aside
-        className={`navbar-mobile-drawer ${mobileOpen
-          ? "is-open"
-          : ""
-          }`}
-      >
-
-        {/* MOBILE HEADER */}
-
-        <div className="navbar-mobile-header">
-
-          <a
-            href={
-              localUrl()
-            }
-
-            className="navbar-mobile-logo"
-
-            onClick={(
-              event
-            ) =>
-              handleInternalLink(
-                event,
-                localUrl()
-              )
-            }
-          >
-
-            <img
-              src={
-                NAV_ASSETS.logo
+            <select
+              value={
+                language
               }
 
-              alt="Noor Capital"
-            />
+              onChange={
+                handleLanguageChange
+              }
+            >
 
-          </a>
+              {languageOptions.map(
+                (
+                  option
+                ) => (
 
+                  <option
+                    key={
+                      option.code
+                    }
 
-          <button
-            type="button"
+                    value={
+                      option.code
+                    }
+                  >
+                    {
+                      option.label
+                    }
+                  </option>
 
-            className="navbar-mobile-close"
+                )
+              )}
 
-            onClick={() =>
-              setMobileOpen(
-                false
-              )
-            }
+            </select>
 
-            aria-label={
-              content.close
-            }
-          >
-            ×
-          </button>
-
-        </div>
-
-
-        {/* MOBILE LANGUAGE */}
-
-        <div className="navbar-mobile-language">
-
-          <span>
-            {content.language}
-          </span>
+          </div>
 
 
-          <select
-            value={
-              language
-            }
+          {/* MOBILE NAV */}
 
-            onChange={
-              handleLanguageChange
-            }
-          >
+          <nav className="navbar-mobile-nav">
 
-            {languageOptions.map(
-              (
-                option
-              ) => (
-                <option
-                  key={
-                    option.code
+            <ul>
+
+              {navigation.map(
+                (
+                  navItem
+                ) => {
+
+                  if (
+                    navItem.type ===
+                    "link"
+                  ) {
+                    const href =
+                      localUrl(
+                        navItem.path
+                      );
+
+
+                    return (
+                      <li
+                        key={
+                          navItem.key
+                        }
+                      >
+
+                        <a
+                          href={
+                            href
+                          }
+
+                          className={`navbar-mobile-main-link ${isPathActive(
+                            navItem.path
+                          )
+                            ? "is-active"
+                            : ""
+                            }`}
+
+                          onClick={(
+                            event
+                          ) =>
+                            handleInternalLink(
+                              event,
+                              href
+                            )
+                          }
+                        >
+
+                          <span>
+                            {
+                              content
+                                .labels[
+                              navItem.key
+                              ]
+                            }
+                          </span>
+
+                        </a>
+
+                      </li>
+                    );
                   }
 
-                  value={
-                    option.code
-                  }
-                >
-                  {
-                    option.label
-                  }
-                </option>
-              )
-            )}
 
-          </select>
-
-        </div>
+                  const isOpen =
+                    mobileAccordion ===
+                    navItem.key;
 
 
-        {/* MOBILE NAV */}
-
-        <nav className="navbar-mobile-nav">
-
-          <ul>
-
-            {navigation.map(
-              (
-                navItem
-              ) => {
-
-                if (
-                  navItem.type ===
-                  "link"
-                ) {
-                  const href =
-                    localUrl(
-                      navItem.path
+                  const items =
+                    getFlatItems(
+                      navItem
                     );
 
 
@@ -2167,27 +2364,27 @@ export default function Navbar({
                       }
                     >
 
-                      <a
-                        href={
-                          href
-                        }
+                      <button
+                        type="button"
 
-                        className={`navbar-mobile-main-link ${isPathActive(
-                          navItem.path
+                        className={`navbar-mobile-main-link navbar-mobile-main-button ${isSectionActive(
+                          navItem
                         )
                           ? "is-active"
                           : ""
                           }`}
 
-                        onClick={(
-                          event
-                        ) =>
-                          handleInternalLink(
-                            event,
-                            href
+                        onClick={() =>
+                          toggleMobileAccordion(
+                            navItem.key
                           )
                         }
+
+                        aria-expanded={
+                          isOpen
+                        }
                       >
+
                         <span>
                           {
                             content
@@ -2196,388 +2393,450 @@ export default function Navbar({
                             ]
                           }
                         </span>
-                      </a>
+
+
+                        <Plus
+                          open={
+                            isOpen
+                          }
+                        />
+
+                      </button>
+
+
+                      <div
+                        className={`navbar-mobile-submenu ${isOpen
+                          ? "is-open"
+                          : ""
+                          }`}
+                      >
+
+                        <ul>
+
+                          {items.map(
+                            (
+                              subItem
+                            ) => {
+
+                              const href =
+                                localUrl(
+                                  subItem.path
+                                );
+
+
+                              return (
+                                <li
+                                  key={
+                                    subItem.key
+                                  }
+                                >
+
+                                  <a
+                                    href={
+                                      href
+                                    }
+
+                                    className={
+                                      isPathActive(
+                                        subItem.path
+                                      )
+                                        ? "is-active"
+                                        : ""
+                                    }
+
+                                    onClick={(
+                                      event
+                                    ) =>
+                                      handleInternalLink(
+                                        event,
+                                        href
+                                      )
+                                    }
+                                  >
+                                    {
+                                      content
+                                        .labels[
+                                      subItem.key
+                                      ]
+                                    }
+                                  </a>
+
+                                </li>
+                              );
+                            }
+                          )}
+
+                        </ul>
+
+                      </div>
 
                     </li>
                   );
                 }
-
-
-                const isOpen =
-                  mobileAccordion ===
-                  navItem.key;
-
-
-                const items =
-                  getFlatItems(
-                    navItem
-                  );
-
-
-                return (
-                  <li
-                    key={
-                      navItem.key
-                    }
-                  >
-
-                    <button
-                      type="button"
-
-                      className={`navbar-mobile-main-link navbar-mobile-main-button ${isSectionActive(
-                        navItem
-                      )
-                        ? "is-active"
-                        : ""
-                        }`}
-
-                      onClick={() =>
-                        toggleMobileAccordion(
-                          navItem.key
-                        )
-                      }
-
-                      aria-expanded={
-                        isOpen
-                      }
-                    >
-
-                      <span>
-                        {
-                          content
-                            .labels[
-                          navItem.key
-                          ]
-                        }
-                      </span>
-
-
-                      <Plus
-                        open={
-                          isOpen
-                        }
-                      />
-
-                    </button>
-
-
-                    <div
-                      className={`navbar-mobile-submenu ${isOpen
-                        ? "is-open"
-                        : ""
-                        }`}
-                    >
-
-                      <ul>
-
-                        {items.map(
-                          (
-                            subItem
-                          ) => {
-
-                            const href =
-                              localUrl(
-                                subItem.path
-                              );
-
-
-                            return (
-                              <li
-                                key={
-                                  subItem.key
-                                }
-                              >
-
-                                <a
-                                  href={
-                                    href
-                                  }
-
-                                  className={
-                                    isPathActive(
-                                      subItem.path
-                                    )
-                                      ? "is-active"
-                                      : ""
-                                  }
-
-                                  onClick={(
-                                    event
-                                  ) =>
-                                    handleInternalLink(
-                                      event,
-                                      href
-                                    )
-                                  }
-                                >
-                                  {
-                                    content
-                                      .labels[
-                                    subItem.key
-                                    ]
-                                  }
-                                </a>
-
-                              </li>
-                            );
-                          }
-                        )}
-
-                      </ul>
-
-                    </div>
-
-                  </li>
-                );
-              }
-            )}
-
-          </ul>
-
-        </nav>
-
-
-        {/* =========================================
-            MOBILE ACTIONS
-        ========================================== */}
-
-        <div className="navbar-mobile-actions">
-
-
-          {/* LICENSE */}
-
-          <div>
-
-            <button
-              type="button"
-
-              className="navbar-mobile-demo-button"
-
-              onClick={() =>
-                setMobileLicenseOpen(
-                  (
-                    current
-                  ) =>
-                    !current
-                )
-              }
-            >
-
-              <span>
-                {
-                  content.license
-                }
-              </span>
-
-
-              <Chevron
-                open={
-                  mobileLicenseOpen
-                }
-              />
-
-            </button>
-
-
-            <div
-              className={`navbar-mobile-action-submenu ${mobileLicenseOpen
-                ? "is-open"
-                : ""
-                }`}
-            >
-
-              {licenseItems.map(
-                (
-                  item
-                ) => (
-                  <a
-                    key={
-                      item.key
-                    }
-
-                    href={
-                      item.href
-                    }
-
-                    target="_blank"
-
-                    rel="noopener noreferrer"
-
-                    onClick={() =>
-                      setMobileOpen(
-                        false
-                      )
-                    }
-                  >
-                    {
-                      content
-                        .labels[
-                      item.key
-                      ]
-                    }
-                  </a>
-                )
               )}
 
-            </div>
+            </ul>
 
-          </div>
+          </nav>
 
 
-          {/* LIVE */}
+          {/* =========================================
+              MOBILE ACTIONS
+          ========================================== */}
 
-          <div>
+          <div className="navbar-mobile-actions">
 
-            <button
-              type="button"
 
-              className="navbar-mobile-live-button"
+            {/* LICENSE */}
 
-              onClick={() =>
-                setMobileLiveOpen(
-                  (
-                    current
-                  ) =>
-                    !current
-                )
-              }
-            >
+            <div>
 
-              <span>
-                {
-                  content.openLive
+              <button
+                type="button"
+
+                className="navbar-mobile-demo-button"
+
+                onClick={() =>
+                  setMobileLicenseOpen(
+                    (
+                      current
+                    ) =>
+                      !current
+                  )
                 }
-              </span>
+              >
 
-
-              <Chevron
-                open={
-                  mobileLiveOpen
-                }
-              />
-
-            </button>
-
-
-            <div
-              className={`navbar-mobile-action-submenu ${mobileLiveOpen
-                ? "is-open"
-                : ""
-                }`}
-            >
-
-              {liveItems.map(
-                (
-                  item
-                ) => {
-
-                  if (
-                    item.external
-                  ) {
-                    return (
-                      <a
-                        key={
-                          item.key
-                        }
-
-                        href={
-                          item.href
-                        }
-
-                        target="_blank"
-
-                        rel="noopener noreferrer"
-                      >
-                        {
-                          content
-                            .labels[
-                          item.key
-                          ]
-                        }
-                      </a>
-                    );
+                <span>
+                  {
+                    content.license
                   }
+                </span>
 
 
-                  const href =
-                    localUrl(
-                      item.path
-                    );
+                <Chevron
+                  open={
+                    mobileLicenseOpen
+                  }
+                />
+
+              </button>
 
 
-                  return (
-                    <a
-                      key={
-                        item.key
+              <div
+                className={`navbar-mobile-action-submenu ${mobileLicenseOpen
+                  ? "is-open"
+                  : ""
+                  }`}
+              >
+
+                <div className="navbar-mobile-action-submenu-inner">
+
+                  {licenseItems.map(
+                    (
+                      item
+                    ) => {
+
+                      if (
+                        item.type ===
+                        "lightbox"
+                      ) {
+                        return (
+                          <button
+                            type="button"
+
+                            key={
+                              item.key
+                            }
+
+                            className="navbar-mobile-license-button"
+
+                            onClick={
+                              openSpkLicense
+                            }
+                          >
+                            {
+                              content
+                                .labels[
+                              item.key
+                              ]
+                            }
+                          </button>
+                        );
                       }
 
-                      href={
-                        href
-                      }
 
-                      onClick={(
-                        event
-                      ) =>
-                        handleInternalLink(
-                          event,
-                          href
-                        )
-                      }
-                    >
-                      {
-                        content
-                          .labels[
-                        item.key
-                        ]
-                      }
-                    </a>
-                  );
+                      return (
+                        <a
+                          key={
+                            item.key
+                          }
+
+                          href={
+                            item.href
+                          }
+
+                          target="_blank"
+
+                          rel="noopener noreferrer"
+
+                          onClick={() =>
+                            setMobileOpen(
+                              false
+                            )
+                          }
+                        >
+                          {
+                            content
+                              .labels[
+                            item.key
+                            ]
+                          }
+                        </a>
+                      );
+                    }
+                  )}
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            {/* LIVE */}
+
+            <div>
+
+              <button
+                type="button"
+
+                className="navbar-mobile-live-button"
+
+                onClick={() =>
+                  setMobileLiveOpen(
+                    (
+                      current
+                    ) =>
+                      !current
+                  )
                 }
-              )}
+              >
+
+                <span>
+                  {
+                    content.openLive
+                  }
+                </span>
+
+
+                <Chevron
+                  open={
+                    mobileLiveOpen
+                  }
+                />
+
+              </button>
+
+
+              <div
+                className={`navbar-mobile-action-submenu ${mobileLiveOpen
+                  ? "is-open"
+                  : ""
+                  }`}
+              >
+
+                <div className="navbar-mobile-action-submenu-inner">
+
+                  {liveItems.map(
+                    (
+                      item
+                    ) => {
+
+                      if (
+                        item.external
+                      ) {
+                        return (
+                          <a
+                            key={
+                              item.key
+                            }
+
+                            href={
+                              item.href
+                            }
+
+                            target="_blank"
+
+                            rel="noopener noreferrer"
+                          >
+                            {
+                              content
+                                .labels[
+                              item.key
+                              ]
+                            }
+                          </a>
+                        );
+                      }
+
+
+                      const href =
+                        localUrl(
+                          item.path
+                        );
+
+
+                      return (
+                        <a
+                          key={
+                            item.key
+                          }
+
+                          href={
+                            href
+                          }
+
+                          onClick={(
+                            event
+                          ) =>
+                            handleInternalLink(
+                              event,
+                              href
+                            )
+                          }
+                        >
+                          {
+                            content
+                              .labels[
+                            item.key
+                            ]
+                          }
+                        </a>
+                      );
+                    }
+                  )}
+
+                </div>
+
+              </div>
 
             </div>
 
           </div>
 
+
+          {/* =========================================
+              MOBILE BOTTOM LINKS
+          ========================================== */}
+
+          <div className="navbar-mobile-bottom">
+
+            <a
+              href="https://mynoor.noorcap.ae/en/traders/login"
+
+              target="_blank"
+
+              rel="noopener noreferrer"
+            >
+              {
+                content.myNoor
+              }
+            </a>
+
+
+            <span>
+              |
+            </span>
+
+
+            <a
+              href="https://agent.noorcap.ae"
+
+              target="_blank"
+
+              rel="noopener noreferrer"
+            >
+              {
+                content.agents
+              }
+            </a>
+
+          </div>
+
+        </aside>
+
+      </header>
+
+
+      {/* =========================================
+          SPK LICENSE LIGHTBOX
+      ========================================== */}
+
+      {spkLicenseOpen && (
+
+        <div
+          className="navbar-license-lightbox"
+
+          role="dialog"
+
+          aria-modal="true"
+
+          aria-label={
+            content.labels
+              .spkLicense
+          }
+
+          onMouseDown={(
+            event
+          ) => {
+            if (
+              event.target ===
+              event.currentTarget
+            ) {
+              closeSpkLicense();
+            }
+          }}
+        >
+
+          <div className="navbar-license-lightbox-dialog">
+
+            <button
+              type="button"
+
+              className="navbar-license-lightbox-close"
+
+              aria-label={
+                content.closeLicense
+              }
+
+              onClick={
+                closeSpkLicense
+              }
+            >
+              ×
+            </button>
+
+
+            <img
+              src={
+                NAV_ASSETS
+                  .spkLicense
+              }
+
+              alt={
+                content.labels
+                  .spkLicense
+              }
+
+              className="navbar-license-lightbox-image"
+            />
+
+          </div>
+
         </div>
 
+      )}
 
-        {/* =========================================
-            MOBILE BOTTOM LINKS
-        ========================================== */}
-
-        <div className="navbar-mobile-bottom">
-
-          <a
-            href="https://mynoor.noorcap.ae/en/traders/login"
-
-            target="_blank"
-
-            rel="noopener noreferrer"
-          >
-            {content.myNoor}
-          </a>
-
-
-          <span>
-            |
-          </span>
-
-
-          <a
-            href="https://agent.noorcap.ae"
-
-            target="_blank"
-
-            rel="noopener noreferrer"
-          >
-            {content.agents}
-          </a>
-
-        </div>
-
-      </aside>
-
-    </header>
+    </>
   );
 }
