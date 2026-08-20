@@ -85,7 +85,7 @@ export const contactOffices = [
   {
     key: "izmir",
 
-    name: "İrtibat Büro",
+    name: "İzmir",
 
     address:
       "Halit Ziya Bulv., Akdeniz Mah., The Mercer Plaza 1/22, Konak 35210 İzmir / Türkiye",
