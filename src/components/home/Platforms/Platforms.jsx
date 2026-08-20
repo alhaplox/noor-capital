@@ -10,7 +10,7 @@ const assets = {
     "https://www.noorcapital.ae/images/about/bg-platform.png",
 
   webPlatform:
-    "/images/web-platform.png",
+    "/images/home/web-platform.png",
 };
 
 
