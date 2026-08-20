@@ -71,46 +71,16 @@
 
 
 .platforms-heading h2 {
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: center;
-
-  max-width:
-    850px;
-
   margin: 0;
-
-  color:
-    #ffffff;
-
-  font-size:
-    36px;
-
-  line-height:
-    1.25;
-
-  font-weight:
-    700;
-}
-
-
-.platforms-heading h2 span {
-  display: block;
-}
-
-
-.platforms-heading h2 strong {
-  display: block;
-
-  margin-top:
-    3px;
 
   color:
     #efb42f;
 
-  font: inherit;
+  font-size:
+    45px;
+
+  line-height:
+    1.25;
 
   font-weight:
     700;
@@ -124,198 +94,46 @@
 .platforms-showcase {
   position: relative;
 
-  width: 100%;
-
-  min-height:
-    620px;
-
-  margin-top:
-    45px;
-
-  overflow:
-    hidden;
-
-  background-image:
-    var(--platform-showcase);
-
-  background-position:
-    center;
-
-  background-repeat:
-    no-repeat;
-
-  background-size:
-    contain;
-}
-
-
-/* =========================================================
-   SWIPER
-========================================================= */
-
-.platforms-swiper {
-  width: 100%;
-
-  height:
-    620px;
-}
-
-
-.platforms-swiper .swiper-wrapper {
-  align-items:
-    stretch;
-}
-
-
-.platforms-swiper .swiper-slide {
-  height:
-    620px;
-}
-
-
-/* =========================================================
-   SLIDE
-========================================================= */
-
-.platform-slide {
-  position: relative;
-
   display: flex;
 
-  align-items:
-    center;
+  align-items: center;
 
-  justify-content:
-    center;
+  justify-content: center;
 
   width: 100%;
 
-  height: 100%;
-
-  margin: 0;
-
-  padding:
-    20px;
-
-  border: 0;
-
-  outline: 0;
-
-  background:
-    transparent;
-
-  color:
-    #ffffff;
-
-  font-family:
-    inherit;
-
-  cursor:
-    pointer;
-
-  opacity:
-    0.4;
-
-  transition:
-    opacity 0.35s ease,
-    transform 0.35s ease;
+  margin-top:
+    50px;
 }
 
 
 /* =========================================================
-   SEPARATOR
+   SHOWCASE IMAGE
 ========================================================= */
 
-.platform-slide::before {
-  content: "";
-
-  position: absolute;
-
-  top:
-    12%;
-
-  bottom:
-    12%;
-
-  left: 0;
+.platforms-showcase-image {
+  display: block;
 
   width:
-    1px;
+    min(1050px,
+      100%);
 
-  background:
-    rgba(255,
-      255,
-      255,
-      0.025);
+  height: auto;
 
-  pointer-events:
-    none;
-}
+  max-height:
+    650px;
 
+  object-fit:
+    contain;
 
-/* =========================================================
-   ACTIVE SLIDE
-========================================================= */
+  border-radius:
+    18px;
 
-.platforms-swiper .swiper-slide-active .platform-slide {
-  opacity: 1;
-
-  transform:
-    scale(1.04);
-}
-
-
-.platforms-swiper .swiper-slide-prev .platform-slide,
-
-.platforms-swiper .swiper-slide-next .platform-slide {
-  opacity:
-    0.72;
-}
-
-
-/* =========================================================
-   SLIDE TITLE
-========================================================= */
-
-.platform-slide h3 {
-  position: relative;
-
-  z-index: 2;
-
-  max-width:
-    260px;
-
-  margin: 0;
-
-  color:
-    #ffffff;
-
-  font-size:
-    26px;
-
-  line-height:
-    1.2;
-
-  font-weight:
-    700;
-
-  text-align:
-    center;
-
-  text-shadow:
-    0 3px 14px rgba(0,
+  box-shadow:
+    0 35px 90px rgba(0,
       0,
       0,
-      0.62);
-
-  transition:
-    color 0.3s ease;
-}
-
-
-.platforms-swiper .swiper-slide-active .platform-slide h3 {
-  color:
-    #f1bb39;
+      0.32);
 }
 
 
@@ -333,14 +151,14 @@
   width: 100%;
 
   margin-top:
-    15px;
+    45px;
 
   text-align: center;
 }
 
 
 /* =========================================================
-   ACTIVE PLATFORM TITLE
+   PLATFORM TITLE
 ========================================================= */
 
 .platforms-bottom>h3 {
@@ -360,45 +178,16 @@
 }
 
 
-.platforms-bottom>h3 strong {
-  font: inherit;
-
-  font-weight:
-    700;
-}
-
-
-/* =========================================================
-   DESCRIPTION ROW
-========================================================= */
-
-.platforms-description-row {
-  display: grid;
-
-  grid-template-columns:
-    70px minmax(0,
-      790px) 70px;
-
-  align-items: center;
-
-  justify-content: center;
-
-  gap:
-    24px;
-
-  width: 100%;
-
-  margin-top:
-    24px;
-}
-
-
 /* =========================================================
    DESCRIPTION
 ========================================================= */
 
-.platforms-description-row p {
-  margin: 0;
+.platforms-description {
+  max-width:
+    790px;
+
+  margin:
+    24px auto 0;
 
   color:
     rgba(255,
@@ -417,68 +206,6 @@
 
   text-align:
     center;
-}
-
-
-/* =========================================================
-   ARROWS
-========================================================= */
-
-.platform-arrow {
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  width:
-    57px;
-
-  height:
-    57px;
-
-  margin: 0;
-
-  padding: 0;
-
-  border: 0;
-
-  outline: 0;
-
-  background:
-    transparent;
-
-  cursor:
-    pointer;
-
-  transition:
-    transform 0.2s ease,
-    filter 0.2s ease;
-}
-
-
-.platform-arrow img {
-  display: block;
-
-  width:
-    57px;
-
-  height:
-    57px;
-
-  max-width: none;
-
-  object-fit:
-    contain;
-}
-
-
-.platform-arrow:hover {
-  transform:
-    scale(1.07);
-
-  filter:
-    brightness(1.1);
 }
 
 
@@ -566,18 +293,6 @@ html[dir="rtl"] .platforms-bottom {
 }
 
 
-html[dir="rtl"] .platforms-description-row {
-  direction: rtl;
-}
-
-
-html[dir="rtl"] .platform-slide::before {
-  left: auto;
-
-  right: 0;
-}
-
-
 /* =========================================================
    LAPTOP
 ========================================================= */
@@ -598,27 +313,19 @@ html[dir="rtl"] .platform-slide::before {
 
   .platforms-heading h2 {
     font-size:
-      32px;
+      38px;
   }
 
 
   .platforms-showcase {
-    min-height:
-      540px;
+    margin-top:
+      42px;
   }
 
 
-  .platforms-swiper,
-
-  .platforms-swiper .swiper-slide {
-    height:
-      540px;
-  }
-
-
-  .platform-slide h3 {
-    font-size:
-      23px;
+  .platforms-showcase-image {
+    max-height:
+      560px;
   }
 
 }
@@ -643,37 +350,29 @@ html[dir="rtl"] .platform-slide::before {
 
 
   .platforms-heading h2 {
-    max-width:
-      650px;
-
     font-size:
-      29px;
+      32px;
   }
 
 
   .platforms-showcase {
-    min-height:
-      470px;
-
     margin-top:
       35px;
-
-    background-size:
-      cover;
   }
 
 
-  .platforms-swiper,
+  .platforms-showcase-image {
+    max-height:
+      480px;
 
-  .platforms-swiper .swiper-slide {
-    height:
-      470px;
+    border-radius:
+      14px;
   }
 
 
-  .platform-slide h3 {
-    font-size:
-      21px;
+  .platforms-bottom {
+    margin-top:
+      35px;
   }
 
 
@@ -683,28 +382,7 @@ html[dir="rtl"] .platform-slide::before {
   }
 
 
-  .platforms-description-row {
-    grid-template-columns:
-      55px minmax(0,
-        1fr) 55px;
-
-    gap:
-      14px;
-  }
-
-
-  .platform-arrow,
-
-  .platform-arrow img {
-    width:
-      48px;
-
-    height:
-      48px;
-  }
-
-
-  .platforms-description-row p {
+  .platforms-description {
     font-size:
       14px;
   }
@@ -732,7 +410,7 @@ html[dir="rtl"] .platform-slide::before {
 
   .platforms-heading h2 {
     font-size:
-      24px;
+      27px;
 
     line-height:
       1.35;
@@ -740,40 +418,25 @@ html[dir="rtl"] .platform-slide::before {
 
 
   .platforms-showcase {
-    min-height:
-      390px;
-
     margin-top:
       28px;
-
-    background-size:
-      auto 360px;
   }
 
 
-  .platforms-swiper,
+  .platforms-showcase-image {
+    width: 100%;
 
-  .platforms-swiper .swiper-slide {
-    height:
-      390px;
-  }
+    max-height:
+      none;
 
-
-  .platform-slide {
-    padding:
+    border-radius:
       10px;
-  }
-
-
-  .platform-slide h3 {
-    font-size:
-      19px;
   }
 
 
   .platforms-bottom {
     margin-top:
-      5px;
+      28px;
   }
 
 
@@ -786,31 +449,10 @@ html[dir="rtl"] .platform-slide::before {
   }
 
 
-  .platforms-description-row {
-    grid-template-columns:
-      42px minmax(0,
-        1fr) 42px;
-
-    gap:
-      8px;
-
+  .platforms-description {
     margin-top:
       18px;
-  }
 
-
-  .platform-arrow,
-
-  .platform-arrow img {
-    width:
-      40px;
-
-    height:
-      40px;
-  }
-
-
-  .platforms-description-row p {
     font-size:
       12px;
 
@@ -834,71 +476,6 @@ html[dir="rtl"] .platform-slide::before {
 
     font-size:
       12px;
-  }
-
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 420px) {
-
-  .platforms-showcase {
-    min-height:
-      350px;
-
-    background-size:
-      auto 325px;
-  }
-
-
-  .platforms-swiper,
-
-  .platforms-swiper .swiper-slide {
-    height:
-      350px;
-  }
-
-
-  .platforms-description-row {
-    position: relative;
-
-    grid-template-columns:
-      1fr;
-
-    gap:
-      18px;
-  }
-
-
-  .platforms-description-row p {
-    order: 1;
-  }
-
-
-  .platform-arrow {
-    position: absolute;
-
-    top:
-      calc(100% + 15px);
-  }
-
-
-  .platform-arrow-left {
-    left: 25%;
-  }
-
-
-  .platform-arrow-right {
-    right: 25%;
-  }
-
-
-  .platforms-cta {
-    margin-top:
-      85px;
   }
 
 }
