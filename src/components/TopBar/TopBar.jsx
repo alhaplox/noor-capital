@@ -17,7 +17,7 @@ export default function TopBar() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  MyNoor
+
                 </a>
 
                 <span className="top-bar-separator">|</span>
@@ -27,7 +27,7 @@ export default function TopBar() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Agents
+
                 </a>
               </li>
             </ul>
