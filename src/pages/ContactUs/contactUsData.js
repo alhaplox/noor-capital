@@ -60,9 +60,9 @@ export const contactOffices = [
     address:
       "Office 203/204, 2nd Floor, Montazah Tower B, Khalidiyah Street, Zayed The First Street",
 
-    phone: "+90 501 548 18 90",
+    phone: "",
 
-    phoneHref: "tel:+905015481890",
+    phoneHref: "tel:",
 
     map: "https://maps.app.goo.gl/UJyMnvRbwpFAN3yW9",
   },
@@ -75,9 +75,9 @@ export const contactOffices = [
     address:
       "1st Floor, MSM 1 Building, Al Safa 1, Sheikh Zayed Road, P. O. Box 334241",
 
-    phone: "+90 501 548 18 90",
+    phone: "",
 
-    phoneHref: "tel:+905015481890",
+    phoneHref: "tel:",
 
     map: "https://maps.app.goo.gl/x3cVzRDaWnhRSeDK9",
   },
