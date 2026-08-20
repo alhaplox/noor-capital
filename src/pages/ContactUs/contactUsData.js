@@ -81,6 +81,21 @@ export const contactOffices = [
 
     map: "https://maps.app.goo.gl/x3cVzRDaWnhRSeDK9",
   },
+
+  {
+    key: "izmir",
+
+    name: "İrtibat Büro",
+
+    address:
+      "Halit Ziya Bulv., Akdeniz Mah., The Mercer Plaza 1/22, Konak 35210 İzmir / Türkiye",
+
+    phone: "0216 253 0670",
+
+    phoneHref: "tel:+902162530670",
+
+    map: null,
+  },
 ];
 
 /* =========================================================
