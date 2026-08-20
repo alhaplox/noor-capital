@@ -10,7 +10,7 @@ const assets = {
     "https://www.noorcapital.ae/images/about/bg-platform.png",
 
   webPlatform:
-    "/images/home/web-platform.png",
+    "/images/web-platform.png",
 };
 
 
@@ -90,40 +90,28 @@ const platformCopy = {
 
 export default function Platforms({
   language = "en",
-  navigate,
 }) {
   const content =
     platformCopy[language] ||
     platformCopy.en;
 
 
-  /*
-    Şimdilik mevcut Web Trader route yapısını koruyoruz.
-    Ayrı bir Noor Capital Web Trader sayfası tanımlandığında
-    sadece bu path değiştirilebilir.
-  */
+  /* =======================================================
+     OPEN NAVBAR LIVE FORM
+  ======================================================= */
 
-  const href =
-    `/${language}/trading/mt5-web-trader`;
+  function openLiveForm() {
+    const liveButton =
+      document.querySelector(
+        ".navbar-live-button"
+      );
 
 
-  function handleLink(
-    event
-  ) {
     if (
-      !navigate ||
-      event.metaKey ||
-      event.ctrlKey ||
-      event.shiftKey ||
-      event.altKey
+      liveButton
     ) {
-      return;
+      liveButton.click();
     }
-
-
-    event.preventDefault();
-
-    navigate(href);
   }
 
 
@@ -191,19 +179,17 @@ export default function Platforms({
           </p>
 
 
-          <a
-            href={
-              href
-            }
+          <button
+            type="button"
 
             className="platforms-cta"
 
             onClick={
-              handleLink
+              openLiveForm
             }
           >
             {content.button}
-          </a>
+          </button>
 
         </div>
 
