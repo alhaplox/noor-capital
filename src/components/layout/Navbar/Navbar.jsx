@@ -5,6 +5,7 @@ import {
 } from "react";
 
 import "./Navbar.css";
+import OpenLiveModal from "./OpenLiveModal";
 
 
 /* =========================================================
@@ -320,43 +321,6 @@ const licenseItems = [
     key: "spkLicense",
 
     type: "lightbox",
-  },
-];
-
-
-/* =========================================================
-   OPEN LIVE MENU
-========================================================= */
-
-const liveItems = [
-  {
-    key: "fxTrading",
-
-    href:
-      "https://mynoor.noorcap.ae/en/mynoor-v2/register",
-
-    external: true,
-  },
-
-  {
-    key: "cashEquities",
-
-    path:
-      "products/cash-equities",
-  },
-
-  {
-    key: "gtnCashEquities",
-
-    path:
-      "trading/gtn-platform",
-  },
-
-  {
-    key: "institutionalLiquidityShort",
-
-    path:
-      "partnership/institutional-liquidity-solutions",
   },
 ];
 
@@ -1227,8 +1191,8 @@ export default function Navbar({
 
 
   const [
-    mobileLiveOpen,
-    setMobileLiveOpen,
+    openLiveOpen,
+    setOpenLiveOpen,
   ] = useState(false);
 
 
@@ -1338,7 +1302,8 @@ export default function Navbar({
     () => {
       if (
         !mobileOpen &&
-        !spkLicenseOpen
+        !spkLicenseOpen &&
+        !openLiveOpen
       ) {
         document.body.style.overflow =
           "";
@@ -1359,6 +1324,7 @@ export default function Navbar({
     [
       mobileOpen,
       spkLicenseOpen,
+      openLiveOpen,
     ]
   );
 
@@ -1580,6 +1546,32 @@ export default function Navbar({
 
   function closeSpkLicense() {
     setSpkLicenseOpen(
+      false
+    );
+  }
+
+
+  /* =======================================================
+     OPEN LIVE FORM
+  ======================================================= */
+
+  function openLiveForm() {
+    setMobileOpen(
+      false
+    );
+
+    setMobileLicenseOpen(
+      false
+    );
+
+    setOpenLiveOpen(
+      true
+    );
+  }
+
+
+  function closeLiveForm() {
+    setOpenLiveOpen(
       false
     );
   }
@@ -2006,115 +1998,23 @@ export default function Navbar({
 
             {/* OPEN LIVE */}
 
-            <div className="navbar-action-dropdown">
+            <button
+              type="button"
 
-              <button
-                type="button"
+              className="navbar-live-button"
 
-                className="navbar-live-button"
-              >
+              onClick={
+                openLiveForm
+              }
+            >
 
-                <span>
-                  {
-                    content.openLive
-                  }
-                </span>
+              <span>
+                {
+                  content.openLive
+                }
+              </span>
 
-                <Chevron />
-
-              </button>
-
-
-              <div className="navbar-action-menu">
-
-                <div className="navbar-action-menu-inner">
-
-                  <ul>
-
-                    {liveItems.map(
-                      (
-                        item
-                      ) => {
-
-                        if (
-                          item.external
-                        ) {
-                          return (
-                            <li
-                              key={
-                                item.key
-                              }
-                            >
-
-                              <a
-                                href={
-                                  item.href
-                                }
-
-                                target="_blank"
-
-                                rel="noopener noreferrer"
-                              >
-                                {
-                                  content
-                                    .labels[
-                                  item.key
-                                  ]
-                                }
-                              </a>
-
-                            </li>
-                          );
-                        }
-
-
-                        const href =
-                          localUrl(
-                            item.path
-                          );
-
-
-                        return (
-                          <li
-                            key={
-                              item.key
-                            }
-                          >
-
-                            <a
-                              href={
-                                href
-                              }
-
-                              onClick={(
-                                event
-                              ) =>
-                                handleInternalLink(
-                                  event,
-                                  href
-                                )
-                              }
-                            >
-                              {
-                                content
-                                  .labels[
-                                item.key
-                                ]
-                              }
-                            </a>
-
-                          </li>
-                        );
-                      }
-                    )}
-
-                  </ul>
-
-                </div>
-
-              </div>
-
-            </div>
+            </button>
 
 
             {/* MOBILE HAMBURGER */}
@@ -2605,122 +2505,23 @@ export default function Navbar({
 
             {/* LIVE */}
 
-            <div>
+            <button
+              type="button"
 
-              <button
-                type="button"
+              className="navbar-mobile-live-button"
 
-                className="navbar-mobile-live-button"
+              onClick={
+                openLiveForm
+              }
+            >
 
-                onClick={() =>
-                  setMobileLiveOpen(
-                    (
-                      current
-                    ) =>
-                      !current
-                  )
+              <span>
+                {
+                  content.openLive
                 }
-              >
+              </span>
 
-                <span>
-                  {
-                    content.openLive
-                  }
-                </span>
-
-
-                <Chevron
-                  open={
-                    mobileLiveOpen
-                  }
-                />
-
-              </button>
-
-
-              <div
-                className={`navbar-mobile-action-submenu ${mobileLiveOpen
-                  ? "is-open"
-                  : ""
-                  }`}
-              >
-
-                <div className="navbar-mobile-action-submenu-inner">
-
-                  {liveItems.map(
-                    (
-                      item
-                    ) => {
-
-                      if (
-                        item.external
-                      ) {
-                        return (
-                          <a
-                            key={
-                              item.key
-                            }
-
-                            href={
-                              item.href
-                            }
-
-                            target="_blank"
-
-                            rel="noopener noreferrer"
-                          >
-                            {
-                              content
-                                .labels[
-                              item.key
-                              ]
-                            }
-                          </a>
-                        );
-                      }
-
-
-                      const href =
-                        localUrl(
-                          item.path
-                        );
-
-
-                      return (
-                        <a
-                          key={
-                            item.key
-                          }
-
-                          href={
-                            href
-                          }
-
-                          onClick={(
-                            event
-                          ) =>
-                            handleInternalLink(
-                              event,
-                              href
-                            )
-                          }
-                        >
-                          {
-                            content
-                              .labels[
-                            item.key
-                            ]
-                          }
-                        </a>
-                      );
-                    }
-                  )}
-
-                </div>
-
-              </div>
-
-            </div>
+            </button>
 
           </div>
 
@@ -2836,6 +2637,25 @@ export default function Navbar({
         </div>
 
       )}
+
+
+      {/* =========================================
+          OPEN LIVE FORM
+      ========================================== */}
+
+      <OpenLiveModal
+        open={
+          openLiveOpen
+        }
+
+        onClose={
+          closeLiveForm
+        }
+
+        language={
+          language
+        }
+      />
 
     </>
   );
